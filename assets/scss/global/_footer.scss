@@ -1,5 +1,6 @@
 .footerWrap {
   position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
 }
@@ -149,7 +150,7 @@
 .footerMainWrap .center {
   position: relative;
   display: table;
-  border-collapse: collapse;
+  //border-collapse: collapse;
 }
 .footerColumn {
   position: relative;

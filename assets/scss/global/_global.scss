@@ -42,6 +42,7 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 h1, h2, h3, p { font-weight: normal; -webkit-margin-before: 0; -webkit-margin-after: 0; }
+ol, ul, li { list-style-type: none; }
 img { border: 0; }
 svg:not(:root) { overflow: hidden; }
 figure { margin: 0; }
@@ -60,7 +61,7 @@ textarea { overflow: auto; vertical-align: top; }
 table { border-collapse: collapse; border-spacing: 0; }
 input, textarea, select { outline: none; }
 .clear { display: block; height: 0; overflow: hidden; clear: both; }
-.center { position: relative; max-width: 1340px; width: 100%; margin: 0 auto; }
+.center { position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 0 10px}
 .centerContent { text-align: center; }
 .nowrap { white-space: nowrap; }
 .floatLeft { float: left; }

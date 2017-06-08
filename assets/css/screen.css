@@ -93,6 +93,9 @@ h1, h2, h3, p {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0; }
 
+ol, ul, li {
+  list-style-type: none; }
+
 img {
   border: 0; }
 
@@ -165,9 +168,10 @@ input, textarea, select {
 
 .center {
   position: relative;
-  max-width: 1340px;
+  max-width: 1360px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 10px; }
 
 .centerContent {
   text-align: center; }
@@ -204,6 +208,159 @@ body {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.input-style {
+  display: block;
+  width: 100%;
+  margin: 0;
+  min-height: 39px;
+  font-size: 18px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  border: none;
+  border-bottom: 2px solid #010101;
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  padding: 6px 12px;
+  background-color: red;
+  -webkit-transition: 0.35s;
+  -khtml-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+  transition: 0.35s; }
+  .input-style.wpcf7-not-valid, .input-style.error {
+    border-color: #ff0000; }
+
+.input-name {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  color: #232323; }
+
+textarea.input-style {
+  line-height: 1.5;
+  padding: 14px 16px;
+  min-height: 150px;
+  resize: none;
+  border: 2px solid #010101; }
+
+input::-webkit-input-placeholder {
+  font-size: 18px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  color: #ababab; }
+
+input::-moz-placeholder {
+  font-size: 18px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  color: #ababab; }
+
+input:-ms-input-placeholder {
+  font-size: 18px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  color: #ababab; }
+
+input:-moz-placeholder {
+  font-size: 18px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  color: #ababab; }
+
+textarea::-webkit-input-placeholder {
+  font-size: 18px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  color: #ababab; }
+
+textarea::-moz-placeholder {
+  font-size: 18px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  color: #ababab; }
+
+textarea:-ms-input-placeholder {
+  font-size: 18px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  color: #ababab; }
+
+textarea:-moz-placeholder {
+  font-size: 18px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  color: #ababab; }
+
+.select-wrap {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -khtml-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); }
+  .select-wrap:before {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 48px;
+    right: 1px;
+    top: 1px;
+    background-color: #FBFBFB;
+    cursor: pointer; }
+  .select-wrap:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 24px;
+    margin-top: -4px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #8F9F9E;
+    cursor: pointer; }
+
+select {
+  min-height: 50px;
+  width: 100%;
+  padding: 12px 50px 12px 16px;
+  color: #abb3ba;
+  font-size: 18px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid #E1E3E2;
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  background-color: #FBFBFB; }
+  select::selection {
+    background: #ffb7b7;
+    /* WebKit/Blink Browsers */ }
+  select option {
+    font-size: 18px;
+    font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    color: #656f77; }
+
 .navigationWrap {
   position: absolute;
   display: block;
@@ -329,6 +486,7 @@ body {
 
 .footerWrap {
   position: relative;
+  z-index: 1;
   display: block;
   width: 100%; }
 
@@ -479,8 +637,7 @@ body {
 
 .footerMainWrap .center {
   position: relative;
-  display: table;
-  border-collapse: collapse; }
+  display: table; }
 
 .footerColumn {
   position: relative;
@@ -752,14 +909,24 @@ a.footerContact:focus {
   text-transform: uppercase; }
 
 .section-contact {
+  position: relative;
+  z-index: 10;
   padding-top: 120px;
   padding-bottom: 100px; }
+  .section-contact .center {
+    max-width: 1060px; }
 
 .contact-page-list > li {
   float: left;
   width: 50%;
-  padding: 0 25px; }
+  padding: 0 25px;
+  list-style-type: none; }
   .contact-page-list > li:last-child {
     padding: 0; }
+
+.form-list > li {
+  margin-bottom: 20px; }
+  .form-list > li:last-child {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=screen.css.map */
