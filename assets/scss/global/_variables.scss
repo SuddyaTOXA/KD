@@ -1,0 +1,50 @@
+/*fonts*/
+$font-s-light: 'Soleil Light', Arial, Verdana, Tahoma, sans-serif;
+$font-s-book: 'Soleil Book', Arial, Verdana, Tahoma, sans-serif;
+$font-s-reg: 'Soleil Regular', Arial, Verdana, Tahoma, sans-serif;
+$font-s-semi: 'Soleil SemiBold', Arial, Verdana, Tahoma, sans-serif;
+$font-mem-light: 'Mr Eaves Mod Light', Arial, Verdana, Tahoma, sans-serif;
+$font-mem-reg: 'Mr Eaves Mod Reg', Arial, Verdana, Tahoma, sans-serif;
+$font-mem-book: 'Mr Eaves Mod Book', Arial, Verdana, Tahoma, sans-serif;
+$font-mem-bold: 'Mr Eaves Mod Bold', Arial, Verdana, Tahoma, sans-serif;
+
+/*fonts-weight*/
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$ex-bold: 800;
+
+/*fonts-size*/
+$size-main: 18px;
+$size-small: 14px;
+$size-heading1: 44px;
+$size-heading2: 40px;
+$size-heading3: 28px;
+
+/*line-height*/
+$line-height: 1.6;
+$line-height-heading: 1;
+
+/*letter-spacing*/
+$letter-spacing-100: 0.1em;
+
+
+/*colors*/
+$white: #ffffff;
+$color-text: #333333;
+$color-text2: #313b43;
+$color-text3: #ff614c;
+$color-bg1: $white;
+$color-bg2: #ff4948;
+$color-bg3: #1d4d94;
+$color-bg4: #d5d5d5;
+
+/*transition*/
+$transition-link: 0.2s;
+$transition-other: 0.35s;
+
+/*border-radius*/
+$radius-main: 10px;
+$radius-small: 5px;

@@ -1,0 +1,14 @@
+.section-contact {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+  .contact-page-list {
+    > li {
+      float: left;
+      width: 50%;
+      padding: 0 25px;
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
