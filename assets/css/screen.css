@@ -168,10 +168,9 @@ input, textarea, select {
 
 .center {
   position: relative;
-  max-width: 1360px;
+  max-width: 1340px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 10px; }
+  margin: 0 auto; }
 
 .centerContent {
   text-align: center; }
@@ -201,6 +200,13 @@ body {
 
 #mfPreviewBar {
   display: none; }
+
+.center {
+  max-width: 1360px;
+  padding: 0 10px; }
+
+.fullWrap {
+  padding-top: 76px; }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -365,6 +371,8 @@ select {
   position: absolute;
   display: block;
   width: 100%;
+  top: 0;
+  left: 0;
   background: #cd0000;
   background: rgba(205, 0, 0, 0.9);
   z-index: 500; }
@@ -491,7 +499,7 @@ select {
   width: 100%; }
 
 .homeBannerWrap + .footerWrap {
-  margin: -10.5% 0 0 0; }
+  margin: -11.5% 0 0 0; }
 
 .footerPageWrap {
   position: relative;
@@ -502,7 +510,7 @@ select {
 
 .footerPage {
   position: relative;
-  display: inline-block;
+  display: table-cell;
   vertical-align: top;
   width: 50%;
   text-decoration: none;
@@ -527,6 +535,14 @@ select {
   transform: rotate(6.5deg);
   transform-origin: top left;
   overflow: hidden; }
+  .footerPageWedge:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.68); }
 
 .footerPageAlt .footerPageWedge {
   left: auto;
@@ -861,32 +877,37 @@ a.footerContact:focus {
 /* styles used throughout site */
 .homeBannerWrap {
   position: relative;
-  display: block;
+  display: table;
   width: 100%;
+  top: -76px;
+  padding-top: 80px;
   min-height: 500px;
   overflow: hidden; }
   .homeBannerWrap img {
     position: absolute;
-    display: block;
+    min-height: 100%;
     min-width: 100%;
     width: auto;
-    min-height: 100%;
     height: auto;
-    top: -9999px;
-    left: -9999px;
-    right: -9999px;
-    bottom: -9999px;
-    margin: auto; }
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -khtml-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
 .homeBannerContent {
-  position: absolute;
-  display: block;
-  left: 50%;
-  bottom: 180px;
-  margin: 0 0 0 -625px; }
+  display: table-cell;
+  width: 100%;
+  height: 100px;
+  vertical-align: bottom;
+  padding-bottom: 10%; }
   .homeBannerContent h1 {
     position: relative;
     display: block;
+    padding-right: 50px;
     font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
     font-size: 124px;
     font-weight: 900;
@@ -894,11 +915,13 @@ a.footerContact:focus {
     line-height: .88em;
     color: #fff;
     text-transform: uppercase; }
+  .homeBannerContent .center {
+    max-width: 1080px; }
 
 .homeBannerSubline {
   position: relative;
   display: block;
-  padding: 10px 15px 0 0;
+  padding: 10px 50px 0 0;
   text-align: right;
   font-family: "Mr Eaves Mod Book", Arial, Verdana, Tahoma, sans-serif;
   font-size: 28px;

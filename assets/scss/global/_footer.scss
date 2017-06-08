@@ -4,7 +4,7 @@
   display: block;
   width: 100%;
 }
-.homeBannerWrap + .footerWrap { margin: -10.5% 0 0 0; }
+.homeBannerWrap + .footerWrap { margin: -11.5% 0 0 0; }
 .footerPageWrap {
   position: relative;
   display: table;
@@ -14,7 +14,7 @@
 }
 .footerPage {
   position: relative;
-  display: inline-block;
+  display: table-cell;
   vertical-align: top;
   width: 50%;
   text-decoration: none;
@@ -39,6 +39,15 @@
   transform: rotate(6.5deg);
   transform-origin: top left;
   overflow: hidden;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.68);
+  }
 }
 .footerPageAlt .footerPageWedge {
   left: auto;

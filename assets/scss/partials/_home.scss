@@ -1,32 +1,48 @@
 .homeBannerWrap {
   position: relative;
-  display: block;
+  display: table;
   width: 100%;
+  top: -76px;
+  padding-top: 80px;
   min-height: 500px;
   overflow: hidden;
   img {
+    //position: absolute;
+    //display: block;
+    //min-width: 100%;
+    //width: auto;
+    //min-height: 100%;
+    //height: auto;
+    //top: -9999px;
+    //left: -9999px;
+    //right: -9999px;
+    //bottom: -9999px;
+    //margin: auto;
     position: absolute;
-    display: block;
+    min-height: 100%;
     min-width: 100%;
     width: auto;
-    min-height: 100%;
     height: auto;
-    top: -9999px;
-    left: -9999px;
-    right: -9999px;
-    bottom: -9999px;
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    @include transform();
   }
 }
 .homeBannerContent {
-  position: absolute;
-  display: block;
-  left: 50%;
-  bottom: 180px;
-  margin: 0 0 0 -625px;
+  //position: absolute;
+  //display: block;
+  //left: 50%;
+  //bottom: 180px;
+  //margin: 0 0 0 -625px;
+  display: table-cell;
+  width: 100%;
+  height: 100px;
+  vertical-align: bottom;
+  padding-bottom: 10%;
   h1 {
     position: relative;
     display: block;
+    padding-right: 50px;
     font-family: $font-mem-bold;
     font-size: 124px;
     font-weight: 900;
@@ -35,11 +51,14 @@
     color: #fff;
     text-transform: uppercase;
   }
+  .center {
+    max-width: 1080px;
+  }
 }
   .homeBannerSubline {
     position: relative;
     display: block;
-    padding: 10px 15px 0 0;
+    padding: 10px 50px 0 0;
     text-align: right;
     font-family: $font-mem-book;
     font-size: 28px;
