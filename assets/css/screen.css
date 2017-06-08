@@ -735,7 +735,21 @@ a.footerContact:focus {
   width: 24px;
   height: 24px;
   margin: 14px 9px 0 0;
-  background: #000; }
+  background: #000;
+  text-align: center; }
+  .footerSocial i {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff; }
+
+.footerSocialFB i {
+  font-size: 15px; }
+
+.footerSocialIN i {
+  font-size: 18px; }
+
+.footerSocialGP i {
+  font-size: 12px; }
 
 .footerNavLink {
   position: relative;
