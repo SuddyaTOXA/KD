@@ -1,8 +1,8 @@
 .section-title {
-  margin-bottom: 62px;
+  margin-bottom: 39px;
   font-family: $font-mem-bold;
   font-weight: $heavy;
-  font-size: $size-heading3;
+  font-size: $size-heading2;
   letter-spacing: 0.12em;
   line-height: 1;
 }
@@ -10,13 +10,13 @@
 .section-contact {
   position: relative;
   z-index: 10;
-  padding-top: 176px;
+  padding-top: 155px;
   padding-bottom: 100px;
   .center {
-    max-width: 1060px;
+    max-width: 1056px;
   }
   .section-title {
-    padding-left: 25px;
+    padding-left: 27px;
   }
   a.btn, .btn {
     text-transform: uppercase;
@@ -36,22 +36,40 @@
       font-size: 16px;
       font-weight: 900;
       line-height: 1.2em;
-      letter-spacing: $letter-spacing-100;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
     }
     .contact-info {
       font-family: $font-s-reg;
       font-size: 28px;
       line-height: 1.4em;
+      letter-spacing: 0.01em;
       a {
+        position: relative;
         color: #232323;
         text-decoration: none;
-        -webkit-transition: all .25s ease;
-        -moz-transition: all .25s ease;
-        transition: all .25s ease;
+        @include css3-prefix('transition', 'all .25s ease');
+        &:after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 1px;
+          left: 0;
+          bottom: 0;
+          background-color: #BEBEBE;
+          @include css3-prefix('transition', 'all .25s ease');
+        }
         &:hover,
         &:focus {
           color: #cd0000;
+          &:after {
+            background-color: #cd0000;
+          }
+        }
+      }
+      a[href^=tel] {
+        &:after {
+          content: none;
         }
       }
     }
@@ -70,7 +88,7 @@
     > li {
       float: left;
       width: 50%;
-      padding: 0 25px;
+      padding: 0 27px;
       list-style-type: none;
       &:last-child {
         padding: 0;
@@ -89,6 +107,7 @@
     > li {
       margin-bottom: 66px;
       &:last-child {
+        padding-top: 18px;
         margin-bottom: 0;
       }
     }

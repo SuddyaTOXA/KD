@@ -9,13 +9,14 @@
   border: none;
   border-bottom: 2px solid #010101;
   @include border-radius(0);
-  padding: 6px 12px;
+  padding: 6px 0;
   background-color: transparent;
   @include transition($transition-other);
   &:hover,
   &:active,
   &:focus {
-    //border-color: $color-text3;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #cd0000;
   }
   &.wpcf7-not-valid,
   &.error {
@@ -39,6 +40,12 @@ textarea.input-style {
   min-height: 150px;
   resize: none;
   border: 2px solid #010101;
+  &:hover,
+  &:active,
+  &:focus {
+    padding: 13px 17px;
+    border: 3px solid #cd0000;
+  }
 }
 input::-webkit-input-placeholder {
   font-size: 18px;

@@ -219,7 +219,8 @@ a.btn, .btn {
   display: inline-block;
   vertical-align: top;
   min-width: 230px;
-  padding: 16px 35px 16px 26px;
+  margin-left: 2px;
+  padding: 18px 35px 14px 30px;
   font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -265,6 +266,8 @@ a.btn, .btn {
   right: 0;
   margin: 0 auto;
   padding: 10px 15px;
+  font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 20px;
   color: #333;
   text-align: center;
   text-decoration: none;
@@ -294,7 +297,7 @@ a.btn, .btn {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  padding: 6px 12px;
+  padding: 6px 0;
   background-color: transparent;
   -webkit-transition: 0.35s;
   -khtml-transition: 0.35s;
@@ -302,6 +305,9 @@ a.btn, .btn {
   -ms-transition: 0.35s;
   -o-transition: 0.35s;
   transition: 0.35s; }
+  .input-style:hover, .input-style:active, .input-style:focus {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #cd0000; }
   .input-style.wpcf7-not-valid, .input-style.error {
     border-color: #ff0000; }
 
@@ -319,6 +325,9 @@ textarea.input-style {
   min-height: 150px;
   resize: none;
   border: 2px solid #010101; }
+  textarea.input-style:hover, textarea.input-style:active, textarea.input-style:focus {
+    padding: 13px 17px;
+    border: 3px solid #cd0000; }
 
 input::-webkit-input-placeholder {
   font-size: 18px;
@@ -1010,22 +1019,22 @@ a.footerContact:focus {
   text-transform: uppercase; }
 
 .section-title {
-  margin-bottom: 62px;
+  margin-bottom: 39px;
   font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 900;
-  font-size: 28px;
+  font-size: 60px;
   letter-spacing: 0.12em;
   line-height: 1; }
 
 .section-contact {
   position: relative;
   z-index: 10;
-  padding-top: 176px;
+  padding-top: 155px;
   padding-bottom: 100px; }
   .section-contact .center {
-    max-width: 1060px; }
+    max-width: 1056px; }
   .section-contact .section-title {
-    padding-left: 25px; }
+    padding-left: 27px; }
   .section-contact a.btn, .section-contact .btn {
     text-transform: uppercase; }
 
@@ -1043,21 +1052,44 @@ a.footerContact:focus {
   font-size: 16px;
   font-weight: 900;
   line-height: 1.2em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase; }
 
 .contact-info {
   font-family: "Soleil Regular", Arial, Verdana, Tahoma, sans-serif;
   font-size: 28px;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  letter-spacing: 0.01em; }
   .contact-info a {
+    position: relative;
     color: #232323;
     text-decoration: none;
     -webkit-transition: all .25s ease;
+    -khtml-transition: all .25s ease;
     -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
     transition: all .25s ease; }
+    .contact-info a:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background-color: #BEBEBE;
+      -webkit-transition: all .25s ease;
+      -khtml-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
     .contact-info a:hover, .contact-info a:focus {
       color: #cd0000; }
+      .contact-info a:hover:after, .contact-info a:focus:after {
+        background-color: #cd0000; }
+  .contact-info a[href^=tel]:after {
+    content: none; }
 
 .form-box label {
   font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
@@ -1070,7 +1102,7 @@ a.footerContact:focus {
   .contact-page-list > li {
     float: left;
     width: 50%;
-    padding: 0 25px;
+    padding: 0 27px;
     list-style-type: none; }
     .contact-page-list > li:last-child {
       padding: 0; }
@@ -1082,6 +1114,7 @@ a.footerContact:focus {
 .form-list > li {
   margin-bottom: 66px; }
   .form-list > li:last-child {
+    padding-top: 18px;
     margin-bottom: 0; }
 
 .form-btn-box {
@@ -1099,11 +1132,11 @@ a.footerContact:focus {
     display: table;
     min-height: 600px;
     padding-top: 80px;
-    padding-bottom: 10%; }
+    padding-bottom: 80px; }
     .section-page-title .center .center-box {
       display: table-cell;
       width: 100%;
-      height: 20px;
+      height: 80px;
       text-align: center;
       vertical-align: middle; }
 
@@ -1123,8 +1156,7 @@ a.footerContact:focus {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  background-color: rgba(205, 0, 0, 0.1); }
+  overflow: hidden; }
   .bottom:before, .bottom:after {
     position: absolute;
     content: '';
