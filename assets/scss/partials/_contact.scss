@@ -25,7 +25,7 @@
   padding-top: 41px;
 }
   .contact-box {
-    margin-bottom: 32px;
+    margin-bottom: 70px;
     max-width: 320px;
   }
     .contact-title {
@@ -73,6 +73,14 @@
       list-style-type: none;
       &:last-child {
         padding: 0;
+      }
+      .contact-box {
+        &:first-child {
+          margin-bottom: 32px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }

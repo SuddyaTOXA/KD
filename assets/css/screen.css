@@ -1010,7 +1010,7 @@ a.footerContact:focus {
   padding-top: 41px; }
 
 .contact-box {
-  margin-bottom: 32px;
+  margin-bottom: 70px;
   max-width: 320px; }
 
 .contact-title {
@@ -1051,6 +1051,10 @@ a.footerContact:focus {
     list-style-type: none; }
     .contact-page-list > li:last-child {
       padding: 0; }
+    .contact-page-list > li .contact-box:first-child {
+      margin-bottom: 32px; }
+    .contact-page-list > li .contact-box:last-child {
+      margin-bottom: 0; }
 
 .form-list > li {
   margin-bottom: 66px; }
