@@ -247,6 +247,13 @@ a.footerContact:focus {
     font-size: 14px;
     line-height: 24px;
     color: $white;
+    @include css3-prefix('transition', 'all .25s ease');
+  }
+  &:hover,
+  &:focus {
+    i {
+      color: $red;
+    }
   }
 }
 .footerSocialFB {

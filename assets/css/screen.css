@@ -813,7 +813,15 @@ a.footerContact:focus {
   .footerSocial i {
     font-size: 14px;
     line-height: 24px;
-    color: #ffffff; }
+    color: #ffffff;
+    -webkit-transition: all .25s ease;
+    -khtml-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease; }
+  .footerSocial:hover i, .footerSocial:focus i {
+    color: #cd0000; }
 
 .footerSocialFB i {
   font-size: 15px; }
@@ -1024,7 +1032,8 @@ a.footerContact:focus {
   font-weight: 900;
   font-size: 60px;
   letter-spacing: 0.12em;
-  line-height: 1; }
+  line-height: 1;
+  text-transform: uppercase; }
 
 .section-contact {
   position: relative;
@@ -1047,6 +1056,7 @@ a.footerContact:focus {
 
 .contact-title {
   position: relative;
+  display: block;
   margin-bottom: 3px;
   font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
@@ -1092,9 +1102,11 @@ a.footerContact:focus {
     content: none; }
 
 .form-box label {
+  margin-bottom: 6px;
   font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
   font-size: 12px;
-  font-weight: 300; }
+  font-weight: 300;
+  letter-spacing: 0.03em; }
 
 .contact-page-list {
   overflow: hidden;
@@ -1114,7 +1126,7 @@ a.footerContact:focus {
 .form-list > li {
   margin-bottom: 66px; }
   .form-list > li:last-child {
-    padding-top: 18px;
+    padding-top: 16px;
     margin-bottom: 0; }
 
 .form-btn-box {
@@ -1193,5 +1205,17 @@ a.footerContact:focus {
     -ms-transform-origin: top right;
     -o-transform-origin: top right;
     transform-origin: top right; }
+
+.left-box,
+.right-box {
+  overflow: hidden;
+  float: left;
+  width: 50%; }
+
+.left-box {
+  padding: 0 40px 0 30px; }
+
+.right-box-box {
+  padding: 0 40px 0 180px; }
 
 /*# sourceMappingURL=screen.css.map */

@@ -57,3 +57,15 @@
       @include css3-prefix('transform-origin', 'top right');
     }
   }
+  .left-box,
+  .right-box {
+    overflow: hidden;
+    float: left;
+    width: 50%;
+  }
+  .left-box {
+    padding: 0 40px 0 30px;
+  }
+  .right-box-box {
+    padding: 0 40px 0 180px;
+  }
