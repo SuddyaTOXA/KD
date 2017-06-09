@@ -190,7 +190,7 @@ html {
   font-family: Tahoma, Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #000;
+  color: #232323;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -214,6 +214,48 @@ body {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+a.btn, .btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 230px;
+  padding: 16px 35px 16px 26px;
+  font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #cd0000;
+  border: 2px solid #cd0000;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  transition: all .25s ease;
+  outline: none;
+  text-align: left; }
+  a.btn:after, .btn:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 50%;
+    right: 24px;
+    margin: -9px 0 0 0;
+    border-top: 9px solid transparent;
+    border-left: 8px solid #fff;
+    border-bottom: 9px solid transparent;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    transition: all .25s ease; }
+  a.btn:hover, a.btn:focus, .btn:hover, .btn:focus {
+    color: #cd0000;
+    background: #fff; }
+    a.btn:hover:after, a.btn:focus:after, .btn:hover:after, .btn:focus:after {
+      border-left-color: #cd0000; }
+
 .input-style {
   display: block;
   width: 100%;
@@ -231,7 +273,7 @@ body {
   -o-border-radius: 0;
   border-radius: 0;
   padding: 6px 12px;
-  background-color: red;
+  background-color: transparent;
   -webkit-transition: 0.35s;
   -khtml-transition: 0.35s;
   -moz-transition: 0.35s;
@@ -945,25 +987,77 @@ a.footerContact:focus {
   color: #fff;
   text-transform: uppercase; }
 
+.section-title {
+  margin-bottom: 62px;
+  font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  letter-spacing: 0.12em; }
+
 .section-contact {
   position: relative;
   z-index: 10;
-  padding-top: 120px;
+  padding-top: 176px;
   padding-bottom: 100px; }
   .section-contact .center {
     max-width: 1060px; }
+  .section-contact .section-title {
+    padding-left: 25px; }
+  .section-contact a.btn, .section-contact .btn {
+    text-transform: uppercase; }
 
-.contact-page-list > li {
-  float: left;
-  width: 50%;
-  padding: 0 25px;
-  list-style-type: none; }
-  .contact-page-list > li:last-child {
-    padding: 0; }
+.form-box {
+  padding-top: 41px; }
+
+.contact-box {
+  margin-bottom: 32px;
+  max-width: 320px; }
+
+.contact-title {
+  position: relative;
+  margin-bottom: 3px;
+  font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+.contact-info {
+  font-family: "Soleil Regular", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 28px;
+  line-height: 1.4em; }
+  .contact-info a {
+    color: #232323;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    transition: all .25s ease; }
+    .contact-info a:hover, .contact-info a:focus {
+      color: #cd0000; }
+
+.form-box label {
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 300; }
+
+.contact-page-list {
+  overflow: hidden;
+  padding-top: 32px; }
+  .contact-page-list > li {
+    float: left;
+    width: 50%;
+    padding: 0 25px;
+    list-style-type: none; }
+    .contact-page-list > li:last-child {
+      padding: 0; }
 
 .form-list > li {
-  margin-bottom: 20px; }
+  margin-bottom: 66px; }
   .form-list > li:last-child {
     margin-bottom: 0; }
+
+.form-btn-box {
+  margin-top: 47px; }
 
 /*# sourceMappingURL=screen.css.map */
