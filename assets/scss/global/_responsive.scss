@@ -7,7 +7,11 @@
 }
 
 @media all and (max-width: 1400px) {
-
+  .project-list {
+    > li {
+      height: 500px;
+    }
+  }
 }
 
 @media all and (max-width: 1280px) {

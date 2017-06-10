@@ -241,19 +241,17 @@ a.footerContact:focus {
   width: 24px;
   height: 24px;
   margin: 14px 9px 0 0;
-  background: #000;
+  background-color: #000;
   text-align: center;
+  @include css3-prefix('transition', 'all .25s ease');
   i {
     font-size: 14px;
     line-height: 24px;
     color: $white;
-    @include css3-prefix('transition', 'all .25s ease');
   }
   &:hover,
   &:focus {
-    i {
-      color: $red;
-    }
+      background-color: $red;
   }
 }
 .footerSocialFB {
