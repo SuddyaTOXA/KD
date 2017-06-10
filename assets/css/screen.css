@@ -1353,7 +1353,7 @@ a.footerContact:focus {
     .link-box ul > li a:hover, .link-box ul > li a:focus {
       color: #cd0000; }
       .link-box ul > li a:hover:after, .link-box ul > li a:focus:after {
-        background-color: #cd0000; }
+        background-color: transparent; }
 
 .link-box-title {
   margin-bottom: 1px;
