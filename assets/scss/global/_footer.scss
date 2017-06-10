@@ -361,9 +361,7 @@ a.footerContact:focus {
   color: #323232;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  transition: all .25s ease;
+  @include css3-prefix('transition', 'all .25s ease');
 }
 .copyrightLeft a:first-child {
   padding-left: 0;
