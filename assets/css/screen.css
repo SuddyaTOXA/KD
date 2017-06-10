@@ -215,12 +215,25 @@ body {
   font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 300;
+  line-height: 1.89;
   letter-spacing: 0.02em; }
   .content * {
-    margin-bottom: 57px;
-    line-height: 1.89; }
+    margin-bottom: 40px; }
     .content *:last-child {
       margin-bottom: 0; }
+  .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    margin-bottom: 2px;
+    font-family: "Soleil Bold", "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em; }
+  .content h2 {
+    font-size: 30px; }
+  .content h3 {
+    font-size: 28px; }
+  .content h4, .content h5, .content h6 {
+    font-size: 26px; }
   .content a {
     color: #ff614c; }
     .content a:hover {
@@ -228,15 +241,31 @@ body {
       text-decoration: none; }
   .content b, .content strong {
     font-family: "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.03em; }
   .content ul > li {
-    list-style-type: disc; }
-  .content ol > li {
-    list-style-type: decimal; }
+    position: relative;
+    padding-left: 40px; }
+    .content ul > li:before {
+      position: absolute;
+      content: '';
+      width: 7px;
+      height: 7px;
+      left: 20px;
+      top: 9px;
+      -webkit-border-radius: 50%;
+      -khtml-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #cd0000; }
   .content li {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
+    line-height: 1.2;
     text-align: left; }
+    .content li:last-child {
+      margin-bottom: 0; }
   .content blockquote {
     max-width: 640px;
     margin-left: auto;
@@ -277,7 +306,10 @@ a.btn, .btn {
   background: #cd0000;
   border: 2px solid #cd0000;
   -webkit-transition: all .25s ease;
+  -khtml-transition: all .25s ease;
   -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
   transition: all .25s ease;
   outline: none;
   text-align: left; }
@@ -294,7 +326,10 @@ a.btn, .btn {
     border-left: 8px solid #fff;
     border-bottom: 9px solid transparent;
     -webkit-transition: all .25s ease;
+    -khtml-transition: all .25s ease;
     -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
     transition: all .25s ease; }
   a.btn:hover, a.btn:focus, .btn:hover, .btn:focus {
     color: #cd0000;
@@ -1319,5 +1354,107 @@ a.footerContact:focus {
   letter-spacing: 0.12em;
   line-height: 1.3;
   text-transform: uppercase; }
+
+a.right-arrow,
+.right-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 17px 27px;
+  font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.5em;
+  letter-spacing: 0.12em;
+  color: #232323;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all .25s ease;
+  -khtml-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease; }
+  a.right-arrow:after,
+  .right-arrow:after {
+    position: relative;
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 0;
+    height: 0;
+    margin: 6px 0 0 18px;
+    border-top: 10px solid transparent;
+    border-left: 9px solid #cd0000;
+    border-bottom: 10px solid transparent; }
+  a.right-arrow:hover, a.right-arrow:focus,
+  .right-arrow:hover,
+  .right-arrow:focus {
+    opacity: 1;
+    color: #cd0000; }
+
+.section-job-detail {
+  padding-top: 173px;
+  padding-bottom: 100px; }
+  .section-job-detail .center {
+    max-width: 1400px; }
+  .section-job-detail .bnt-box {
+    margin-top: 12px;
+    margin-bottom: 58px; }
+    .section-job-detail .bnt-box a {
+      padding: 17px 32px; }
+      .section-job-detail .bnt-box a:first-child {
+        padding-left: 2px; }
+  .section-job-detail a.btn, .section-job-detail .btn {
+    margin-top: 54px;
+    min-width: 304px; }
+
+.job-detail-box {
+  max-width: 1000px; }
+
+.job-detail-header-box {
+  margin-bottom: 52px; }
+
+.job-title {
+  margin-bottom: 6px;
+  font-family: "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  letter-spacing: 0.04em;
+  line-height: 1.2; }
+
+.job-info {
+  display: inline-block;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.02em; }
+
+.location {
+  position: relative;
+  margin-left: 30px;
+  color: #232323;
+  text-decoration: none; }
+  .location:before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 2px;
+    left: -20px;
+    top: 19px;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #232323; }
+  .location:hover, .location:focus {
+    color: #cd0000; }
+
+.job-link {
+  float: right;
+  margin-top: -11px; }
 
 /*# sourceMappingURL=screen.css.map */

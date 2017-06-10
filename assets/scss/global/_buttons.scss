@@ -15,9 +15,7 @@ a.btn, .btn {
   text-transform: uppercase;
   background: #cd0000;
   border: 2px solid #cd0000;
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  transition: all .25s ease;
+  @include css3-prefix('transition', 'all .25s ease');
   outline: none;
   text-align: left;
   &:after {
@@ -32,9 +30,7 @@ a.btn, .btn {
     border-top: 9px solid transparent;
     border-left: 8px solid #fff;
     border-bottom: 9px solid transparent;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    transition: all .25s ease;
+    @include css3-prefix('transition', 'all .25s ease');
   }
   &:hover,
   &:focus {
