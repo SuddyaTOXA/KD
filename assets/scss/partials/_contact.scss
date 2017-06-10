@@ -65,7 +65,7 @@
         &:focus {
           color: #cd0000;
           &:after {
-            background-color: #cd0000;
+            background-color: transparent;
           }
         }
       }
@@ -85,6 +85,10 @@
       font-weight: $light;
       letter-spacing: 0.03em;
     }
+    a.btn, .btn {
+      margin-left: 2px;
+      min-width: 231px;
+    }
   }
   .contact-page-list {
     overflow: hidden;
@@ -103,6 +107,7 @@
         }
         &:last-child {
           margin-bottom: 0;
+          margin-top: -18px;
         }
       }
     }

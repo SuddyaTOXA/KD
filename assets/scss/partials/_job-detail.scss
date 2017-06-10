@@ -39,7 +39,7 @@ a.right-arrow,
   }
   .bnt-box {
     margin-top: 12px;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
     a {
       padding: 17px 32px;
       &:first-child {
@@ -49,7 +49,10 @@ a.right-arrow,
   }
   a.btn, .btn {
     margin-top: 54px;
-    min-width: 304px;
+    min-width: 306px;
+    &:after {
+      margin-right: 3px;
+    }
   }
 }
   .job-detail-box {
@@ -99,4 +102,5 @@ a.right-arrow,
       .job-link {
         float: right;
         margin-top: -11px;
+        margin-right: -2px;
       }

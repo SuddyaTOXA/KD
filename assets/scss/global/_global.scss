@@ -171,6 +171,7 @@ body { width: 100%; height: 100%; }
     letter-spacing: 0.03em;
   }
   ul {
+    margin-bottom: 36px;
     > li {
       position: relative;
       padding-left: 40px;
@@ -187,7 +188,7 @@ body { width: 100%; height: 100%; }
     }
   }
   ol {
-
+    margin-bottom: 36px
   }
   li {
     margin-bottom: 11px;
