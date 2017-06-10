@@ -1297,8 +1297,8 @@ a.footerContact:focus {
 
 .section-welcome {
   overflow: hidden;
-  padding-top: 43px;
-  padding-bottom: 40px; }
+  padding-top: 76px;
+  padding-bottom: 50px; }
   .section-welcome .section-title {
     margin-bottom: 9px; }
 
@@ -1312,7 +1312,7 @@ a.footerContact:focus {
   padding: 0 40px 0 29px; }
 
 .right-box {
-  padding: 24px 40px 0 175px; }
+  padding: 24px 40px 0 170px; }
   .right-box .link-box:last-child {
     margin-bottom: 0; }
 
