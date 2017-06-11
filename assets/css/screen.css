@@ -10,6 +10,10 @@
 /*----------------------------------------------------------------------------------*/
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 * {
   margin: 0;
   padding: 0;
@@ -206,6 +210,7 @@ body {
   padding: 0 10px; }
 
 .fullWrap {
+  overflow: hidden;
   padding-top: 76px; }
 
 /*----------------------------------------------------------------------------------*/
@@ -584,10 +589,9 @@ select {
 .navigationRight {
   position: relative;
   display: block;
-  padding: 26px 20px;
+  padding: 28px 18px 24px;
   font-family: 'Mr Eaves Mod Bold', Arial, Verdana, Tahoma, sans-serif;
   font-size: 18px;
-  font-weight: 600;
   letter-spacing: .1em;
   line-height: 24px;
   color: #fff;
@@ -676,6 +680,10 @@ select {
   position: relative;
   display: block;
   width: 100%; }
+  .footerPageContainer .footerPageCTA {
+    min-width: 307px;
+    margin: 30px 0 0 2px;
+    padding: 18px 70px 14px 34px; }
 
 .footerPageWedge {
   position: absolute;
@@ -741,11 +749,12 @@ select {
 .footerPageHeadline {
   position: relative;
   display: block;
-  font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-size: 60px;
   font-weight: 900;
-  letter-spacing: 0.1em;
-  line-height: 1.13em;
+  letter-spacing: 0.13em;
+  word-spacing: -0.06em;
+  line-height: 1.14em;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase; }
@@ -1039,6 +1048,7 @@ a.footerContact:focus {
   font-family: "Mr Eaves Mod Reg", Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
+  letter-spacing: 0.09em;
   color: #a9a9a9;
   text-align: right;
   text-transform: uppercase; }
@@ -1088,10 +1098,10 @@ a.footerContact:focus {
     position: relative;
     display: block;
     padding-right: 50px;
-    font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+    font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
     font-size: 124px;
     font-weight: 900;
-    letter-spacing: .1em;
+    letter-spacing: .12em;
     line-height: .88em;
     color: #fff;
     text-transform: uppercase; }
@@ -1101,12 +1111,12 @@ a.footerContact:focus {
 .homeBannerSubline {
   position: relative;
   display: block;
-  padding: 10px 50px 0 0;
+  padding: 10px 36px 0 0;
   text-align: right;
   font-family: "Mr Eaves Mod Book", Arial, Verdana, Tahoma, sans-serif;
   font-size: 28px;
   font-weight: 300;
-  letter-spacing: .1em;
+  letter-spacing: .11em;
   line-height: 1.2em;
   color: #fff;
   text-transform: uppercase; }
@@ -1231,7 +1241,7 @@ a.footerContact:focus {
     position: relative;
     z-index: 20;
     display: table;
-    min-height: 600px;
+    min-height: 775px;
     padding-top: 80px;
     padding-bottom: 80px; }
     .section-page-title .center .center-box {
@@ -1472,7 +1482,7 @@ a.right-arrow,
 .section-projects {
   overflow: hidden; }
   .section-projects + .footerWrap {
-    margin-top: -10%; }
+    margin-top: -6%; }
 
 .project-list > li {
   overflow: hidden;
@@ -1671,6 +1681,9 @@ a.right-arrow,
   text-decoration: none; }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
+@media all and (max-width: 1920px) {
+  .section-page-title .center {
+    min-height: 600px; } }
 @media all and (max-width: 1400px) {
   .project-list > li {
     height: 500px; }

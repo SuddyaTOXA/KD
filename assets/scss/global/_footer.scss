@@ -24,6 +24,11 @@
   position: relative;
   display: block;
   width: 100%;
+  .footerPageCTA {
+    min-width: 307px;
+    margin: 30px 0 0 2px;
+    padding: 18px 70px 14px 34px;
+  }
 }
 .footerPageWedge {
   position: absolute;
@@ -90,11 +95,12 @@
 .footerPageHeadline {
   position: relative;
   display: block;
-  font-family: $font-mem-bold;
+  font-family: $font-mem-heavy;
   font-size: 60px;
   font-weight: 900;
-  letter-spacing: $letter-spacing-100;
-  line-height: 1.13em;
+  letter-spacing: 0.13em;
+  word-spacing: -0.06em;
+  line-height: 1.14em;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -388,6 +394,7 @@ a.footerContact:focus {
   font-family: $font-mem-reg;
   font-size: 16px;
   line-height: 1.5em;
+  letter-spacing: 0.09em;
   color: #a9a9a9;
   text-align: right;
   text-transform: uppercase;
