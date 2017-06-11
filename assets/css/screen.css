@@ -1704,7 +1704,13 @@ a.right-arrow,
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all .25s ease;
+    -khtml-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease; }
     .submenu-overlay .close-overlay:after, .submenu-overlay .close-overlay:before {
       position: absolute;
       content: '';
@@ -1727,6 +1733,13 @@ a.right-arrow,
       -ms-transform: translate(-50%, -50%) rotate(-45deg);
       -o-transform: translate(-50%, -50%) rotate(-45deg);
       transform: translate(-50%, -50%) rotate(-45deg); }
+    .submenu-overlay .close-overlay:hover, .submenu-overlay .close-overlay:focus {
+      -webkit-transform: rotate(90deg);
+      -khtml-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg); }
   .submenu-overlay .subnav {
     display: block; }
   .submenu-overlay .left-box {
