@@ -1830,5 +1830,10 @@ a.right-arrow,
   .submenu-overlay .close-overlay {
     top: 10px;
     right: 10px; } }
+@media all and (max-width: 1280px) {
+  .submenu-overlay .left-box {
+    padding-left: 0; }
+  .submenu-overlay .right-box {
+    padding-left: 40px; } }
 
 /*# sourceMappingURL=screen.css.map */

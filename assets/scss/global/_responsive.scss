@@ -54,7 +54,17 @@
 }
 
 @media all and (max-width: 1280px) {
-
+  .subnav-title {
+    padding-left: 0;
+  }
+  .submenu-overlay {
+    .left-box {
+      padding-left: 0;
+    }
+    .right-box {
+      padding-left: 40px;
+    }
+  }
 }
 
 @media all and (max-width: 1199px) {
