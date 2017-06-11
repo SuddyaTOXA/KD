@@ -152,6 +152,10 @@ body { width: 100%; height: 100%; }
   font-weight: 300;
   line-height: 1.89;
   letter-spacing: 0.02em;
+  &.big {
+    font-size: 28px;
+    line-height: 2;
+  }
   .inverse & {
     color: $white;
   }
@@ -168,6 +172,7 @@ body { width: 100%; height: 100%; }
     font-weight: $bold;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    word-spacing: 0.06em;
   }
   h2 { font-size: 30px; }
   h3 { font-size: 28px; }

@@ -229,6 +229,9 @@ body {
   font-weight: 300;
   line-height: 1.89;
   letter-spacing: 0.02em; }
+  .content.big {
+    font-size: 28px;
+    line-height: 2; }
   .inverse .content {
     color: #ffffff; }
   .content * {
@@ -241,7 +244,8 @@ body {
     font-size: 34px;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: 0.03em; }
+    letter-spacing: 0.03em;
+    word-spacing: 0.06em; }
   .content h2 {
     font-size: 30px; }
   .content h3 {
@@ -809,7 +813,8 @@ select {
 .footerMainWrap {
   position: relative;
   display: block;
-  width: 100%; }
+  width: 100%;
+  background-color: #ffffff; }
 
 .footerMainWrap .center {
   position: relative;
@@ -987,7 +992,8 @@ a.footerContact:focus {
 .copyrightWrap {
   position: relative;
   display: block;
-  border-top: 1px solid #c5c5c5; }
+  border-top: 1px solid #c5c5c5;
+  background-color: #ffffff; }
 
 .copyrightLeft {
   position: relative;
@@ -1431,7 +1437,7 @@ a.right-arrow,
 .job-detail-header-box {
   margin-bottom: 52px; }
 
-.job-title {
+.box-title {
   margin-bottom: 6px;
   font-family: "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 800;
@@ -1796,6 +1802,68 @@ a.right-arrow,
     .subnav > li a:hover, .subnav > li a:focus {
       margin-left: 27px; }
 
+.section-structural {
+  padding-top: 172px;
+  padding-bottom: 140px; }
+  .section-structural .center {
+    max-width: 1540px;
+    padding-right: 315px; }
+  .section-structural .box-title {
+    margin-bottom: 4px;
+    max-width: 1020px;
+    word-spacing: -0.06em; }
+  .section-structural .content {
+    max-width: 1020px; }
+    .section-structural .content * {
+      margin-bottom: 34px; }
+    .section-structural .content h1, .section-structural .content h2, .section-structural .content h3, .section-structural .content h4, .section-structural .content h5, .section-structural .content h6 {
+      margin-bottom: 2px; }
+  .section-structural .slider-box {
+    max-width: 1180px; }
+
+.btn-estimate-box {
+  position: fixed;
+  bottom: 98px;
+  right: 0; }
+  .btn-estimate-box a.btn, .btn-estimate-box .btn {
+    max-width: 305px; }
+
+.info-wrap {
+  margin: 42px -10px 93px;
+  max-width: 1226px; }
+
+.info-box {
+  display: inline-block;
+  max-width: 388px;
+  margin: 9px 9px 9px;
+  padding: 39px 55px 37px 41px;
+  border: 2px solid #D2D2D2; }
+  .info-box .content {
+    line-height: 1.6; }
+    .info-box .content * {
+      margin-bottom: 6px; }
+      .info-box .content *:last-child {
+        margin-bottom: 0; }
+    .info-box .content li {
+      line-height: 1.6; }
+    .info-box .content ul > li, .info-box .content ol > li {
+      padding-left: 21px; }
+    .info-box .content ul > li {
+      margin-bottom: 5px; }
+      .info-box .content ul > li:before {
+        width: 6px;
+        height: 6px;
+        left: 1px;
+        top: 12px; }
+
+.info-title {
+  margin-bottom: 6px;
+  font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase; }
+
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1920px) {
   .section-page-title .center {
@@ -1831,6 +1899,9 @@ a.right-arrow,
     top: 10px;
     right: 10px; } }
 @media all and (max-width: 1280px) {
+  .subnav-title {
+    padding-left: 0; }
+
   .submenu-overlay .left-box {
     padding-left: 0; }
   .submenu-overlay .right-box {
