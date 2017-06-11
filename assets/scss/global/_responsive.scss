@@ -5,7 +5,10 @@
   }
 }
 @media all and (max-width: 1680px) {
-
+  .info-box {
+    max-width: 325px;
+    padding: 31px 25px 29px 25px;
+  }
 }
 
 @media all and (max-width: 1400px) {

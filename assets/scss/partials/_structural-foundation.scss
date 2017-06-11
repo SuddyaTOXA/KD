@@ -129,13 +129,16 @@
     max-width: 1020px;
     * {
       margin-bottom: 34px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
     h1, h2, h3, h4, h5, h6 {
       margin-bottom: 2px;
     }
-  }
-  .slider-box {
-    max-width: 1180px;
+    b, strong {
+      word-spacing: 0.06em;
+    }
   }
 }
   .btn-estimate-box {
@@ -193,3 +196,15 @@
         letter-spacing: 0.12em;
         text-transform: uppercase;
       }
+.slider-box {
+  margin-top: 18px;
+  max-width: 1180px;
+}
+  .slider-title {
+    margin-bottom: 20px;
+    font-family: $font-s-ex-bold;
+    font-weight: $ex-bold;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: .03em;
+  }

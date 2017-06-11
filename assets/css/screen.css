@@ -1816,10 +1816,12 @@ a.right-arrow,
     max-width: 1020px; }
     .section-structural .content * {
       margin-bottom: 34px; }
+      .section-structural .content *:last-child {
+        margin-bottom: 0; }
     .section-structural .content h1, .section-structural .content h2, .section-structural .content h3, .section-structural .content h4, .section-structural .content h5, .section-structural .content h6 {
       margin-bottom: 2px; }
-  .section-structural .slider-box {
-    max-width: 1180px; }
+    .section-structural .content b, .section-structural .content strong {
+      word-spacing: 0.06em; }
 
 .btn-estimate-box {
   position: fixed;
@@ -1864,10 +1866,26 @@ a.right-arrow,
   letter-spacing: 0.12em;
   text-transform: uppercase; }
 
+.slider-box {
+  margin-top: 18px;
+  max-width: 1180px; }
+
+.slider-title {
+  margin-bottom: 20px;
+  font-family: "Soleil ExtraBold", "Soleil Bold", "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: .03em; }
+
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1920px) {
   .section-page-title .center {
     min-height: 600px; } }
+@media all and (max-width: 1680px) {
+  .info-box {
+    max-width: 325px;
+    padding: 31px 25px 29px 25px; } }
 @media all and (max-width: 1400px) {
   .project-list > li {
     height: 500px; }
