@@ -4,8 +4,8 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: #cd0000;
-  background: rgba(205,0,0,.9);
+  background: #ad0000;
+  background: rgba(173,0,0,.9);
   z-index: 500;
 }
 .navigationWedge {
@@ -27,8 +27,8 @@
   top: 0;
   left: 50%;
   margin: 0 0 0 462px;
-  background: #780000;
-  @include css3-prefix('transform', 'skew(-40deg,0deg)');
+  background: #760000;
+  @include css3-prefix('transform', 'skew(-42deg,0deg)');
 }
 .siteLogo {
   position: relative;

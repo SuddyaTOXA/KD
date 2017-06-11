@@ -554,8 +554,8 @@ select {
   width: 100%;
   top: 0;
   left: 0;
-  background: #cd0000;
-  background: rgba(205, 0, 0, 0.9);
+  background: #ad0000;
+  background: rgba(173, 0, 0, 0.9);
   z-index: 500; }
 
 .navigationWedge {
@@ -577,13 +577,13 @@ select {
   top: 0;
   left: 50%;
   margin: 0 0 0 462px;
-  background: #780000;
-  -webkit-transform: skew(-40deg,0deg);
-  -khtml-transform: skew(-40deg,0deg);
-  -moz-transform: skew(-40deg,0deg);
-  -ms-transform: skew(-40deg,0deg);
-  -o-transform: skew(-40deg,0deg);
-  transform: skew(-40deg,0deg); }
+  background: #760000;
+  -webkit-transform: skew(-42deg,0deg);
+  -khtml-transform: skew(-42deg,0deg);
+  -moz-transform: skew(-42deg,0deg);
+  -ms-transform: skew(-42deg,0deg);
+  -o-transform: skew(-42deg,0deg);
+  transform: skew(-42deg,0deg); }
 
 .siteLogo {
   position: relative;
@@ -1733,7 +1733,8 @@ a.right-arrow,
     text-align: left;
     padding: 0 10px 0 88px; }
   .submenu-overlay .right-box {
-    padding: 15px 0 0 107px;
+    max-width: 640px;
+    padding: 15px 0 0 83px;
     text-align: left; }
     .submenu-overlay .right-box a.btn, .submenu-overlay .right-box .btn {
       margin-top: 34px;
