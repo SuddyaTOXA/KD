@@ -39,6 +39,16 @@ a.btn, .btn {
       border-left-color: #cd0000;
     }
   }
+  &.inverse {
+    color: $white;
+    border-color: $white;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+      color: $red;
+      background-color: $white;
+    }
+  }
 }
 .jumpToContent {
   position: absolute;

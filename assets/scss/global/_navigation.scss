@@ -28,9 +28,7 @@
   left: 50%;
   margin: 0 0 0 462px;
   background: #780000;
-  -webkit-transform: skew(-40deg,0deg);
-  -ms-transform: skew(-40deg,0deg);
-  transform: skew(-40deg,0deg);
+  @include css3-prefix('transform', 'skew(-40deg,0deg)');
 }
 .siteLogo {
   position: relative;
@@ -48,14 +46,14 @@
   padding: 0 235px 0 363px;
   text-align: center;
   z-index: 500;
-  li {
+  > li {
     position: relative;
     display: inline-block;
     vertical-align: top;
     list-style-type: none;
   }
 }
-.navigation li a,
+.navigation > li > a,
 .navigationRight {
   position: relative;
   display: block;
@@ -70,10 +68,10 @@
 }
 .navigationRight {
   float: right;
-  z-index: 501;
+  z-index: 502;
 }
-.navigation > li a::before,
-.navigation > li a:before,
+.navigation > li > a::before,
+.navigation > li > a:before,
 .navigationRight::before,
 .navigationRight:before {
   content: '';
@@ -88,42 +86,42 @@
   border-right: 8px solid transparent;
   border-bottom: 8px solid #fff;
 }
-.navigation > li:hover a::before,
-.navigation > li:hover a:before,
-.navigation > li a:focus::before,
-.navigation > li a:focus:before,
+.navigation > li:hover > a::before,
+.navigation > li:hover > a:before,
+.navigation > li > a:focus::before,
+.navigation > li > a:focus:before,
 .navigationRight:hover::before,
 .navigationRight:hover:before,
 .navigationRight:focus::before,
 .navigationRight:focus:before {
   display: block;
 }
-.subnav {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  background: #fff;
-}
-.navigation li:hover .subnav {
-  display: block;
-}
-.subnav {
-  li {
-    display: block;
-    a {
-      display: block;
-      padding: 20px;
-      text-align: left;
-      color: #323232;
-      white-space: nowrap;
-      -webkit-transition: all .25s ease;
-      -moz-transition: all .25s ease;
-      transition: all .25s ease;
-      &:hover,
-      &:focus {
-        color: #cd0000;
-      }
-    }
-  }
-}
+//.subnav {
+//  position: absolute;
+//  display: none;
+//  top: 100%;
+//  left: 0;
+//  background: #fff;
+//}
+//.navigation li:hover .subnav {
+//  //display: block;
+//}
+//.subnav {
+//  li {
+//    display: block;
+//    a {
+//      display: block;
+//      padding: 20px;
+//      text-align: left;
+//      color: #323232;
+//      white-space: nowrap;
+//      -webkit-transition: all .25s ease;
+//      -moz-transition: all .25s ease;
+//      transition: all .25s ease;
+//      &:hover,
+//      &:focus {
+//        color: #cd0000;
+//      }
+//    }
+//  }
+//}

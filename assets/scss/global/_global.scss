@@ -74,6 +74,16 @@ body { width: 100%; height: 100%; }
 
 .center { max-width: 1360px; padding: 0 10px; }
 .fullWrap { overflow: hidden; padding-top: 76px; }
+.disable-scroll {
+  overflow: hidden !important;
+  .siteLogo {
+    z-index: 500;
+  }
+  .navigationRight {
+    z-index: 499;
+  }
+}
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -142,6 +152,9 @@ body { width: 100%; height: 100%; }
   font-weight: 300;
   line-height: 1.89;
   letter-spacing: 0.02em;
+  .inverse & {
+    color: $white;
+  }
   * {
     margin-bottom: 40px;
     &:last-child {
