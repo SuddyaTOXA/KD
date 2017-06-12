@@ -53,13 +53,16 @@ $(function(){
                 }  else {
                     var popup = $(this).parents('.slider-popup');
                 }
-                var slide = popup.find('.swiper-slide'),
+                var sliderBox = popup.parents('.slider-box'),
+                    sliderBoxHeight = sliderBox.outerHeight(),
+                    slide = popup.find('.swiper-slide'),
                     popupWrap = popup.find('.slider-popup-wrap'),
                     wrap = popup.find('.swiper-wrapper'),
                     img = wrap.find('.swiper-slide img'),
                     winHeight = $(window).height(),
                     imgHeight = winHeight - 206,
                     wrapMaxHeight = imgHeight + 86;
+
 
                     if ($(this).hasClass('close-swiper')) {
                         popup.removeClass('open');
@@ -68,12 +71,14 @@ $(function(){
                         img.css('max-height', '');
                         wrap.css('max-height', '');
                         popupWrap.css('margin-top', '');
+                        sliderBox.css('height', '');
                         setTimeout(function () {
                             swiper.update();
                             swiper.slideNext(false, 0);
                             swiper.slideNext(false, 0);
                         }, duration);
                     } else if (!($(this).hasClass('dis'))) {
+                        sliderBox.css('height', sliderBoxHeight);
                         popup.addClass('open');
                         slide.addClass('dis');
                         body.addClass('disable-scroll');
