@@ -1705,12 +1705,12 @@ a.right-arrow,
     -o-border-radius: 3px;
     border-radius: 3px;
     cursor: pointer;
-    -webkit-transition: all .25s ease;
-    -khtml-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease; }
+    -webkit-transition: all .35s ease-in;
+    -khtml-transition: all .35s ease-in;
+    -moz-transition: all .35s ease-in;
+    -ms-transition: all .35s ease-in;
+    -o-transition: all .35s ease-in;
+    transition: all .35s ease-in; }
     .submenu-overlay .close-overlay:after, .submenu-overlay .close-overlay:before {
       position: absolute;
       content: '';
@@ -1734,12 +1734,12 @@ a.right-arrow,
       -o-transform: translate(-50%, -50%) rotate(-45deg);
       transform: translate(-50%, -50%) rotate(-45deg); }
     .submenu-overlay .close-overlay:hover, .submenu-overlay .close-overlay:focus {
-      -webkit-transform: rotate(90deg);
-      -khtml-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      transform: rotate(90deg); }
+      -webkit-transform: rotate(180deg);
+      -khtml-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg); }
   .submenu-overlay .subnav {
     display: block; }
   .submenu-overlay .left-box {
@@ -1891,6 +1891,149 @@ a.right-arrow,
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: .03em; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 36px; }
+
+.swiper-slide {
+  text-align: center; }
+  .swiper-slide img {
+    max-width: 100%;
+    height: auto;
+    width: auto; }
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-image: none;
+  width: 24px;
+  height: 56px;
+  margin-top: -48px; }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0; }
+
+.swiper-button-next {
+  right: 30px; }
+  .swiper-button-next:after {
+    border-top: 28px solid transparent;
+    border-left: 24px solid #fff;
+    border-bottom: 28px solid transparent; }
+
+.swiper-button-prev {
+  left: 30px; }
+  .swiper-button-prev:after {
+    border-top: 28px solid transparent;
+    border-right: 24px solid #fff;
+    border-bottom: 28px solid transparent; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 3px; }
+
+.swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  opacity: 1;
+  background-color: #d8d8d8;
+  -webkit-transition: all .25s ease;
+  -khtml-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease; }
+  .swiper-pagination-bullet:hover, .swiper-pagination-bullet:focus {
+    background-color: rgba(205, 0, 0, 0.7); }
+
+.swiper-pagination-bullet-active {
+  background-color: #cd0000; }
+  .swiper-pagination-bullet-active:hover, .swiper-pagination-bullet-active:focus {
+    background-color: #cd0000; }
+
+.slider-popup {
+  -webkit-transition: 0.35s;
+  -khtml-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+  transition: 0.35s; }
+  .slider-popup.open {
+    position: fixed;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.84); }
+    .slider-popup.open .slider-popup-wrap {
+      max-width: 1190px;
+      margin: 0 auto;
+      padding: 0 10px; }
+    .slider-popup.open .swiper-container {
+      width: auto;
+      height: auto;
+      padding-top: 50px; }
+    .slider-popup.open .swiper-slide img {
+      padding: 0 55px; }
+    .slider-popup.open .swiper-button-next {
+      right: 0; }
+    .slider-popup.open .swiper-button-prev {
+      left: 0; }
+    .slider-popup.open .close-swiper {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      cursor: pointer;
+      -webkit-transition: all .35s ease-in;
+      -khtml-transition: all .35s ease-in;
+      -moz-transition: all .35s ease-in;
+      -ms-transition: all .35s ease-in;
+      -o-transition: all .35s ease-in;
+      transition: all .35s ease-in; }
+      .slider-popup.open .close-swiper:after, .slider-popup.open .close-swiper:before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        width: 67px;
+        height: 3px;
+        background-color: #ffffff; }
+      .slider-popup.open .close-swiper:after {
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+        -khtml-transform: translate(-50%, -50%) rotate(45deg);
+        -moz-transform: translate(-50%, -50%) rotate(45deg);
+        -ms-transform: translate(-50%, -50%) rotate(45deg);
+        -o-transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg); }
+      .slider-popup.open .close-swiper:before {
+        -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+        -khtml-transform: translate(-50%, -50%) rotate(-45deg);
+        -moz-transform: translate(-50%, -50%) rotate(-45deg);
+        -ms-transform: translate(-50%, -50%) rotate(-45deg);
+        -o-transform: translate(-50%, -50%) rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(-45deg); }
+      .slider-popup.open .close-swiper:hover, .slider-popup.open .close-swiper:focus {
+        -webkit-transform: rotate(180deg);
+        -khtml-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg); }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1920px) {
