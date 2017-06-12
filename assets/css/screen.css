@@ -1851,7 +1851,7 @@ a.right-arrow,
 .info-box {
   display: inline-block;
   max-width: 388px;
-  margin: 9px 9px 9px;
+  margin: 10px 8px 9px;
   padding: 39px 55px 37px 41px;
   border: 2px solid #D2D2D2; }
   .info-box .content {
@@ -1881,11 +1881,11 @@ a.right-arrow,
   text-transform: uppercase; }
 
 .slider-box {
-  margin-top: 18px;
+  margin-top: 13px;
   max-width: 1180px; }
 
 .slider-title {
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   font-family: "Soleil ExtraBold", "Soleil Bold", "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 800;
   font-size: 40px;
