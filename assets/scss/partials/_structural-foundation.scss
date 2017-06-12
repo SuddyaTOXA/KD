@@ -121,9 +121,12 @@
 .section-structural {
   padding-top: 172px;
   padding-bottom: 140px;
+  .center-wrap {
+    position: relative;
+  }
   .center {
-    max-width: 1540px;
-    padding-right: 315px;
+    max-width: 1225px;
+    //padding-right: 315px;
   }
   .box-title {
     margin-bottom: 4px;
@@ -131,7 +134,10 @@
     word-spacing: -0.06em;
   }
   .content {
-    max-width: 1020px;
+    &.big {
+      max-width: 1020px;
+    }
+    max-width: 998px;
     * {
       margin-bottom: 34px;
       &:last-child {
@@ -139,19 +145,29 @@
       }
     }
     h1, h2, h3, h4, h5, h6 {
+      font-size: 36px;
       margin-bottom: 2px;
     }
+    h2 { font-size: 34px; }
+    h3 { font-size: 30px; }
+    h4, h5, h6 { font-size: 28px; }
     b, strong {
       word-spacing: 0.06em;
     }
   }
 }
   .btn-estimate-box {
-    position: fixed;
-    bottom: 98px;
+    position: absolute;
+    top: 0;
     right: 0;
+    &.b-fixed {
+      position: fixed;
+      top: auto;
+      right: 0;
+      bottom: 98px;
+    }
     a.btn, .btn {
-      max-width: 305px;
+      min-width: 305px;
     }
   }
   .info-wrap {

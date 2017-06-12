@@ -1,3 +1,47 @@
+function stickyBtn() {
+    if ($('.section-structural').length) {
+        console.log('Init');
+        $(window).on('load resize', function() {
+            setTimeout(function() {
+                var section = $('.section-structural'),
+                    content = section.find('.center-wrap'),
+                    contentHeight = content.outerHeight(),
+                    positionTop = content.position().top,
+                    positionBottom = positionTop + contentHeight,
+                    height = $(window).height(),
+                    btn = section.find('.btn-estimate-box'),
+                    btnHeight = btn.outerHeight(),
+                    btnPosition = height - 90 - btnHeight;
+
+                $(window).on('scroll', function () {
+                    var currentPosition = $(window).scrollTop();
+                    //console.log('Current-position' + currentPosition);
+                    if (currentPosition > (positionTop - btnPosition) && currentPosition < (positionBottom - btnPosition)) {
+                        if (!(btn.hasClass('b-fixed'))) {
+                            btn.addClass('b-fixed');
+                            btn.css('top', 'auto');
+                            btn.css('bottom', '98px');
+                        }
+                    } else if (currentPosition < (positionTop - btnPosition)) {
+                        if (btn.hasClass('b-fixed')) {
+                            btn.removeClass('b-fixed');
+                            btn.css('top', '0px');
+                            btn.css('bottom', 'auto');
+                        }
+                    } else if (currentPosition > (positionBottom - btnPosition)) {
+                        if (btn.hasClass('b-fixed')) {
+                            btn.removeClass('b-fixed');
+                            btn.css('top', 'auto');
+                            btn.css('bottom', '0px');
+                        }
+                    }
+                });
+            }, 300);
+        });
+    } else {
+        console.log('False');
+    }
+};
 $(function(){
 	$(document).ready(function() {
 	    body = $('body');
@@ -34,6 +78,8 @@ $(function(){
             });
         }
 
+        //for sticky btn
+        stickyBtn();
         //for slider
         if($('.s-slider').length) {
             var swiper = new Swiper('.swiper-container', {
@@ -60,7 +106,7 @@ $(function(){
                     wrap = popup.find('.swiper-wrapper'),
                     img = wrap.find('.swiper-slide img'),
                     winHeight = $(window).height(),
-                    imgHeight = winHeight - 206,
+                    imgHeight = winHeight - 126,
                     wrapMaxHeight = imgHeight + 86,
                     activeIndex = swiper.activeIndex;
 
@@ -101,7 +147,7 @@ $(function(){
                         wrap = popup.find('.swiper-wrapper'),
                         img = wrap.find('.swiper-slide img'),
                         winHeight = $(window).height(),
-                        imgHeight = winHeight - 206,
+                        imgHeight = winHeight - 126,
                         wrapMaxHeight = imgHeight + 86;
 
                         img.css('max-height', imgHeight);
