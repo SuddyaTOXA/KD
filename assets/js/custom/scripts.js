@@ -111,17 +111,24 @@ $(function(){
                     activeIndex = swiper.activeIndex;
 
                     if ($(this).hasClass('close-swiper')) {
-                        popup.removeClass('open');
-                        slide.removeClass('dis');
-                        body.removeClass('disable-scroll');
-                        img.css('max-height', '');
-                        wrap.css('max-height', '');
-                        popupWrap.css('margin-top', '');
-                        sliderBox.css('height', '');
+                        popup.addClass('hide');
                         setTimeout(function () {
-                            swiper.update();
-                            swiper.slideTo(activeIndex, 0, false);
-                        }, duration);
+                            popup.removeClass('open');
+                            slide.removeClass('dis');
+                            body.removeClass('disable-scroll');
+                            img.css('max-height', '');
+                            wrap.css('max-height', '');
+                            popupWrap.css('margin-top', '');
+                            sliderBox.css('height', '');
+                            setTimeout(function () {
+                                swiper.update();
+                                swiper.slideTo(activeIndex, 0, false);
+                            }, duration);
+                        }, 350);
+                        setTimeout(function () {
+                            popup.removeClass('show');
+                            popup.removeClass('hide');
+                        }, 700 );
                     } else if (!($(this).hasClass('dis'))) {
                         sliderBox.css('height', sliderBoxHeight);
                         popup.addClass('open');
@@ -129,6 +136,9 @@ $(function(){
                         body.addClass('disable-scroll');
                         img.css('max-height', imgHeight);
                         wrap.css('max-height', wrapMaxHeight);
+                        setTimeout(function () {
+                            popup.addClass('show');
+                        }, 500 );
                         setTimeout(function () {
 
                             swiper.update();
