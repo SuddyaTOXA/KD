@@ -12,7 +12,7 @@ function stickyBtn() {
                     btn = section.find('.btn-estimate-box'),
                     btnHeight = btn.outerHeight(),
                     btnTopPosition = height - 98 - btnHeight,
-                    btnBotoomPosition = height - 64 - btnHeight;
+                    btnBotoomPosition = height - 98;
 
                 $(window).on('scroll', function () {
                     var currentPosition = $(window).scrollTop();
