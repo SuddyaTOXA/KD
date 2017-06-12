@@ -120,6 +120,13 @@
                 border-bottom: none;
                 &:last-child {
                   border-bottom: 1px solid #BEBEBE;
+                  tr {
+                    &:last-child {
+                      td {
+                        padding-bottom: 8px;
+                      }
+                    }
+                  }
                 }
                 tr {
                   border-top: 1px solid #BEBEBE;

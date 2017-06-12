@@ -2182,6 +2182,8 @@ a.right-arrow,
       border-bottom: none; }
       .fleet-table-list > li table:last-child {
         border-bottom: 1px solid #BEBEBE; }
+        .fleet-table-list > li table:last-child tr:last-child td {
+          padding-bottom: 8px; }
       .fleet-table-list > li table tr {
         border-top: 1px solid #BEBEBE; }
         .fleet-table-list > li table tr td {
