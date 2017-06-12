@@ -1846,6 +1846,10 @@ a.right-arrow,
       font-size: 28px; }
     .section-structural .content b, .section-structural .content strong {
       word-spacing: 0.06em; }
+    .section-structural .content ul, .section-structural .content ol {
+      margin-top: 40px; }
+      .section-structural .content ul li, .section-structural .content ol li {
+        padding-left: 45px; }
 
 .btn-estimate-box {
   position: absolute;

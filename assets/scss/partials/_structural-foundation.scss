@@ -156,6 +156,12 @@
     b, strong {
       word-spacing: 0.06em;
     }
+    ul, ol {
+      margin-top: 40px;
+      li {
+        padding-left: 45px;
+      }
+    }
   }
 }
   .btn-estimate-box {
