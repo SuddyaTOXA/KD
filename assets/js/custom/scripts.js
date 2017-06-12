@@ -61,8 +61,8 @@ $(function(){
                     img = wrap.find('.swiper-slide img'),
                     winHeight = $(window).height(),
                     imgHeight = winHeight - 206,
-                    wrapMaxHeight = imgHeight + 86;
-
+                    wrapMaxHeight = imgHeight + 86,
+                    activeIndex = swiper.activeIndex;
 
                     if ($(this).hasClass('close-swiper')) {
                         popup.removeClass('open');
@@ -74,8 +74,7 @@ $(function(){
                         sliderBox.css('height', '');
                         setTimeout(function () {
                             swiper.update();
-                            swiper.slideNext(false, 0);
-                            swiper.slideNext(false, 0);
+                            swiper.slideTo(activeIndex, 0, false);
                         }, duration);
                     } else if (!($(this).hasClass('dis'))) {
                         sliderBox.css('height', sliderBoxHeight);
@@ -85,9 +84,9 @@ $(function(){
                         img.css('max-height', imgHeight);
                         wrap.css('max-height', wrapMaxHeight);
                         setTimeout(function () {
+
                             swiper.update();
-                            swiper.slideNext(false, 0);
-                            swiper.slideNext(false, 0);
+                            swiper.slideTo(activeIndex, 0, false);
                             var h = ((winHeight - wrap.outerHeight()) / 2) - 43;
                             popupWrap.css('margin-top', h);
                         },duration );
