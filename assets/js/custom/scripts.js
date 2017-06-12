@@ -11,24 +11,25 @@ function stickyBtn() {
                     height = $(window).height(),
                     btn = section.find('.btn-estimate-box'),
                     btnHeight = btn.outerHeight(),
-                    btnPosition = height - 90 - btnHeight;
+                    btnTopPosition = height - 98 - btnHeight,
+                    btnBotoomPosition = height - 64 - btnHeight;
 
                 $(window).on('scroll', function () {
                     var currentPosition = $(window).scrollTop();
                     //console.log('Current-position' + currentPosition);
-                    if (currentPosition > (positionTop - btnPosition) && currentPosition < (positionBottom - btnPosition)) {
+                    if (currentPosition > (positionTop - btnTopPosition) && currentPosition < (positionBottom - btnBotoomPosition)) {
                         if (!(btn.hasClass('b-fixed'))) {
                             btn.addClass('b-fixed');
                             btn.css('top', 'auto');
                             btn.css('bottom', '98px');
                         }
-                    } else if (currentPosition < (positionTop - btnPosition)) {
+                    } else if (currentPosition < (positionTop - btnTopPosition)) {
                         if (btn.hasClass('b-fixed')) {
                             btn.removeClass('b-fixed');
                             btn.css('top', '0px');
                             btn.css('bottom', 'auto');
                         }
-                    } else if (currentPosition > (positionBottom - btnPosition)) {
+                    } else if (currentPosition > (positionBottom - btnBotoomPosition)) {
                         if (btn.hasClass('b-fixed')) {
                             btn.removeClass('b-fixed');
                             btn.css('top', 'auto');

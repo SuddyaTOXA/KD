@@ -1998,7 +1998,7 @@ a.right-arrow,
     opacity: 1; }
   .slider-popup.open .slider-popup-wrap {
     opacity: 0;
-    max-width: 1190px;
+    max-width: 1290px;
     margin: 0 auto;
     padding: 0 10px;
     -webkit-transition: opacity 0s;
@@ -2082,7 +2082,8 @@ a.right-arrow,
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 1; }
+  opacity: 1;
+  z-index: 2; }
 .slider-popup.hide .slider-popup-wrap {
   opacity: 0; }
 
