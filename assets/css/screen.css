@@ -818,22 +818,36 @@ select {
 
 .footerMainWrap .center {
   position: relative;
-  display: table; }
+  display: block;
+  padding-top: 90px;
+  padding-bottom: 123px;
+  max-width: 1384px; }
 
 .footerColumn {
-  position: relative;
-  display: table-cell;
+  display: inline-block;
   vertical-align: top;
-  padding: 90px 100px 120px 0; }
-
-.footerColumn:last-child {
-  padding-right: 0; }
+  padding: 0 10px;
+  width: 100%; }
+  .footerColumn:nth-child(1) {
+    padding-left: 25px;
+    max-width: 346px; }
+  .footerColumn:nth-child(2) {
+    max-width: 264px; }
+  .footerColumn:nth-child(3) {
+    max-width: 209px; }
+  .footerColumn:nth-child(4) {
+    max-width: 220px; }
+  .footerColumn:nth-child(5) {
+    float: right;
+    max-width: 230px;
+    margin-right: 10px;
+    padding-right: 0; }
 
 .footerHeading,
 .footerHeadingSmall {
   position: relative;
   display: block;
-  margin: 32px 0 2px 0;
+  margin: 31px 0 2px 0;
   font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-size: 20px;
   font-weight: 900;
@@ -843,8 +857,11 @@ select {
   text-transform: uppercase; }
 
 .footerHeadingSmall {
+  margin-top: 30px;
   font-size: 14px;
   line-height: 1.2em; }
+  .footerHeadingSmall:first-child {
+    margin-top: 32px; }
 
 .footerHeading a,
 a.footerHeading,
@@ -872,6 +889,7 @@ a.footerHeadingSmall:focus {
   font-family: "Soleil Regular", Arial, Verdana, Tahoma, sans-serif;
   font-size: 20px;
   line-height: 1.4em;
+  letter-spacing: .01em;
   color: #323232; }
 
 .footerContact a,
@@ -931,6 +949,7 @@ a.footerContact:focus {
   font-family: "Soleil Regular", Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 1.25em;
+  letter-spacing: .01em;
   color: #323232;
   text-decoration: none;
   -webkit-transition: all .25s ease;
@@ -994,13 +1013,16 @@ a.footerContact:focus {
   display: block;
   border-top: 1px solid #c5c5c5;
   background-color: #ffffff; }
+  .copyrightWrap .center {
+    max-width: 1384px; }
 
 .copyrightLeft {
   position: relative;
   display: block;
   float: left;
   font-size: 0;
-  z-index: 1; }
+  z-index: 1;
+  padding-left: 25px; }
 
 .copyrightLeft a {
   position: relative;
@@ -1050,6 +1072,7 @@ a.footerContact:focus {
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.09em;
+  word-spacing: -0.03em;
   color: #a9a9a9;
   text-align: right;
   text-transform: uppercase; }
@@ -1064,6 +1087,21 @@ a.footerContact:focus {
 .copyrightRight a:hover,
 .copyrightRight a:focus {
   color: #cd0000; }
+
+.anchor-footer-box {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+  .anchor-footer-box a {
+    float: left;
+    width: 50%;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 1.4; }
 
 /* styles used throughout site */
 .homeBannerWrap {
@@ -2182,7 +2220,7 @@ a.right-arrow,
       border-bottom: none; }
       .fleet-table-list > li table:last-child {
         border-bottom: 1px solid #BEBEBE; }
-        .fleet-table-list > li table:last-child tr:last-child td {
+        .fleet-table-list > li table:last-child tbody tr:last-child td {
           padding-bottom: 8px; }
       .fleet-table-list > li table tr {
         border-top: 1px solid #BEBEBE; }
@@ -2239,6 +2277,12 @@ a.right-arrow,
   .fleet-table-list {
     padding-bottom: 20px; } }
 @media all and (max-width: 1400px) {
+  .footerColumn:first-child {
+    padding-left: 0; }
+
+  .copyrightLeft {
+    padding-left: 0; }
+
   .project-list > li {
     height: 500px; }
     .project-list > li:nth-child(4n - 3) {
@@ -2268,6 +2312,19 @@ a.right-arrow,
   .submenu-overlay .close-overlay {
     top: 10px;
     right: 10px; } }
+@media all and (max-width: 1320px) {
+  .footerColumn:nth-child(1) {
+    max-width: 280px; }
+  .footerColumn:nth-child(2) {
+    max-width: 220px; }
+  .footerColumn:nth-child(3) {
+    max-width: 200px; }
+  .footerColumn:nth-child(4) {
+    max-width: 200px; }
+  .footerColumn:nth-child(5) {
+    float: right;
+    max-width: 230px;
+    margin-right: 0; } }
 @media all and (max-width: 1280px) {
   .subnav-title {
     padding-left: 0; }
@@ -2276,5 +2333,18 @@ a.right-arrow,
     padding-left: 0; }
   .submenu-overlay .right-box {
     padding-left: 40px; } }
+@media all and (max-width: 1080px) {
+  .footerColumn:nth-child(1) {
+    max-width: 245px; }
+  .footerColumn:nth-child(2) {
+    max-width: 200px; }
+  .footerColumn:nth-child(3) {
+    max-width: 180px; }
+  .footerColumn:nth-child(4) {
+    max-width: 175px; }
+  .footerColumn:nth-child(5) {
+    max-width: 190px; }
+    .footerColumn:nth-child(5) .footerCTA {
+      min-width: 190px; } }
 
 /*# sourceMappingURL=screen.css.map */
