@@ -40,9 +40,27 @@ function stickyBtn() {
         });
     }
 }
+function msieversion() {
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
 
+    if (msie > 0) // If Internet Explorer, return version number
+    {
+        $('body').addClass('ie');
+        console.log(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+    }
+    else  // If another browser, return 0
+    {
+        console.log('otherbrowser');
+    }
+
+    return false;
+}
 $(document).ready(function() {
+    msieversion();
+
     body = $('body');
+
     // for submenu
     $('.open-overlay, .close-overlay').on('click', function(){
         if($(this).hasClass('open-overlay')) {
