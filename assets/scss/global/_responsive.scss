@@ -129,6 +129,13 @@
       padding-left: 40px;
     }
   }
+  .leadership-list {
+    overflow: hidden;
+    > li {
+      width: 33.33%;
+      padding-bottom: 33.33%;
+    }
+  }
 }
 
 @media all and (max-width: 1199px) {

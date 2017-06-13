@@ -2256,39 +2256,87 @@ a.right-arrow,
   .section-about .center {
     max-width: 1520px; }
   .section-about .left-box {
-    padding: 0; }
+    padding: 0;
+    padding-right: 10px; }
     .section-about .left-box .content {
       max-width: 620px; }
   .section-about .right-box {
-    padding: 0; }
-  .section-about.bottom-s .center {
-    max-width: 745px; }
-  .section-about.bottom-s .content .big {
-    margin-bottom: 34px; }
-  .section-about.bottom-s .content h1, .section-about.bottom-s .content h2, .section-about.bottom-s .content h3, .section-about.bottom-s .content h4, .section-about.bottom-s .content h5, .section-about.bottom-s .content h6 {
+    padding: 17px 0 0 78px; }
+  .section-about.bottom-s {
+    padding-bottom: 207px; }
+    .section-about.bottom-s .center {
+      max-width: 745px; }
+    .section-about.bottom-s .content .big {
+      margin-bottom: 34px; }
+    .section-about.bottom-s .content h1, .section-about.bottom-s .content h2, .section-about.bottom-s .content h3, .section-about.bottom-s .content h4, .section-about.bottom-s .content h5, .section-about.bottom-s .content h6 {
+      font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+      font-weight: 900;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: center; }
+    .section-about.bottom-s .content * {
+      margin-bottom: 33px; }
+      .section-about.bottom-s .content *:last-child {
+        margin-bottom: 0; }
+    .section-about.bottom-s .content strong, .section-about.bottom-s .content b {
+      letter-spacing: 0.04em;
+      word-spacing: -0.01em; }
+    .section-about.bottom-s .content ul {
+      margin-top: -6px;
+      margin-bottom: 29px; }
+      .section-about.bottom-s .content ul > li {
+        padding-left: 58px; }
+        .section-about.bottom-s .content ul > li:before {
+          content: none; }
+    .section-about.bottom-s .content li {
+      margin-bottom: 12px;
+      line-height: 1.85; }
+
+.important-info {
+  max-width: 480px;
+  font-family: "Soleil ExtraBold", "Soleil Bold", "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 800;
+  font-size: 44px;
+  letter-spacing: 0.03em;
+  line-height: 1.15; }
+
+.blockquote-box {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  padding-top: 59px;
+  margin-top: 63px;
+  margin-left: 2px;
+  font-family: "Mr Eaves Mod Book", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.2; }
+  .blockquote-box:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -3px;
+    width: 25px;
+    height: 10px;
+    background-color: #cd0000;
+    -webkit-transform: skew(-32deg);
+    -khtml-transform: skew(-32deg);
+    -moz-transform: skew(-32deg);
+    -ms-transform: skew(-32deg);
+    -o-transform: skew(-32deg);
+    transform: skew(-32deg); }
+  .blockquote-box .author {
+    display: block;
+    margin-bottom: 4px;
     font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 900;
-    margin-bottom: 25px;
+    font-size: 20px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-align: center; }
-  .section-about.bottom-s .content * {
-    margin-bottom: 33px; }
-    .section-about.bottom-s .content *:last-child {
-      margin-bottom: 0; }
-  .section-about.bottom-s .content strong, .section-about.bottom-s .content b {
-    letter-spacing: 0.04em;
-    word-spacing: -0.01em; }
-  .section-about.bottom-s .content ul {
-    margin-top: -6px;
-    margin-bottom: 29px; }
-    .section-about.bottom-s .content ul > li {
-      padding-left: 58px; }
-      .section-about.bottom-s .content ul > li:before {
-        content: none; }
-  .section-about.bottom-s .content li {
-    margin-bottom: 12px;
-    line-height: 1.85; }
+    letter-spacing: 0.12em;
+    line-height: 1.2; }
 
 .signatures-box {
   margin-top: 50px;
@@ -2315,12 +2363,12 @@ a.right-arrow,
   line-height: 1.2; }
 
 .president {
-  margin-left: 30px;
+  margin-left: 20px;
   font-family: "Mr Eaves Mod Book", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   line-height: 1.2;
   color: #b51919; }
 
@@ -2494,8 +2542,9 @@ a.right-arrow,
   text-transform: uppercase; }
 
 .section-customers {
-  padding-top: 110px;
-  padding-bottom: 110px; }
+  padding-top: 147px;
+  padding-bottom: 203px;
+  border-top: 2px solid #EAEAEA; }
   .section-customers .section-title {
     margin-bottom: 107px;
     text-align: center; }
@@ -2503,6 +2552,7 @@ a.right-arrow,
     max-width: 1270px; }
 
 .customers-list {
+  overflow: hidden;
   margin: 0 -45px -124px; }
   .customers-list > li {
     float: left;
@@ -2623,7 +2673,13 @@ a.right-arrow,
   .submenu-overlay .left-box {
     padding-left: 0; }
   .submenu-overlay .right-box {
-    padding-left: 40px; } }
+    padding-left: 40px; }
+
+  .leadership-list {
+    overflow: hidden; }
+    .leadership-list > li {
+      width: 33.33%;
+      padding-bottom: 33.33%; } }
 @media all and (max-width: 1080px) {
   .footerColumn:nth-child(1) {
     max-width: 245px; }
