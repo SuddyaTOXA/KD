@@ -232,6 +232,11 @@ body {
   .content.big {
     font-size: 28px;
     line-height: 2; }
+  .content .big {
+    margin-bottom: 34px;
+    font-size: 26px;
+    letter-spacing: .02em;
+    line-height: 1.65; }
   .inverse .content {
     color: #ffffff; }
   .content * {
@@ -250,8 +255,12 @@ body {
     font-size: 30px; }
   .content h3 {
     font-size: 28px; }
-  .content h4, .content h5, .content h6 {
-    font-size: 26px; }
+  .content h4 {
+    font-size: 24px; }
+  .content h5 {
+    font-size: 20px; }
+  .content h6 {
+    font-size: 18px; }
   .content a {
     color: #ff614c; }
     .content a:hover {
@@ -1875,14 +1884,13 @@ a.right-arrow,
       .section-structural .content *:last-child {
         margin-bottom: 0; }
     .section-structural .content h1, .section-structural .content h2, .section-structural .content h3, .section-structural .content h4, .section-structural .content h5, .section-structural .content h6 {
-      font-size: 36px;
       margin-bottom: 2px; }
+    .section-structural .content h1 {
+      font-size: 36px; }
     .section-structural .content h2 {
       font-size: 34px; }
     .section-structural .content h3 {
       font-size: 30px; }
-    .section-structural .content h4, .section-structural .content h5, .section-structural .content h6 {
-      font-size: 28px; }
     .section-structural .content b, .section-structural .content strong {
       word-spacing: 0.06em; }
     .section-structural .content ul, .section-structural .content ol {
@@ -2241,12 +2249,87 @@ a.right-arrow,
       .fleet-table-list > li thead th {
         padding: 6px 19px 4px; }
 
+.section-about {
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 100px; }
+  .section-about .center {
+    max-width: 1520px; }
+  .section-about .left-box {
+    padding: 0; }
+    .section-about .left-box .content {
+      max-width: 620px; }
+  .section-about .right-box {
+    padding: 0; }
+  .section-about.bottom-s .center {
+    max-width: 745px; }
+  .section-about.bottom-s .content .big {
+    margin-bottom: 34px; }
+  .section-about.bottom-s .content h1, .section-about.bottom-s .content h2, .section-about.bottom-s .content h3, .section-about.bottom-s .content h4, .section-about.bottom-s .content h5, .section-about.bottom-s .content h6 {
+    font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 900;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center; }
+  .section-about.bottom-s .content * {
+    margin-bottom: 33px; }
+    .section-about.bottom-s .content *:last-child {
+      margin-bottom: 0; }
+  .section-about.bottom-s .content strong, .section-about.bottom-s .content b {
+    letter-spacing: 0.04em;
+    word-spacing: -0.01em; }
+  .section-about.bottom-s .content ul {
+    margin-top: -6px;
+    margin-bottom: 29px; }
+    .section-about.bottom-s .content ul > li {
+      padding-left: 58px; }
+      .section-about.bottom-s .content ul > li:before {
+        content: none; }
+  .section-about.bottom-s .content li {
+    margin-bottom: 12px;
+    line-height: 1.85; }
+
+.signatures-box {
+  margin-top: 50px;
+  text-align: center; }
+  .signatures-box p {
+    margin-bottom: 20px;
+    font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    font-size: 18px; }
+  .signatures-box img {
+    display: block;
+    margin: 0 auto 9px;
+    max-width: 100%;
+    height: auto; }
+
+.president-name {
+  font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  line-height: 1.2; }
+
+.president {
+  margin-left: 30px;
+  font-family: "Mr Eaves Mod Book", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  color: #b51919; }
+
 .section-leadership {
-  padding-top: 110px;
-  padding-bottom: 120px; }
+  padding-top: 153px;
+  padding-bottom: 101px; }
   .section-leadership .section-title {
     padding: 0 10px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
     text-align: right; }
   .section-leadership .center {
     max-width: 1656px;
@@ -2268,6 +2351,8 @@ a.right-arrow,
           background-color: #cd0000; }
           .ie .leadership-list > li a:hover .leadership-overlay:after, .ie .leadership-list > li a:focus .leadership-overlay:after {
             background-color: rgba(205, 0, 0, 0.8); }
+    .leadership-list > li.separator a {
+      color: #000; }
 
 .leadership-box {
   position: absolute;
@@ -2277,7 +2362,7 @@ a.right-arrow,
   left: 0;
   top: 0;
   overflow: hidden;
-  background-color: red; }
+  background-color: #ffffff; }
   .leadership-box img {
     position: absolute;
     min-height: 100%;
@@ -2300,7 +2385,7 @@ a.right-arrow,
   height: 100%;
   left: -100%;
   top: 0;
-  padding: 49px 49px 49px;
+  padding: 53px 49px 117px;
   -webkit-transition: 0.25s;
   -khtml-transition: 0.25s;
   -moz-transition: 0.25s;
@@ -2319,8 +2404,15 @@ a.right-arrow,
     background-color: rgba(205, 0, 0, 0); }
   .leadership-overlay a.btn, .leadership-overlay .btn {
     position: absolute;
-    bottom: 0;
-    left: 0; }
+    bottom: -64px;
+    left: 0;
+    min-width: 252px; }
+    .leadership-overlay a.btn:after, .leadership-overlay .btn:after {
+      margin: -8px 11px 0 0px; }
+    .leadership-overlay a.btn.small, .leadership-overlay .btn.small {
+      width: 100%; }
+      .leadership-overlay a.btn.small:after, .leadership-overlay .btn.small:after {
+        margin-right: -9px; }
 
 .leadership-cell {
   position: relative;
@@ -2331,23 +2423,75 @@ a.right-arrow,
   mix-blend-mode: unset;
   z-index: 110; }
 
+.leader-header-box {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 40px; }
+  .leader-header-box:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: -3px;
+    width: 25px;
+    height: 10px;
+    background-color: #ffffff;
+    -webkit-transform: skew(-32deg);
+    -khtml-transform: skew(-32deg);
+    -moz-transform: skew(-32deg);
+    -ms-transform: skew(-32deg);
+    -o-transform: skew(-32deg);
+    transform: skew(-32deg); }
+
 .name {
-  margin-bottom: 10px;
+  margin-bottom: -2px;
   display: block;
   font-family: "Soleil ExtraBold", "Soleil Bold", "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 800;
   font-size: 30px;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: .03em; }
 
 .info {
-  margin-bottom: 10px;
   display: block;
   font-family: "Mr Eaves Mod Book", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: .02em; }
+
+.separator .leadership-separator-box {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 53px 51px 107px 30px;
+  background-color: #ffffff; }
+.separator .leadership-cell {
+  vertical-align: bottom; }
+.separator .leader-header-box {
+  padding-bottom: 25px;
+  text-align: right; }
+  .separator .leader-header-box:after {
+    left: auto;
+    right: 15px;
+    background-color: #cd0000; }
+  .separator .leader-header-box:before {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    bottom: 0;
+    right: 37px;
+    height: 10px;
+    width: 8px;
+    background-color: #ffffff; }
+.separator .name {
+  display: block;
+  font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 26px;
   line-height: 1.4;
-  letter-spacing: .01em; }
+  letter-spacing: .12em;
+  text-transform: uppercase; }
 
 .section-customers {
   padding-top: 110px;

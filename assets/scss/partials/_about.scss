@@ -1,9 +1,106 @@
+.section-about {
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  .center {
+    max-width: 1520px;
+  }
+  .left-box {
+    padding: 0;
+    .content {
+      max-width: 620px;
+    }
+  }
+  .right-box {
+    padding: 0;
+  }
+  &.bottom-s {
+    .center {
+      max-width: 745px;
+    }
+    .content {
+      .big {
+        margin-bottom: 34px;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: $font-mem-heavy;
+        font-weight: $heavy;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: center;
+      }
+      * {
+        margin-bottom: 33px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      strong, b {
+        letter-spacing: 0.04em;
+        word-spacing: -0.01em;
+      }
+      ul {
+        margin-top: -6px;
+        margin-bottom: 29px;
+        > li {
+          padding-left: 58px;
+          &:before {
+            content: none;
+          }
+        }
+      }
+      li {
+        margin-bottom: 12px;
+        line-height: 1.85;
+      }
+    }
+  }
+}
+.signatures-box {
+  margin-top: 50px;
+  text-align: center;
+  p {
+    margin-bottom: 20px;
+    font-family: $font-s-light;
+    font-weight: $light;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    font-size: 18px;
+  }
+  img {
+    display: block;
+    margin: 0 auto 9px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+  .president-name {
+    font-family: $font-mem-heavy;
+    font-weight: $heavy;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    line-height: 1.2;
+  }
+  .president {
+    margin-left: 30px;
+    font-family: $font-mem-book;
+    font-weight: $normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    line-height: 1.2;
+    color: #b51919;
+  }
+
+
 .section-leadership {
-  padding-top: 110px;
-  padding-bottom: 120px;
+  padding-top: 153px;
+  padding-bottom: 101px;
   .section-title {
     padding: 0 10px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
     text-align: right;
   }
   .center {
@@ -34,6 +131,11 @@
           }
         }
       }
+      &.separator {
+        a {
+          color: #000;
+        }
+      }
     }
   }
     .leadership-box {
@@ -44,7 +146,7 @@
       left: 0;
       top: 0;
       overflow: hidden;
-      background-color: red;
+      background-color: $white;
       img {
         position: absolute;
         min-height: 100%;
@@ -63,7 +165,7 @@
         height: 100%;
         left: -100%;
         top: 0;
-        padding: 49px 49px 49px;
+        padding: 53px 49px 117px;
         @include transition(.25s);
         &:after {
           position: absolute;
@@ -78,8 +180,18 @@
         }
         a.btn, .btn {
           position: absolute;
-          bottom: 0;
+          bottom: -64px;
           left: 0;
+          min-width: 252px;
+          &:after {
+            margin: -8px 11px 0 0px;
+          }
+          &.small {
+            width: 100%;
+            &:after {
+              margin-right: -9px;
+            }
+          }
         }
       }
         .leadership-cell {
@@ -91,26 +203,79 @@
           mix-blend-mode: unset;
           z-index: 110;
         }
-          .leader-header-box {}
+          .leader-header-box {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 40px;
+            &:after {
+              position: absolute;
+              content: '';
+              bottom: 0;
+              left: -3px;
+              width: 25px;
+              height: 10px;
+              background-color: $white;
+              @include css3-prefix('transform', 'skew(-32deg)');
+            }
+          }
             .name {
-              margin-bottom: 10px;
+              margin-bottom: -2px;
               display: block;
               font-family: $font-s-ex-bold;
               font-weight: $ex-bold;
               font-size: 30px;
-              line-height: 1.4;
+              line-height: 1.2;
               letter-spacing: .03em;
             }
             .info {
-              margin-bottom: 10px;
               display: block;
               font-family: $font-mem-book;
               font-weight: $normal;
               font-size: 24px;
-              line-height: 1.4;
-              letter-spacing: .01em;
+              line-height: 1.2;
+              letter-spacing: .02em;
             }
-
+        .separator {
+          .leadership-separator-box {
+            display: table;
+            width: 100%;
+            height: 100%;
+            padding: 53px 51px 107px 30px;
+            background-color: $white;
+          }
+          .leadership-cell {
+            vertical-align: bottom;
+          }
+          .leader-header-box {
+            padding-bottom: 25px;
+            text-align: right;
+            &:after {
+              left: auto;
+              right: 15px;
+              background-color: $red;
+            }
+            &:before {
+              position: absolute;
+              content: '';
+              z-index: 1;
+              bottom: 0;
+              right: 37px;
+              height: 10px;
+              width: 8px;
+              background-color: #ffffff;
+            }
+          }
+          .name {
+            display: block;
+            font-family: $font-mem-heavy;
+            font-weight: $heavy;
+            font-size: 26px;
+            line-height: 1.4;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+          }
+        }
 
 
 
