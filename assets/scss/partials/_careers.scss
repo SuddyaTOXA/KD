@@ -1,20 +1,439 @@
+.section-career-banner {
+  overflow: hidden;
+  position: relative;
+  min-height: calc(100vh + 200px);
+  margin-top: -76px;
+  img {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    @include css3-prefix('transform', 'translate(-50%, -50%)');
+    opacity: 0.8;
+  }
+  .center {
+    position: relative;
+    z-index: 110;
+    max-width: 1440px;
+  }
+  a.btn, .btn {
+    min-width: 305px;
+    margin-left: 3px;
+  }
+  a.down-arrow, .down-arrow {
+    position: absolute;
+    left: 0;
+    top: -175px;
+  }
+  &.about {
+    min-height: 100vh;
+    text-align: right;
+    .center {
+      max-width: 1500px;
+    }
+    .banner-table {
+      height: calc(100vh + 100px);
+      padding-bottom: 280px;
+      &:before {
+        position: absolute;
+        z-index: 100;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        mix-blend-mode: multiply;
+        background-color: rgba(205, 0, 0, 1);
+      }
+      &:after {
+        position: absolute;
+        z-index: 110;
+        content: '';
+        width: 100%;
+        height: 280px;
+        left: 0;
+        bottom: -140px;
+        background-color: $white;
+        transform-origin: 50% 50%;
+        @include css3-prefix('transform', 'rotate(9deg) scale(1.2)');
+      }
+    }
+    .banner-cell {
+      vertical-align: bottom;
+    }
+    .banner-desc {
+      font-size: 38px;
+      margin-bottom: 0;
+    }
+    .banner-title {
+      max-width: 100%;
+      font-size: 200px;
+    }
+    .banner-bottom-box {
+      overflow: hidden;
+      float: none;
+      max-width: 100%;
+      margin-top: -15px;
+      .bottom-left {
+        float: left;
+        text-align: left;
+      }
+      .bottom-right {
+        float: right;
+        margin-top: 9px;
+      }
+      a {
+        word-spacing: 0.08em;
+      }
+    }
+    .bottom-name {
+      margin-bottom: -1px;
+      font-size: 15px;
+    }
+    .bottom-info {
+      margin-bottom: 14px;
+      font-size: 15px;
+      word-spacing: 0.15em;
+    }
+  }
+}
+  .banner-table {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 90vh;
+    padding-top: 186px;
+    padding-bottom: 95px;
+  }
+    .left-overlay,
+    .right-overlay {
+      position: absolute;
+      overflow: hidden;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      &:before {
+        position: absolute;
+        z-index: 100;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        mix-blend-mode: multiply;
+        background-color: rgba(205, 0, 0, 1);
+      }
+    }
+    .left-overlay {
+      left: 0;
+      &:before {
+        transform-origin: 100% 100%;
+        @include css3-prefix('transform', 'rotate(10deg) scale(2)');
+      }
+    }
+    .right-overlay {
+      right: 0;
+      &:before {
+          transform-origin: 0 100%;
+          @include css3-prefix('transform', 'rotate(-10deg) scale(2)');
+      }
+    }
+
+    .banner-cell {
+      display: table-cell;
+      width: 100%;
+      height: 100px;
+      vertical-align: top;
+    }
+  .anchor-list {
+    margin: 0 -18px 68px;
+    > li {
+      a {
+        position: relative;
+        padding: 11px 0 11px;
+        margin: 0 18px 10px;
+        font-family: $font-mem-heavy;
+        font-weight: $heavy;
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        color: #e69797;
+        text-decoration: none;
+        @include css3-prefix('transition', 'all .25s ease');
+        &:after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 3px;
+          left: 0;
+          bottom: 0;
+          background-color: transparent;
+          @include css3-prefix('transition', 'all .25s ease');
+        }
+        &:hover,
+        &:focus {
+          color: $white;
+          &:after {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+  .banner-title {
+    max-width: 800px;
+    margin-bottom: 18px;
+    font-family: $font-mem-heavy;
+    font-weight: $heavy;
+    font-size: 120px;
+    line-height: 0.85;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: $white;
+  }
+  .banner-desc {
+    padding-left: 10px;
+    margin-bottom: 36px;
+    font-family: $font-mem-book;
+    font-weight: $normal;
+    font-size: 30px;
+    line-height: 1.33;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: $white;
+    strong, b {
+      font-family: $font-s-ex-bold;
+      font-weight: $ex-bold;
+    }
+  }
+  .about-desc {
+    padding-left: 10px;
+    margin-bottom: 36px;
+    font-family: $font-s-light;
+    font-weight: $light;
+    font-size: 23px;
+    line-height: 1.7;
+    letter-spacing: .02em;
+    color: $white;
+    strong, b {
+      font-family: $font-s-ex-bold;
+      font-weight: $ex-bold;
+    }
+  }
+  .banner-bottom-box {
+    float: right;
+    display: block;
+    margin-top: 27px;
+    margin-bottom: 88px;
+    max-width: 280px;
+    text-align: right;
+    font-family: $font-s-light;
+    font-weight: $light;
+    line-height: 1.22;
+    color: $white;
+    a {
+      font-family: $font-s-light;
+      font-weight: $light;
+      font-size: 16px;
+      line-height: 1.33;
+      letter-spacing: .01em;
+      color: #ee8e8e;
+      text-decoration: none;
+      @include css3-prefix('transition', 'all .25s ease');
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+    .bottom-name {
+      display: block;
+      margin-bottom: 1px;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      strong, b {
+        font-family: $font-s-ex-bold;
+        font-weight: $ex-bold;
+        letter-spacing: .12em;
+      }
+    }
+    .bottom-info {
+      margin-bottom: 18px;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      line-height: 1.7;
+    }
+
+  .banner-down-arrow {
+    position: absolute;
+    z-index: 120;
+    display: block;
+    bottom: 45px;
+    left: 50%;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-top: 19px solid #ffffff;
+    @include transform(-50%, 0);
+    @include css3-prefix('transition', 'all .25s ease');
+    &:hover,
+    &:focus {
+      border-top-color: #ee8e8e;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 .section-advancement {
   padding-top: 100px;
   padding-bottom: 100px;
-  .center {}
+  .center {
+    overflow: hidden;
+  }
   .left-box,
   .right-box {
     float: left;
+    padding: 0;
+  }
+  .right-box {
+    padding-left: 210px;
   }
 }
   .advancement-title {
-
+    margin-bottom: 10px;
+    font-family: $font-mem-heavy;
+    font-weight: $heavy;
+    font-size: 24px;
+    letter-spacing: .03em;
+    line-height: 1.25;
+    text-transform: uppercase;
+    text-align: center;
+    .right-box {
+      margin-bottom: 49px;
+    }
   }
+    .promotions-desc {
+      padding: 0 10px;
+      font-family: $font-s-light;
+      font-weight: $light;
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: .02em;
+    }
     .promotions-list {
+      float: right;
+      //max-width: 600px;
+      margin: 0 -40px;
       > li {
-
+        float: left;
+        width: 50%;
+        padding: 0 40px;
       }
     }
+
+  .retention-wrap {
+    max-width: 355px;
+    text-align: center;
+  }
+    .retention-list {
+      > li {
+        margin-bottom: 82px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+      .retention-box {
+        max-width: 355px;
+        text-align: center;
+      }
+      .retention-line {
+        text-align: center;
+        margin-bottom: 21px;
+      }
+        .progress-value {
+          display: block;
+          margin-bottom: 15px;
+          font-family: $font-mem-heavy;
+          font-weight: $heavy;
+          font-size: 36px;
+          letter-spacing: .03em;
+          line-height: 1.2;
+          text-transform: uppercase;
+          color: $red;
+        }
+          .progress-line {
+            position: relative;
+            span {
+              font-family: $font-mem-heavy;
+              font-weight: $heavy;
+              font-size: 21px;
+              letter-spacing: .03em;
+              line-height: 1;
+              text-transform: uppercase;
+            }
+            .start {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              padding-right: 20px;
+              @include transform(-100%, - 50%);
+            }
+            .finish {
+              position: absolute;
+              top: 50%;
+              right: 0;
+              padding-left: 20px;
+              @include transform(100%, - 50%);
+            }
+            .line {
+              position: relative;
+              z-index: 100;
+              display: block;
+              height: 10px;
+              width: 100%;
+              background-color: #EBEBEB;
+              .progress {
+                position: absolute;
+                z-index: 110;
+                height: 100%;
+                width: 0;
+                top: 0;
+                left: 0;
+                background-color: $red;
+                @include css3-prefix('transition', 'all .55s ease');
+              }
+            }
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

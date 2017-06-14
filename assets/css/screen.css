@@ -2526,8 +2526,23 @@ a.right-arrow,
   color: #b51919; }
 
 .section-leadership {
+  position: relative;
   padding-top: 153px;
   padding-bottom: 101px; }
+  .section-leadership:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: 0;
+    background-color: #EAEAEA;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(-9.6deg);
+    -khtml-transform: rotate(-9.6deg);
+    -moz-transform: rotate(-9.6deg);
+    -ms-transform: rotate(-9.6deg);
+    -o-transform: rotate(-9.6deg);
+    transform: rotate(-9.6deg); }
   .section-leadership .section-title {
     padding: 0 10px;
     margin-bottom: 95px;
@@ -2734,12 +2749,420 @@ a.right-arrow,
     width: auto;
     vertical-align: middle; }
 
+.section-career-banner {
+  overflow: hidden;
+  position: relative;
+  min-height: calc(100vh + 200px);
+  margin-top: -76px; }
+  .section-career-banner img {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -khtml-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.8; }
+  .section-career-banner .center {
+    position: relative;
+    z-index: 110;
+    max-width: 1440px; }
+  .section-career-banner a.btn, .section-career-banner .btn {
+    min-width: 305px;
+    margin-left: 3px; }
+  .section-career-banner a.down-arrow, .section-career-banner .down-arrow {
+    position: absolute;
+    left: 0;
+    top: -175px; }
+  .section-career-banner.about {
+    min-height: 100vh;
+    text-align: right; }
+    .section-career-banner.about .center {
+      max-width: 1500px; }
+    .section-career-banner.about .banner-table {
+      height: calc(100vh + 100px);
+      padding-bottom: 280px; }
+      .section-career-banner.about .banner-table:before {
+        position: absolute;
+        z-index: 100;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        mix-blend-mode: multiply;
+        background-color: #cd0000; }
+      .section-career-banner.about .banner-table:after {
+        position: absolute;
+        z-index: 110;
+        content: '';
+        width: 100%;
+        height: 280px;
+        left: 0;
+        bottom: -140px;
+        background-color: #ffffff;
+        transform-origin: 50% 50%;
+        -webkit-transform: rotate(9deg) scale(1.2);
+        -khtml-transform: rotate(9deg) scale(1.2);
+        -moz-transform: rotate(9deg) scale(1.2);
+        -ms-transform: rotate(9deg) scale(1.2);
+        -o-transform: rotate(9deg) scale(1.2);
+        transform: rotate(9deg) scale(1.2); }
+    .section-career-banner.about .banner-cell {
+      vertical-align: bottom; }
+    .section-career-banner.about .banner-desc {
+      font-size: 38px;
+      margin-bottom: 0; }
+    .section-career-banner.about .banner-title {
+      max-width: 100%;
+      font-size: 200px; }
+    .section-career-banner.about .banner-bottom-box {
+      overflow: hidden;
+      float: none;
+      max-width: 100%;
+      margin-top: -15px; }
+      .section-career-banner.about .banner-bottom-box .bottom-left {
+        float: left;
+        text-align: left; }
+      .section-career-banner.about .banner-bottom-box .bottom-right {
+        float: right;
+        margin-top: 9px; }
+      .section-career-banner.about .banner-bottom-box a {
+        word-spacing: 0.08em; }
+    .section-career-banner.about .bottom-name {
+      margin-bottom: -1px;
+      font-size: 15px; }
+    .section-career-banner.about .bottom-info {
+      margin-bottom: 14px;
+      font-size: 15px;
+      word-spacing: 0.15em; }
+
+.banner-table {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 90vh;
+  padding-top: 186px;
+  padding-bottom: 95px; }
+
+.left-overlay,
+.right-overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  top: 0; }
+  .left-overlay:before,
+  .right-overlay:before {
+    position: absolute;
+    z-index: 100;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    mix-blend-mode: multiply;
+    background-color: #cd0000; }
+
+.left-overlay {
+  left: 0; }
+  .left-overlay:before {
+    transform-origin: 100% 100%;
+    -webkit-transform: rotate(10deg) scale(2);
+    -khtml-transform: rotate(10deg) scale(2);
+    -moz-transform: rotate(10deg) scale(2);
+    -ms-transform: rotate(10deg) scale(2);
+    -o-transform: rotate(10deg) scale(2);
+    transform: rotate(10deg) scale(2); }
+
+.right-overlay {
+  right: 0; }
+  .right-overlay:before {
+    transform-origin: 0 100%;
+    -webkit-transform: rotate(-10deg) scale(2);
+    -khtml-transform: rotate(-10deg) scale(2);
+    -moz-transform: rotate(-10deg) scale(2);
+    -ms-transform: rotate(-10deg) scale(2);
+    -o-transform: rotate(-10deg) scale(2);
+    transform: rotate(-10deg) scale(2); }
+
+.banner-cell {
+  display: table-cell;
+  width: 100%;
+  height: 100px;
+  vertical-align: top; }
+
+.anchor-list {
+  margin: 0 -18px 68px; }
+  .anchor-list > li a {
+    position: relative;
+    padding: 11px 0 11px;
+    margin: 0 18px 10px;
+    font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #e69797;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -khtml-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease; }
+    .anchor-list > li a:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: 0;
+      background-color: transparent;
+      -webkit-transition: all .25s ease;
+      -khtml-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
+    .anchor-list > li a:hover, .anchor-list > li a:focus {
+      color: #ffffff; }
+      .anchor-list > li a:hover:after, .anchor-list > li a:focus:after {
+        background-color: white; }
+
+.banner-title {
+  max-width: 800px;
+  margin-bottom: 18px;
+  font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 0.85;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.banner-desc {
+  padding-left: 10px;
+  margin-bottom: 36px;
+  font-family: "Mr Eaves Mod Book", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.33;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #ffffff; }
+  .banner-desc strong, .banner-desc b {
+    font-family: "Soleil ExtraBold", "Soleil Bold", "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 800; }
+
+.about-desc {
+  padding-left: 10px;
+  margin-bottom: 36px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 1.7;
+  letter-spacing: .02em;
+  color: #ffffff; }
+  .about-desc strong, .about-desc b {
+    font-family: "Soleil ExtraBold", "Soleil Bold", "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 800; }
+
+.banner-bottom-box {
+  float: right;
+  display: block;
+  margin-top: 27px;
+  margin-bottom: 88px;
+  max-width: 280px;
+  text-align: right;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  line-height: 1.22;
+  color: #ffffff; }
+  .banner-bottom-box a {
+    font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.33;
+    letter-spacing: .01em;
+    color: #ee8e8e;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -khtml-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease; }
+    .banner-bottom-box a:hover, .banner-bottom-box a:focus {
+      color: #ffffff; }
+
+.bottom-name {
+  display: block;
+  margin-bottom: 1px;
+  font-size: 18px;
+  letter-spacing: 0.02em; }
+  .bottom-name strong, .bottom-name b {
+    font-family: "Soleil ExtraBold", "Soleil Bold", "Soleil SemiBold", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 800;
+    letter-spacing: .12em; }
+
+.bottom-info {
+  margin-bottom: 18px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  line-height: 1.7; }
+
+.banner-down-arrow {
+  position: absolute;
+  z-index: 120;
+  display: block;
+  bottom: 45px;
+  left: 50%;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  border-top: 19px solid #ffffff;
+  -webkit-transform: translate(-50%, 0);
+  -khtml-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-transition: all .25s ease;
+  -khtml-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease; }
+  .banner-down-arrow:hover, .banner-down-arrow:focus {
+    border-top-color: #ee8e8e; }
+
 .section-advancement {
   padding-top: 100px;
   padding-bottom: 100px; }
+  .section-advancement .center {
+    overflow: hidden; }
   .section-advancement .left-box,
   .section-advancement .right-box {
-    float: left; }
+    float: left;
+    padding: 0; }
+  .section-advancement .right-box {
+    padding-left: 210px; }
+
+.advancement-title {
+  margin-bottom: 10px;
+  font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: .03em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center; }
+  .advancement-title .right-box {
+    margin-bottom: 49px; }
+
+.promotions-desc {
+  padding: 0 10px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: .02em; }
+
+.promotions-list {
+  float: right;
+  margin: 0 -40px; }
+  .promotions-list > li {
+    float: left;
+    width: 50%;
+    padding: 0 40px; }
+
+.retention-wrap {
+  max-width: 355px;
+  text-align: center; }
+
+.retention-list > li {
+  margin-bottom: 82px; }
+  .retention-list > li:last-child {
+    margin-bottom: 0; }
+
+.retention-box {
+  max-width: 355px;
+  text-align: center; }
+
+.retention-line {
+  text-align: center;
+  margin-bottom: 21px; }
+
+.progress-value {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  letter-spacing: .03em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #cd0000; }
+
+.progress-line {
+  position: relative; }
+  .progress-line span {
+    font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 21px;
+    letter-spacing: .03em;
+    line-height: 1;
+    text-transform: uppercase; }
+  .progress-line .start {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding-right: 20px;
+    -webkit-transform: translate(-100%, -50%);
+    -khtml-transform: translate(-100%, -50%);
+    -moz-transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
+    -o-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%); }
+  .progress-line .finish {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding-left: 20px;
+    -webkit-transform: translate(100%, -50%);
+    -khtml-transform: translate(100%, -50%);
+    -moz-transform: translate(100%, -50%);
+    -ms-transform: translate(100%, -50%);
+    -o-transform: translate(100%, -50%);
+    transform: translate(100%, -50%); }
+  .progress-line .line {
+    position: relative;
+    z-index: 100;
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: #EBEBEB; }
+    .progress-line .line .progress {
+      position: absolute;
+      z-index: 110;
+      height: 100%;
+      width: 0;
+      top: 0;
+      left: 0;
+      background-color: #cd0000;
+      -webkit-transition: all .55s ease;
+      -khtml-transition: all .55s ease;
+      -moz-transition: all .55s ease;
+      -ms-transition: all .55s ease;
+      -o-transition: all .55s ease;
+      transition: all .55s ease; }
 
 .section-what-say {
   padding-top: 100px;

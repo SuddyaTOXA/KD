@@ -175,19 +175,46 @@
             <!--end header-->
 
             <!--begin content-->
-            <div class="section-page-title" id="bodyWrap" style="background-image: url(img/emp_bg1.png)">
-                <div class="center">
-                    <div class="center-box">
-                        <h1 class="page-title">Careers</h1>
+            <div class="section-career-banner"  id="bodyWrap">
+                <img src="img/careers_bg2.jpg" alt="">
+                <div class="banner-table">
+                    <div class="banner-cell">
+                        <div class="center">
+                            <div>
+                                <ul class="anchor-list">
+                                    <li>
+                                        <a href="#bodyWrap">Start your career</a>
+                                        <a href="#stats">Stats</a>
+                                        <a href="#testimonials">Testimonials</a>
+                                        <a href="#open-positions">Open positions</a>
+                                        <a href="#apply">Apply now</a>
+                                    </li>
+                                </ul>
+                                <h1 class="banner-title">
+                                    Start your career
+                                </h1>
+                                <p class="banner-desc">Work on the best projects with the best equipment</p>
+                                <a href="/broken" class="btn">ALL OPEN POSITIONS</a>
+                            </div>
+                            <div class="banner-bottom-box">
+                                <span class="bottom-name"><strong>FHLB BANK</strong>  ·  Topeka, Kansas</span>
+                                <p class="bottom-info">Probably should caption this with<br/>
+                                    some details about the project</p>
+                                <a href="/broken">See Our Projects</a>
+                            </div>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="left-overlay"></div>
+                    <div class="right-overlay"></div>
+                    <a href="#advancement-s" class="banner-down-arrow"></a>
                 </div>
-                <div class="bottom"></div>
             </div>
 
-            <div class="section-advancement">
+            <div class="section-advancement" id="stats">
                 <div class="center">
                     <div class="left-box">
-                        <h3 class="advancement-title">advancement and promotions</h3>
+                        <h3 class="advancement-title">advancement <br/>and promotions</h3>
                         <ul class="promotions-list">
                             <li>
                                 <div class="promotions-box">
@@ -209,29 +236,49 @@
                         </ul>
                     </div>
                     <div class="right-box">
-                        <h3 class="advancement-title">job retention</h3>
-                        <ul class="retention-list">
+                        <div class="retention-wrap">
+                            <h3 class="advancement-title">job retention</h3>
+                            <ul class="retention-list">
                             <li>
                                 <div class="retention-box">
-                                    <div class="retention-line"></div>
-                                    <p class="retention-desc">The average Kolde employee stays with
+                                    <div class="retention-line">
+                                        <span class="progress-value">6.3 years</span>
+                                        <div class="progress-line">
+                                            <span class="start">0</span>
+                                            <span class="line">
+                                                <span class="progress" style="width: 63%" data-progress="63"></span>
+                                            </span>
+                                            <span class="finish">10</span>
+                                        </div>
+                                    </div>
+                                    <p class="promotions-desc">The average Kolde employee stays with
                                         us for an average of 6.3 years</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="retention-box">
-                                    <div class="retention-line"></div>
-                                    <p class="retention-desc">At Kolde, providing stability for your family
+                                    <div class="retention-line">
+                                        <span class="progress-value">43.5 hrs/week</span>
+                                        <div class="progress-line">
+                                            <span class="start">0</span>
+                                            <span class="line">
+                                                <span class="progress" style="width: 43%" data-progress="43"></span>
+                                            </span>
+                                            <span class="finish">50</span>
+                                        </div>
+                                    </div>
+                                    <p class="promotions-desc">At Kolde, providing stability for your family
                                         and you is key. That's why year-round work for each of our employees
                                         is a priority for us.</p>
                                 </div>
                             </li>
                         </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="section-what-say">
+            <div class="section-what-say" id="testimonials">
                 <div class="center">
                     <h2 class="section-title">What our employees say</h2>
                     <ul class="what-say-list">
@@ -333,7 +380,7 @@
                 </div>
             </div>
 
-            <div class="section-positions">
+            <div class="section-positions" id="open-positions">
                 <div class="center">
                     <h2 class="section-title">Open positions</h2>
                     <div class="job-detail-box">
@@ -380,7 +427,7 @@
                 </div>
             </div>
 
-            <div class="section-careers-form">
+            <div class="section-careers-form" id="apply">
                 <div class="center">
                     <h2 class="section-title">Apply now</h2>
                     <div class="career-form-box">
@@ -708,6 +755,7 @@
         </div>
         <script src="assets/js/jquery-1.12.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+        <script src="assets/js/smooth-scroll.min.js"></script>
         <script src="assets/js/custom/scripts.js"></script>
     </body>
 </html>
