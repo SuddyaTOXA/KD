@@ -350,7 +350,7 @@
                                 </span>
                             </li>
                             <li>
-                                <ul>
+                                <ul class="name-row">
                                     <li>
                                         <div class="input-wrap">
                                             <input type="text" id="c-first-name" class="input-style" placeholder="first name">
@@ -384,7 +384,7 @@
                                 </div>
                             </li>
                             <li>
-                                <ul>
+                                <ul class="address-row">
                                     <li>
                                         <div class="input-wrap">
                                             <input type="text" id="c-city" class="input-style" placeholder="City">
@@ -413,7 +413,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <ul>
+                                <ul class="birth-row">
                                     <li>
                                         <div class="input-wrap">
                                              <span class="select-wrap">
@@ -456,7 +456,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <ul>
+                                <ul class="license-row">
                                     <li>
                                         <div class="input-wrap">
                                             <input type="text" id="c-license" class="input-style" placeholder="CDL Driver’s License #">
@@ -478,7 +478,131 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li>
+                                <span class="radio-name">Have you ever been convicted of a felony?</span>
+                                <span class="radio-style">
+                                    <input  type="radio" name="convicted" value="yes">
+                                    <span class="radio-btn">YES</span>
+                                </span>
+                                <span class="radio-style">
+                                    <input  type="radio" name="convicted" value="no">
+                                    <span class="radio-btn">NO</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="radio-name">Are you authorized to work in the US??</span>
+                                <span class="radio-style">
+                                    <input  type="radio" name="authorized" value="yes">
+                                    <span class="radio-btn">YES</span>
+                                </span>
+                                <span class="radio-style">
+                                    <input  type="radio" name="authorized" value="no">
+                                    <span class="radio-btn">NO</span>
+                                </span>
+                            </li>
                         </ul>
+
+                        <div class="job-history">
+                            <h3 class="form-title">Job History</h3>
+                            <div class="job-box">
+                                <ul class="job-history-list">
+                                <li>
+                                    <ul>
+                                        <li>
+                                             <div class="input-wrap">
+                                                <input type="text" id="h-begin" class="input-style" placeholder="start date (ex. January 2010)">
+                                                <label class="show" for="h-begin">Most Recent Job</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                             <div class="input-wrap">
+                                                <input type="text" id="h-end" class="input-style" placeholder="end date (ex. January 2010, present)">
+                                                <label for="h-end"></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                             <div class="input-wrap">
+                                                <input type="text" id="h-company" class="input-style" placeholder="Company">
+                                                <label for="h-company">Company</label>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                             <div class="input-wrap">
+                                                <input type="text" id="h-position" class="input-style" placeholder="Position">
+                                                <label for="h-position">Position</label>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="input-wrap">
+                                        <textarea id="h-message" name="text" class="input-style" placeholder="Give a brief description of your duties"></textarea>
+                                        <label for="h-message" class="show">Job Description</label>
+                                    </div>
+                                </li>
+                            </ul>
+                                <ul id="another" class="job-history-list hide">
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <div class="input-wrap">
+                                                    <input type="text" id="h-begin" class="input-style" placeholder="start date (ex. January 2010)">
+                                                    <label class="show" for="h-begin">Most Recent Job</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-wrap">
+                                                    <input type="text" id="h-end" class="input-style" placeholder="end date (ex. January 2010, present)">
+                                                    <label for="h-end"></label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <div class="input-wrap">
+                                                    <input type="text" id="h-company" class="input-style" placeholder="Company">
+                                                    <label for="h-company">Company</label>
+                                                </div>
+
+                                            </li>
+                                            <li>
+                                                <div class="input-wrap">
+                                                    <input type="text" id="h-position" class="input-style" placeholder="Position">
+                                                    <label for="h-position">Position</label>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="input-wrap">
+                                            <textarea id="h-message" name="text" class="input-style" placeholder="Give a brief description of your duties"></textarea>
+                                            <label for="h-message" class="show">Job Description</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="right-arrow job">Add another job</span>
+                            <span class="right-arrow hide job">Remove job</span>
+                        </div>
+                        <div class="check-box">
+                            <span class="check-style">
+                                <input  type="checkbox" id="checkbox" value="yes">
+                                <span>I agree to the application and background check agreement</span>
+                            </span>
+                        </div>
+
+                        <div class="form-btn-box">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>

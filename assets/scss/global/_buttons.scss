@@ -75,3 +75,35 @@ a.btn, .btn {
     z-index: 9999;
   }
 }
+a.down-arrow,
+.down-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 17px 41px 17px 27px;
+  font-family: $font-mem-bold;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.5em;
+  letter-spacing: 0.12em;
+  color: $color-text;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include css3-prefix('transition', 'all .25s ease');
+  &:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 28px;
+    right: 1px;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 10px solid #cd0000;
+  }
+  &:hover,
+  &:focus {
+    opacity: 1;
+    color: #cd0000;
+  }
+}

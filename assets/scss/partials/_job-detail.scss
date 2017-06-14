@@ -12,6 +12,7 @@ a.right-arrow,
   color: $color-text;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
   @include css3-prefix('transition', 'all .25s ease');
   &:after {
     position: relative;
