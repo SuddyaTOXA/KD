@@ -209,4 +209,16 @@ $(document).ready(function() {
                 }
         }
     });
+
+    //for select
+    $('select').on('change',function(){
+        var color = $(this).find('option:selected').attr('value');
+        console.log(color);
+        if (color) {
+            $(this).addClass('check');
+        } else {
+            $(this).removeClass('check');
+        }
+
+    });
 });

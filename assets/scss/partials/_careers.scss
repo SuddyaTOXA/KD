@@ -1,9 +1,12 @@
 .section-what-say {
+  padding-top: 100px;
+  padding-bottom: 120px;
   .center {
     max-width: 1580px;
   }
   .section-title {
-
+    margin-bottom: 60px;
+    text-align: center;
   }
 }
   .what-say-list {
@@ -55,3 +58,60 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
       }
+
+.section-positions {
+  padding-top: 100px;
+  padding-bottom: 160px;
+  .section-title {
+    margin-bottom: 78px;
+  }
+  .center {
+    max-width: 1400px;
+    > * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .job-detail-box {
+    margin-bottom: 87px;
+    > * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+    .box-title {
+      font-size: 34px;
+    }
+    .job-detail-header-box  {
+      margin-bottom: 3px;
+    }
+    .content {
+      margin-bottom: 22px;
+    }
+    .bnt-box a:first-child {
+      padding-left: 1px;
+    }
+    a.right-arrow:after,
+    .right-arrow:after {
+      margin-left: 23px;
+    }
+}
+
+.section-careers-form {
+  padding-top: 160px;
+  padding-bottom: 100px;
+  .center {
+    max-width: 1400px;
+  }
+  .section-title {}
+}
+  .career-form-box {
+    max-width: 738px;
+  }
+    .career-form-list {
+       > li {
+         margin-bottom: 70px;
+       }
+    }

@@ -286,111 +286,198 @@
                 </div>
             </div>
 
+            <div class="section-positions">
+                <div class="center">
+                    <h2 class="section-title">Open positions</h2>
+                    <div class="job-detail-box">
+                        <div class="job-detail-header-box">
+                            <h1 class="box-title">ReallyLong Job Title</h1>
+                            <span class="job-info">Full Time / Year Round</span>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis justo in leo
+                                dignissim pellentesque. Aliquam erat volutpat. Praesent vulputate leo et diam tristique
+                                facilisis. Proin purus sapien, tincidunt ac mattis vitae, laoreet sit amet tortor. Nam
+                                tempor, dui vitae ultrices placerat, enim purus laoreet tellus, eget fringilla leo nisi
+                                eu enim. Nullam non faucibus nunc. Vivamus justo erat, ullamcorper vel ex eget,
+                                dignissim vehicula nunc.
+                            </p>
+                        </div>
+
+                        <div class="bnt-box">
+                            <a href="/broken" class="right-arrow">Details / Apply now</a>
+                        </div>
+                    </div>
+
+                    <div class="job-detail-box">
+                        <div class="job-detail-header-box">
+                            <h1 class="box-title">ReallyLong Job Title</h1>
+                            <span class="job-info">Full Time / Year Round</span>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis justo in leo
+                                dignissim pellentesque. Aliquam erat volutpat. Praesent vulputate leo et diam tristique
+                                facilisis. Proin purus sapien, tincidunt ac mattis vitae, laoreet sit amet tortor. Nam
+                                tempor, dui vitae ultrices placerat, enim purus laoreet tellus, eget fringilla leo nisi
+                                eu enim. Nullam non faucibus nunc. Vivamus justo erat, ullamcorper vel ex eget,
+                                dignissim vehicula nunc.
+                            </p>
+                        </div>
+
+                        <div class="bnt-box">
+                            <a href="/broken" class="right-arrow">Details / Apply now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="section-careers-form">
                 <div class="center">
                     <h2 class="section-title">Apply now</h2>
                     <div class="career-form-box">
                         <ul class="career-form-list">
                             <li>
+                                <!--<label for="c-position">position applying for</label>-->
                                  <span class="select-wrap">
-                                    <select>
-                                        <option value="All_day">All day</option>
-                                        <option value="Morning">Morning</option>
-                                        <option value="Afternoon">Afternoon</option>
-                                        <option value="Fireworks">Fireworks</option>
+                                    <select id="c-position">
+                                        <option value="" selected>position applying for</option>
+                                        <option value="1">position 1</option>
+                                        <option value="2">position 2</option>
+                                        <option value="3">position 3</option>
                                     </select>
                                 </span>
                             </li>
                             <li>
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <input type="text" class="input-style" placeholder="name">
-                            </li>
-                            <li>
-                                <input type="text" class="input-style" placeholder="name">
-                            </li>
-                            <li>
-                                <input type="text" class="input-style" placeholder="name">
-                            </li>
-                            <li>
-                                <ul>
                                     <li>
-                                        <input type="text" class="input-style" placeholder="name">
+                                        <div class="input-wrap">
+                                            <input type="text" id="c-first-name" class="input-style" placeholder="first name">
+                                            <label for="c-first-name">first name</label>
+                                        </div>
                                     </li>
                                     <li>
-                                        <span class="select-wrap">
-                                            <select>
-                                                <option value="All_day">All day</option>
-                                                <option value="Morning">Morning</option>
-                                                <option value="Afternoon">Afternoon</option>
-                                                <option value="Fireworks">Fireworks</option>
-                                            </select>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <input type="text" class="input-style" placeholder="name">
+                                        <div class="input-wrap">
+                                            <input type="text" id="c-last-name" class="input-style" placeholder="last name">
+                                            <label for="c-last-name">last name</label>
+                                        </div>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <ul>
-                                    <li>
-                                        <span class="select-wrap">
-                                            <select>
-                                                <option value="All_day">All day</option>
-                                                <option value="Morning">Morning</option>
-                                                <option value="Afternoon">Afternoon</option>
-                                                <option value="Fireworks">Fireworks</option>
-                                            </select>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="select-wrap">
-                                            <select>
-                                                <option value="All_day">All day</option>
-                                                <option value="Morning">Morning</option>
-                                                <option value="Afternoon">Afternoon</option>
-                                                <option value="Fireworks">Fireworks</option>
-                                            </select>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="select-wrap">
-                                            <select>
-                                                <option value="All_day">All day</option>
-                                                <option value="Morning">Morning</option>
-                                                <option value="Afternoon">Afternoon</option>
-                                                <option value="Fireworks">Fireworks</option>
-                                            </select>
-                                        </span>
-                                    </li>
-                                </ul>
+                                <div class="input-wrap">
+                                    <input type="email" id="c-email" class="input-style" placeholder="email">
+                                    <label for="c-email">email</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-wrap">
+                                    <input type="tel" id="c-phone" class="input-style" placeholder="phone">
+                                    <label for="c-phone">phone</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-wrap">
+                                    <input type="text" id="c-address" class="input-style" placeholder="address">
+                                    <label for="c-address">address</label>
+                                </div>
                             </li>
                             <li>
                                 <ul>
-                                    <li></li>
                                     <li>
+                                        <div class="input-wrap">
+                                            <input type="text" id="c-city" class="input-style" placeholder="City">
+                                            <label for="c-city">City</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-wrap">
                                          <span class="select-wrap">
-                                            <select>
-                                                <option value="All_day">All day</option>
-                                                <option value="Morning">Morning</option>
-                                                <option value="Afternoon">Afternoon</option>
-                                                <option value="Fireworks">Fireworks</option>
-                                            </select>
-                                        </span>
+                                                <select id="c-state">
+                                                    <option value="state" selected>State</option>
+                                                    <option value="1">State 1</option>
+                                                    <option value="2">State 2</option>
+                                                    <option value="3">State 3</option>
+                                                </select>
+                                            </span>
+                                            <!--<label for="c-state">State</label>-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-wrap">
+                                            <input type="text" id="c-zipcode" class="input-style" placeholder="Zipcode">
+                                            <label for="c-zipcode">Zipcode</label>
+                                        </div>
                                     </li>
                                 </ul>
                             </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-
+                            <li>
+                                <ul>
+                                    <li>
+                                        <div class="input-wrap">
+                                             <span class="select-wrap">
+                                                <select id="c-birth">
+                                                    <option value="month" selected>month</option>
+                                                    <option value="1">month 1</option>
+                                                    <option value="2">month 2</option>
+                                                    <option value="3">month 3</option>
+                                                </select>
+                                            </span>
+                                            <label for="c-birth" class="show">date of birth</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-wrap">
+                                             <span class="select-wrap">
+                                                <select id="c-day">
+                                                    <option value="day" selected>day</option>
+                                                    <option value="1">day 1</option>
+                                                    <option value="2">day 2</option>
+                                                    <option value="3">day 3</option>
+                                                </select>
+                                            </span>
+                                            <!--<label for="c-day">day</label>-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-wrap">
+                                             <span class="select-wrap">
+                                                <select id="c-year">
+                                                    <option value="year" selected>year</option>
+                                                    <option value="1">year 1</option>
+                                                    <option value="2">year 2</option>
+                                                    <option value="3">year 3</option>
+                                                </select>
+                                            </span>
+                                            <!--<label for="c-year">year</label>-->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <div class="input-wrap">
+                                            <input type="text" id="c-license" class="input-style" placeholder="CDL Driver’s License #">
+                                            <label for="c-license">CDL Driver’s License #</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-wrap">
+                                             <span class="select-wrap">
+                                                <select id="c-CDL">
+                                                    <option value="state" selected>CDL State</option>
+                                                    <option value="1">state 1</option>
+                                                    <option value="2">state 2</option>
+                                                    <option value="3">state 3</option>
+                                                </select>
+                                            </span>
+                                            <!--<label for="c-CDL">CDL State</label>-->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
