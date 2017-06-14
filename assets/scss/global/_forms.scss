@@ -2,31 +2,32 @@
   position: relative;
   padding-top: 15px;
 }
-
-label {
-  position: absolute;
-  display: block;
-  font-size: 12px;
-  font-family: $font-s-light;
-  font-weight: $light;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  opacity: 0;
-  @include transition($transition-other);
-  &:not(.show) {
-    bottom: 0;
-    left: 0;
+.input-wrap {
+  label {
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    font-family: $font-s-light;
+    font-weight: $light;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    opacity: 0;
+    @include transition($transition-other);
+    &:not(.show) {
+      bottom: 0;
+      left: 0;
+    }
+    &.show {
+      top: -2px;
+      bottom: auto;
+      opacity: 1;
+    }
   }
-  &.show {
+  .input-style:focus + label {
     top: -2px;
     bottom: auto;
     opacity: 1;
   }
-}
-.input-style:focus + label {
-  top: -2px;
-  bottom: auto;
-  opacity: 1;
 }
 
 .input-style {
@@ -237,7 +238,7 @@ select {
   border-radius: 2px;
   cursor: pointer;
   color: #757575;
-  font: normal normal normal 18px/20px FontAwesome;
+  font: normal normal normal 14px/15px FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   text-align: center;
@@ -271,31 +272,17 @@ select {
   border: 2px solid #CDCDCD;
   cursor: pointer;
   @include css3-prefix('transition', 'all .25s ease');
-  &:hover {
+  &:hover,
+  &:focus {
     color: $white;
     background-color: #57A800;
     border-color: #57A800;
+    opacity: 0.7;
   }
 }
-//.radio-style span:before {
-//  content: '';
-//  position: absolute;
-//  top: 50%;
-//  margin-top: -13px;
-//  left: 0;
-//  display: inline-block;
-//  width: 67px;
-//  height: 41px;
-//  border: 2px solid #CDCDCD;
-//  cursor: pointer;
-//  color: #0097de;
-//  font: normal normal normal 17px/20px FontAwesome;
-//  text-rendering: auto;
-//  -webkit-font-smoothing: antialiased;
-//  text-align: center;
-//  background: #ffffff;
-//  letter-spacing: 1px;
-//}
-//.radio-style input[type=radio]:checked + span:before {
-//  content: '\f111';
-//}
+.radio-style input[type=radio]:checked + .radio-btn {
+  color: $white;
+  background-color: #57A800;
+  border-color: #57A800;
+}
+

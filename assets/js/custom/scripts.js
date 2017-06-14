@@ -219,6 +219,14 @@ $(document).ready(function() {
         } else {
             $(this).removeClass('check');
         }
-
     });
+
+    //for job history
+    $('.right-arrow.job').on('click', function () {
+        var btn = $(this),
+            jobBox = btn.prev(),
+            jobForm = jobBox.find('.job-history-list:first');
+
+            jobForm.clone().appendTo(jobBox);
+    })
 });

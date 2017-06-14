@@ -184,6 +184,53 @@
                 <div class="bottom"></div>
             </div>
 
+            <div class="section-advancement">
+                <div class="center">
+                    <div class="left-box">
+                        <h3 class="advancement-title">advancement and promotions</h3>
+                        <ul class="promotions-list">
+                            <li>
+                                <div class="promotions-box">
+                                    <div class="promotions-circle"></div>
+                                   <p class="promotions-desc">75% of all promotions are
+                                       made from within Kolde</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="promotions-box">
+                                    <div class="promotions-circle"></div>
+                                    <p class="promotions-desc">72% of all Kolde employees
+                                        are promoted, 53% of those
+                                        are promoted a second time, 30%
+                                        of those employees are promoted
+                                        a third time or more</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-box">
+                        <h3 class="advancement-title">job retention</h3>
+                        <ul class="retention-list">
+                            <li>
+                                <div class="retention-box">
+                                    <div class="retention-line"></div>
+                                    <p class="retention-desc">The average Kolde employee stays with
+                                        us for an average of 6.3 years</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="retention-box">
+                                    <div class="retention-line"></div>
+                                    <p class="retention-desc">At Kolde, providing stability for your family
+                                        and you is key. That's why year-round work for each of our employees
+                                        is a priority for us.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <div class="section-what-say">
                 <div class="center">
                     <h2 class="section-title">What our employees say</h2>
@@ -481,23 +528,31 @@
                             <li>
                                 <span class="radio-name">Have you ever been convicted of a felony?</span>
                                 <span class="radio-style">
-                                    <input  type="radio" name="convicted" value="yes">
-                                    <span class="radio-btn">YES</span>
+                                    <label>
+                                        <input  type="radio" name="convicted" value="yes">
+                                        <span class="radio-btn">YES</span>
+                                    </label>
                                 </span>
                                 <span class="radio-style">
-                                    <input  type="radio" name="convicted" value="no">
-                                    <span class="radio-btn">NO</span>
+                                    <label>
+                                        <input  type="radio" name="convicted" value="no">
+                                        <span class="radio-btn">NO</span>
+                                    </label>
                                 </span>
                             </li>
                             <li>
                                 <span class="radio-name">Are you authorized to work in the US??</span>
                                 <span class="radio-style">
-                                    <input  type="radio" name="authorized" value="yes">
-                                    <span class="radio-btn">YES</span>
+                                    <label>
+                                        <input  type="radio" name="authorized" value="yes">
+                                        <span class="radio-btn">YES</span>
+                                    </label>
                                 </span>
                                 <span class="radio-style">
-                                    <input  type="radio" name="authorized" value="no">
-                                    <span class="radio-btn">NO</span>
+                                    <label>
+                                        <input  type="radio" name="authorized" value="no">
+                                        <span class="radio-btn">NO</span>
+                                    </label>
                                 </span>
                             </li>
                         </ul>
@@ -547,56 +602,15 @@
                                     </div>
                                 </li>
                             </ul>
-                                <ul id="another" class="job-history-list hide">
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                <div class="input-wrap">
-                                                    <input type="text" id="h-begin" class="input-style" placeholder="start date (ex. January 2010)">
-                                                    <label class="show" for="h-begin">Most Recent Job</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="input-wrap">
-                                                    <input type="text" id="h-end" class="input-style" placeholder="end date (ex. January 2010, present)">
-                                                    <label for="h-end"></label>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                <div class="input-wrap">
-                                                    <input type="text" id="h-company" class="input-style" placeholder="Company">
-                                                    <label for="h-company">Company</label>
-                                                </div>
-
-                                            </li>
-                                            <li>
-                                                <div class="input-wrap">
-                                                    <input type="text" id="h-position" class="input-style" placeholder="Position">
-                                                    <label for="h-position">Position</label>
-                                                </div>
-
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <div class="input-wrap">
-                                            <textarea id="h-message" name="text" class="input-style" placeholder="Give a brief description of your duties"></textarea>
-                                            <label for="h-message" class="show">Job Description</label>
-                                        </div>
-                                    </li>
-                                </ul>
                             </div>
                             <span class="right-arrow job">Add another job</span>
-                            <span class="right-arrow hide job">Remove job</span>
                         </div>
                         <div class="check-box">
                             <span class="check-style">
-                                <input  type="checkbox" id="checkbox" value="yes">
-                                <span>I agree to the application and background check agreement</span>
+                                <label>
+                                    <input  type="checkbox" id="checkbox" value="yes" required>
+                                    <span>I agree to the application and background check agreement</span>
+                                </label>
                             </span>
                         </div>
 
