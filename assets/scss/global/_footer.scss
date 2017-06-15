@@ -622,15 +622,15 @@ a.footerContact:focus {
       min-width: 100%;
       width: auto;
       height: auto;
-      top: 50%;
-      left: 50%;
+      top: 0;
     }
     .footer-box.left & {
       left: 0;
       @include css3-prefix('transform', 'rotate(6.5deg)');
       transform-origin: top left;
       img {
-        @include css3-prefix('transform', 'translate(-50%, -50%) rotate(-6.5deg)');
+        left: 0;
+        @include css3-prefix('transform', 'rotate(-6.5deg)');
         transform-origin: top left;
       }
     }
@@ -639,7 +639,8 @@ a.footerContact:focus {
       @include css3-prefix('transform', 'rotate(-6.5deg)');
       transform-origin: top right;
       img {
-        @include css3-prefix('transform', 'translate(-50%, -50%) rotate(6.5deg)');
+        right: 0;
+        @include css3-prefix('transform', 'rotate(6.5deg)');
         transform-origin: top right;
       }
     }
