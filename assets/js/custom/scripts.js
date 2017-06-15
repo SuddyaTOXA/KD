@@ -56,6 +56,15 @@ function msieversion() {
 
     return false;
 }
+function setMaxOuterHeight(box) {
+    var maxHeight = 0;
+    box.each(function () {
+        if ( $(this).outerHeight() > maxHeight ) {
+            maxHeight = $(this).outerHeight();
+        }
+    });
+    box.height(maxHeight);
+}
 $(document).ready(function() {
     msieversion();
 
@@ -95,11 +104,19 @@ $(document).ready(function() {
     if($('.browserHeight').length ) {
         $(window).on('load resize', function() {
             var banner = $('.browserHeight'),
-                winHeight = $(window).height() - 156;
+                winHeight = $(window).height() - 76;
 
             banner.height(winHeight);
         });
     }
+
+    //for footer
+    // $(window).on('load resize', function() {
+    //     if($('.footer-top-list').length) {
+    //         var box = $('.footer-table');
+    //         setMaxOuterHeight(box);
+    //     }
+    // });
 
     //for sticky btn
     stickyBtn();

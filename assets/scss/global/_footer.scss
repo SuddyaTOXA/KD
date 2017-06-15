@@ -4,7 +4,10 @@
   display: block;
   width: 100%;
 }
-.homeBannerWrap + .footerWrap { margin: -11.5% 0 0 0; }
+.homeBannerWrap + .footerWrap {
+  margin-top: -205px;
+
+}
 .footerPageWrap {
   position: relative;
   display: table;
@@ -461,3 +464,188 @@ a.footerContact:focus {
     line-height: 1.4;
   }
 }
+
+
+.footer-top-list {
+  overflow: hidden;
+  > li {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+}
+  .footer-box {
+    overflow: hidden;
+    position: relative;
+    .footerPageCTA {
+      min-width: 306px;
+      width: auto;
+      margin: 30px 0 0 3px;
+      padding: 19px 70px 15px 32px;
+      &:after {
+        margin: -9px -4px 0 0;
+      }
+    }
+    &.left {
+
+    }
+    &.right {
+      .footerPageCTA {
+        background: rgba(0, 0, 0, 0.4);
+        &:after {
+          border-left-color: $white;
+        }
+      }
+      &:hover,
+      &:focus {
+        .footerPageCTA {
+          color: #cd0000;
+          background: #fff;
+          &:after {
+            border-left-color: #cd0000;
+          }
+        }
+      }
+    }
+    a {
+      position: relative;
+      z-index: 100;
+      display: block;
+      text-decoration: none;
+      &.anchor:hover,
+      &.anchor:focus {
+        .anchor-box-overlay {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+      }
+      &:hover,
+      &:focus {
+        .footerPageCTA {
+          color: #cd0000;
+          background: #fff;
+        }
+        .footer-table {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+  }
+  .anchor-box {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 32px 20px 32px;
+    .footer-box.left & {
+      text-align: left;
+    }
+    .footer-box.right & {
+      text-align: right;
+    }
+    a.down-arrow, .down-arrow {
+      z-index: 100;
+      color: $white;
+    }
+    .anchor-box-overlay {
+      position: absolute;
+      z-index: 90;
+      width: 120%;
+      height: 100%;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0);
+      @include css3-prefix('transition', 'all .25s ease');
+      .footer-box.left & {
+          left: 0;
+          @include css3-prefix('transform', 'rotate(6.5deg)');
+          transform-origin: top left;
+      }
+      .footer-box.right & {
+          right: 0;
+          @include css3-prefix('transform', 'rotate(-6.5deg)');
+          transform-origin: top right;
+      }
+    }
+    //&:after {
+    //  position: absolute;
+    //  content: '';
+    //  width: 120%;
+    //  height: 100%;
+    //  top: 0;
+    //  background-color: rgba(0, 0, 0, 0.7);
+    //}
+
+    //.footer-box.left & {
+    //  @include css3-prefix('transform', 'rotate(6.5deg)');
+    //  transform-origin: top left;
+    //  a.down-arrow, .down-arrow {
+    //    @include css3-prefix('transform', 'translate(-50%, -50%) rotate(-6.5deg)');
+    //    transform-origin: top left;
+    //  }
+    //}
+  }
+
+  .footer-table {
+    position: relative;
+    z-index: 100;
+    display: table;
+    min-height: 600px;
+    width: 100%;
+    padding: 50px 20px 50px;
+    @include css3-prefix('transition', 'all .25s ease');
+  }
+    .footer-cell {
+      display: table-cell;
+      width: 100%;
+      height: 100px;
+      vertical-align: middle;
+    }
+  .footer-img-box {
+    position: absolute;
+    z-index: 90;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    &:after {
+      position: absolute;
+      z-index: 95;
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.68);
+    }
+    img {
+      position: absolute;
+      min-height: 100%;
+      min-width: 100%;
+      width: auto;
+      height: auto;
+      top: 50%;
+      left: 50%;
+    }
+    .footer-box.left & {
+      left: 0;
+      @include css3-prefix('transform', 'rotate(6.5deg)');
+      transform-origin: top left;
+      img {
+        @include css3-prefix('transform', 'translate(-50%, -50%) rotate(-6.5deg)');
+        transform-origin: top left;
+      }
+    }
+    .footer-box.right & {
+      right: 0;
+      @include css3-prefix('transform', 'rotate(-6.5deg)');
+      transform-origin: top right;
+      img {
+        @include css3-prefix('transform', 'translate(-50%, -50%) rotate(6.5deg)');
+        transform-origin: top right;
+      }
+    }
+  }
+  .footer-cell-content {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
