@@ -104,7 +104,7 @@ $(document).ready(function() {
     if($('.browserHeight').length ) {
         $(window).on('load resize', function() {
             var banner = $('.browserHeight'),
-                winHeight = $(window).height() - 76;
+                winHeight = $(window).height() - 106;
 
             banner.height(winHeight);
         });

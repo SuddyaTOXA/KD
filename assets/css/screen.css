@@ -406,7 +406,7 @@ a.down-arrow,
   padding: 17px 41px 17px 27px;
   font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1.5em;
   letter-spacing: 0.12em;
   color: #232323;
@@ -917,7 +917,8 @@ select {
   line-height: 1.14em;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  max-width: 450px; }
 
 .footerPageCTA {
   position: relative;
@@ -1309,14 +1310,17 @@ a.footerContact:focus {
   position: relative;
   display: block;
   width: 100%;
-  padding: 32px 20px 32px; }
+  padding: 58px 20px 32px;
+  min-height: 156px; }
   .footer-box.left .anchor-box {
     text-align: left; }
   .footer-box.right .anchor-box {
-    text-align: right; }
+    text-align: right;
+    padding-right: 155px; }
   .anchor-box a.down-arrow, .anchor-box .down-arrow {
     z-index: 100;
-    color: #ffffff; }
+    color: #ffffff;
+    padding: 17px 47px 17px 132px; }
   .anchor-box .anchor-box-overlay {
     position: absolute;
     z-index: 90;
@@ -1354,6 +1358,7 @@ a.footerContact:focus {
   z-index: 100;
   display: table;
   min-height: 600px;
+  height: 668px;
   width: 100%;
   padding: 50px 20px 50px;
   -webkit-transition: all .25s ease;
@@ -1362,11 +1367,14 @@ a.footerContact:focus {
   -ms-transition: all .25s ease;
   -o-transition: all .25s ease;
   transition: all .25s ease; }
+  .footer-box.right .footer-table {
+    padding-left: 130px; }
 
 .footer-cell {
   display: table-cell;
   width: 100%;
   height: 100px;
+  padding-bottom: 36px;
   vertical-align: middle; }
 
 .footer-img-box {
@@ -1430,7 +1438,7 @@ a.footerContact:focus {
       transform-origin: top right; }
 
 .footer-cell-content {
-  max-width: 450px;
+  max-width: 650px;
   margin: 0 auto; }
 
 /* styles used throughout site */
@@ -1462,7 +1470,7 @@ a.footerContact:focus {
   width: 100%;
   height: 100px;
   vertical-align: bottom;
-  padding-bottom: 190px; }
+  padding-bottom: 152px; }
   .homeBannerContent h1 {
     position: relative;
     display: block;
@@ -1475,12 +1483,12 @@ a.footerContact:focus {
     color: #fff;
     text-transform: uppercase; }
   .homeBannerContent .center {
-    max-width: 1080px; }
+    max-width: 1280px; }
 
 .homeBannerSubline {
   position: relative;
   display: block;
-  padding: 10px 36px 0 0;
+  padding: 10px 231px 0 0;
   text-align: right;
   font-family: "Mr Eaves Mod Book", Arial, Verdana, Tahoma, sans-serif;
   font-size: 28px;
