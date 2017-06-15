@@ -68,6 +68,7 @@ function circleProgressBar() {
             var radius = $(this).data('radius'),
                 mainCircle = $(this).data('mainCircle');
 
+                if (!radius) { radius = 130; }
                 if (mainCircle) {
                     var width = radius * 2,
                         mainStrokeWidth = 10,
