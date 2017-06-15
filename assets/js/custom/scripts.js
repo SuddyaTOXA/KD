@@ -15,7 +15,7 @@ function stickyBtn() {
 
                 $(window).on('scroll', function () {
                     var currentPosition = $(window).scrollTop();
-                    //console.log('Current-position' + currentPosition);
+
                     if (currentPosition > (positionTop - btnTopPosition) && currentPosition < (positionBottom - btnBotoomPosition)) {
                         if (!(btn.hasClass('b-fixed'))) {
                             btn.addClass('b-fixed');
@@ -44,14 +44,8 @@ function msieversion() {
     var ua = window.navigator.userAgent;
     var msie = ua.indexOf("MSIE ");
 
-    if (msie > 0) // If Internet Explorer, return version number
-    {
+    if (msie > 0) {
         $('body').addClass('ie');
-        console.log(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
-    }
-    else  // If another browser, return 0
-    {
-        console.log('otherbrowser');
     }
 
     return false;
@@ -219,8 +213,6 @@ $(document).ready(function() {
                 btn = cell.find('.btn'),
                 cellWidth = cell.width(),
                 btnWidth = btn.outerWidth();
-                console.log(cellWidth);
-                console.log(btnWidth);
 
                 if (cellWidth < btnWidth) {
                     btn.css('max-width', cellWidth);
@@ -237,7 +229,6 @@ $(document).ready(function() {
     //for select
     $('select').on('change',function(){
         var color = $(this).find('option:selected').attr('value');
-        console.log(color);
         if (color) {
             $(this).addClass('check');
         } else {

@@ -569,23 +569,6 @@ a.footerContact:focus {
           transform-origin: top right;
       }
     }
-    //&:after {
-    //  position: absolute;
-    //  content: '';
-    //  width: 120%;
-    //  height: 100%;
-    //  top: 0;
-    //  background-color: rgba(0, 0, 0, 0.7);
-    //}
-
-    //.footer-box.left & {
-    //  @include css3-prefix('transform', 'rotate(6.5deg)');
-    //  transform-origin: top left;
-    //  a.down-arrow, .down-arrow {
-    //    @include css3-prefix('transform', 'translate(-50%, -50%) rotate(-6.5deg)');
-    //    transform-origin: top left;
-    //  }
-    //}
   }
 
   .footer-table {
@@ -659,3 +642,15 @@ a.footerContact:focus {
     margin: 0 auto;
   }
 
+body:not(.home) {
+  .anchor {
+    display: none;
+  }
+  .footer-table {
+    height: 824px;
+  }
+  .footer-box a:hover .footer-table,
+  .footer-box a:focus .footer-table {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
