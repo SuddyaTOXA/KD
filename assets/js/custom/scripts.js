@@ -59,8 +59,73 @@ function setMaxOuterHeight(box) {
     });
     box.height(maxHeight);
 }
+function circleProgressBar() {
+    if ($('.circle-bar').length) {
+        var bar = $('.circle-bar'),
+            pi = Math.PI;
+
+        bar.each(function () {
+            var radius = $(this).data('radius'),
+                mainCircle = $(this).data('mainCircle');
+
+                if (mainCircle) {
+                    var width = radius * 2,
+                        mainStrokeWidth = 10,
+                        trueRadius = radius - (mainStrokeWidth / 2),
+                        mainStrokeDasharray = 2 * pi * trueRadius,
+                        mainStrokeDashoffset = mainStrokeDasharray * ((100 - mainCircle) * 0.01),
+                        circleBg = '<circle cx="'+ radius +'" cy="'+ radius +'" r="'+ trueRadius +'" fill="none" stroke="#EAEAEA" stroke-width="'+ mainStrokeWidth +'" />',
+                        circleMain =  '<circle cx="'+ radius +'" cy="'+ radius +'" r="'+ trueRadius +'" fill="none" stroke="#cd0000" stroke-width="'+ mainStrokeWidth +'" stroke-dasharray="'+ mainStrokeDasharray +'" stroke-dashoffset="'+ mainStrokeDashoffset +'" />',
+                        circles = circleBg + circleMain;
+
+                    var secondCircle = $(this).data('secondCircle');
+
+                    if (secondCircle) {
+                        var secondStrokeWidth = 16,
+                            secondRadius = radius - mainStrokeWidth,
+                            secondTrueRadius = secondRadius- (secondStrokeWidth / 2),
+                            secondStrokeDasharray = 2 * pi * secondTrueRadius,
+                            secondStrokeDashoffset = secondStrokeDasharray * ((100 - secondCircle) * 0.01),
+                            circleSecond =  '<circle cx="'+ secondRadius +'" cy="'+ secondRadius +'" r="'+ secondTrueRadius +'" fill="none" stroke="#FE4040" stroke-width="'+ secondStrokeWidth +'" stroke-dasharray="'+ secondStrokeDasharray +'" stroke-dashoffset="'+ secondStrokeDashoffset +'" transform="translate('+ mainStrokeWidth +', '+ mainStrokeWidth +')"/>',
+                            circles = circles + circleSecond;
+
+                        var thirdCircle = $(this).data('thirdCircle');
+
+                        if (thirdCircle) {
+                            var thirdStrokeWidth = 22,
+                                offset = mainStrokeWidth + secondStrokeWidth,
+                                thirdRadius = radius - mainStrokeWidth - secondStrokeWidth,
+                                thirdTrueRadius = thirdRadius - (thirdStrokeWidth / 2),
+                                thirdStrokeDasharray = 2 * pi * thirdTrueRadius,
+                                thirdStrokeDashoffset = thirdStrokeDasharray * ((100 - thirdCircle) * 0.01),
+                                circleThird =  '<circle cx="'+ thirdRadius +'" cy="'+ thirdRadius +'" r="'+ thirdTrueRadius +'" fill="none" stroke="#B00000" stroke-width="'+ thirdStrokeWidth +'" stroke-dasharray="'+ thirdStrokeDasharray +'" stroke-dashoffset="'+ thirdStrokeDashoffset +'" transform="translate('+ offset +', '+ offset +')"/>',
+                                circles = circles + circleThird;
+                        }
+                    }
+                    $(this).html(function () {
+                        return '<svg class="progress-svg" width="'+ width +'" height="'+ width +'" viewbox="0 0 '+ width +' '+ width +'">' + circles + '</svg>';
+                    })
+                }
+        });
+
+        // bar.html('<svg class="progress-svg" width="260" height="260" viewbox="0 0 260 260"><circle cx="130" cy="130" r="125" fill="none" stroke="#EAEAEA" stroke-width="10" /> <circle class="progress__value" cx="130" cy="130" r="125" fill="none" stroke="#cd0000" stroke-width="10" /> </svg>');
+        //     bar.html(function () {
+        //         var circleBg = '<circle cx="130" cy="130" r="125" fill="none" stroke="#EAEAEA" stroke-width="10" />',
+        //             circleMain =  '<circle cx="130" cy="130" r="125" fill="none" stroke="#cd0000" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="339.292" />',
+        //             circleSecond =  '<circle cx="130" cy="130" r="125" fill="none" stroke="#cd0000" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="339.292" />',
+        //             circleThird =  '<circle cx="130" cy="130" r="125" fill="none" stroke="#cd0000" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="339.292" />',
+        //             circles = '';
+        //
+        //
+        //                 circles = circleBg + circleMain;
+        //
+        //         return '<svg class="progress-svg" width="260" height="260" viewbox="0 0 260 260">' + circles + '</svg>';
+        //     })
+    }
+}
 $(document).ready(function() {
     msieversion();
+    circleProgressBar();
 
     body = $('body');
 
