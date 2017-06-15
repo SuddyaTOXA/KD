@@ -524,6 +524,9 @@ a.footerContact:focus {
         .footerPageCTA {
           color: #cd0000;
           background: #fff;
+          &:after {
+            border-left-color: #cd0000;
+          }
         }
         .footer-table {
           background-color: rgba(0, 0, 0, 0.7);
