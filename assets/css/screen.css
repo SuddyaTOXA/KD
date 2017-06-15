@@ -327,7 +327,7 @@ a.btn, .btn {
   padding: 19px 35px 14px 30px;
   font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.5em;
   letter-spacing: 0.1em;
   color: #fff;
@@ -1126,11 +1126,11 @@ a.footerContact:focus {
   display: inline-block;
   vertical-align: top;
   min-width: 230px;
-  margin: 13px 0 0 0;
-  padding: 16px 58px 16px 30px;
+  margin: 14px 0 0 0;
+  padding: 17px 58px 14px 30px;
   font-family: "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1.5em;
   letter-spacing: 0.1em;
   color: #fff;
@@ -2404,8 +2404,8 @@ a.right-arrow,
 
 .section-about {
   overflow: hidden;
-  padding-top: 60px;
-  padding-bottom: 100px; }
+  padding-top: 85px;
+  padding-bottom: 85px; }
   .section-about .center {
     max-width: 1520px; }
   .section-about .left-box {
@@ -2527,8 +2527,8 @@ a.right-arrow,
 
 .section-leadership {
   position: relative;
-  padding-top: 153px;
-  padding-bottom: 101px; }
+  padding-top: 165px;
+  padding-bottom: 76px; }
   .section-leadership:before {
     position: absolute;
     content: '';
@@ -2537,14 +2537,14 @@ a.right-arrow,
     top: 0;
     background-color: #EAEAEA;
     transform-origin: 50% 50%;
-    -webkit-transform: rotate(-9.6deg);
-    -khtml-transform: rotate(-9.6deg);
-    -moz-transform: rotate(-9.6deg);
-    -ms-transform: rotate(-9.6deg);
-    -o-transform: rotate(-9.6deg);
-    transform: rotate(-9.6deg); }
+    -webkit-transform: rotate(-9.7deg);
+    -khtml-transform: rotate(-9.7deg);
+    -moz-transform: rotate(-9.7deg);
+    -ms-transform: rotate(-9.7deg);
+    -o-transform: rotate(-9.7deg);
+    transform: rotate(-9.7deg); }
   .section-leadership .section-title {
-    padding: 0 10px;
+    padding: 0 0 0 10px;
     margin-bottom: 95px;
     text-align: right; }
   .section-leadership .center {
@@ -2711,7 +2711,7 @@ a.right-arrow,
 
 .section-customers {
   padding-top: 147px;
-  padding-bottom: 203px;
+  padding-bottom: 173px;
   border-top: 2px solid #EAEAEA; }
   .section-customers .section-title {
     margin-bottom: 107px;
@@ -2778,8 +2778,8 @@ a.right-arrow,
     margin-left: 3px; }
   .section-career-banner a.down-arrow, .section-career-banner .down-arrow {
     position: absolute;
-    left: 0;
-    top: -175px; }
+    left: -28px;
+    top: -194px; }
   .section-career-banner.about {
     min-height: 100vh;
     text-align: right; }
@@ -2808,20 +2808,24 @@ a.right-arrow,
         bottom: -140px;
         background-color: #ffffff;
         transform-origin: 50% 50%;
-        -webkit-transform: rotate(9deg) scale(1.2);
-        -khtml-transform: rotate(9deg) scale(1.2);
-        -moz-transform: rotate(9deg) scale(1.2);
-        -ms-transform: rotate(9deg) scale(1.2);
-        -o-transform: rotate(9deg) scale(1.2);
-        transform: rotate(9deg) scale(1.2); }
+        -webkit-transform: rotate(9.7deg) scale(1.2);
+        -khtml-transform: rotate(9.7deg) scale(1.2);
+        -moz-transform: rotate(9.7deg) scale(1.2);
+        -ms-transform: rotate(9.7deg) scale(1.2);
+        -o-transform: rotate(9.7deg) scale(1.2);
+        transform: rotate(9.7deg) scale(1.2); }
     .section-career-banner.about .banner-cell {
       vertical-align: bottom; }
     .section-career-banner.about .banner-desc {
       font-size: 38px;
-      margin-bottom: 0; }
+      margin-bottom: 2px;
+      letter-spacing: .09em; }
     .section-career-banner.about .banner-title {
       max-width: 100%;
-      font-size: 200px; }
+      font-size: 190px;
+      letter-spacing: .16em;
+      position: relative;
+      right: -0.25em; }
     .section-career-banner.about .banner-bottom-box {
       overflow: hidden;
       float: none;
@@ -2829,10 +2833,12 @@ a.right-arrow,
       margin-top: -15px; }
       .section-career-banner.about .banner-bottom-box .bottom-left {
         float: left;
-        text-align: left; }
+        text-align: left;
+        padding-left: 22px;
+        margin-top: 9px; }
       .section-career-banner.about .banner-bottom-box .bottom-right {
         float: right;
-        margin-top: 9px; }
+        margin-top: 17px; }
       .section-career-banner.about .banner-bottom-box a {
         word-spacing: 0.08em; }
     .section-career-banner.about .bottom-name {
@@ -2874,23 +2880,23 @@ a.right-arrow,
   left: 0; }
   .left-overlay:before {
     transform-origin: 100% 100%;
-    -webkit-transform: rotate(10deg) scale(2);
-    -khtml-transform: rotate(10deg) scale(2);
-    -moz-transform: rotate(10deg) scale(2);
-    -ms-transform: rotate(10deg) scale(2);
-    -o-transform: rotate(10deg) scale(2);
-    transform: rotate(10deg) scale(2); }
+    -webkit-transform: rotate(6.3deg) scale(2);
+    -khtml-transform: rotate(6.3deg) scale(2);
+    -moz-transform: rotate(6.3deg) scale(2);
+    -ms-transform: rotate(6.3deg) scale(2);
+    -o-transform: rotate(6.3deg) scale(2);
+    transform: rotate(6.3deg) scale(2); }
 
 .right-overlay {
   right: 0; }
   .right-overlay:before {
     transform-origin: 0 100%;
-    -webkit-transform: rotate(-10deg) scale(2);
-    -khtml-transform: rotate(-10deg) scale(2);
-    -moz-transform: rotate(-10deg) scale(2);
-    -ms-transform: rotate(-10deg) scale(2);
-    -o-transform: rotate(-10deg) scale(2);
-    transform: rotate(-10deg) scale(2); }
+    -webkit-transform: rotate(-6.3deg) scale(2);
+    -khtml-transform: rotate(-6.3deg) scale(2);
+    -moz-transform: rotate(-6.3deg) scale(2);
+    -ms-transform: rotate(-6.3deg) scale(2);
+    -o-transform: rotate(-6.3deg) scale(2);
+    transform: rotate(-6.3deg) scale(2); }
 
 .banner-cell {
   display: table-cell;
@@ -2905,7 +2911,7 @@ a.right-arrow,
     padding: 11px 0 11px;
     margin: 0 18px 10px;
     font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: .12em;
@@ -2968,7 +2974,7 @@ a.right-arrow,
   font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 300;
   font-size: 23px;
-  line-height: 1.7;
+  line-height: 1.75;
   letter-spacing: .02em;
   color: #ffffff; }
   .about-desc strong, .about-desc b {
@@ -2978,7 +2984,7 @@ a.right-arrow,
 .banner-bottom-box {
   float: right;
   display: block;
-  margin-top: 27px;
+  margin-top: 25px;
   margin-bottom: 88px;
   max-width: 280px;
   text-align: right;
@@ -3044,7 +3050,7 @@ a.right-arrow,
     border-top-color: #ee8e8e; }
 
 .section-advancement {
-  padding-top: 100px;
+  padding-top: 157px;
   padding-bottom: 100px; }
   .section-advancement .center {
     overflow: hidden; }
@@ -3085,12 +3091,15 @@ a.right-arrow,
 
 .retention-wrap {
   max-width: 355px;
+  padding-top: 5px;
   text-align: center; }
 
-.retention-list > li {
-  margin-bottom: 82px; }
-  .retention-list > li:last-child {
-    margin-bottom: 0; }
+.retention-list {
+  padding-top: 39px; }
+  .retention-list > li {
+    margin-bottom: 82px; }
+    .retention-list > li:last-child {
+      margin-bottom: 0; }
 
 .retention-box {
   max-width: 355px;
@@ -3116,7 +3125,7 @@ a.right-arrow,
   .progress-line span {
     font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
     font-weight: 900;
-    font-size: 21px;
+    font-size: 22px;
     letter-spacing: .03em;
     line-height: 1;
     text-transform: uppercase; }
@@ -3165,17 +3174,18 @@ a.right-arrow,
       transition: all .55s ease; }
 
 .section-what-say {
-  padding-top: 100px;
+  padding-top: 106px;
   padding-bottom: 120px; }
   .section-what-say .center {
-    max-width: 1580px; }
+    max-width: 1670px; }
   .section-what-say .section-title {
-    margin-bottom: 60px;
-    text-align: center; }
+    margin-bottom: 94px;
+    text-align: center;
+    letter-spacing: 0.12em; }
   .section-what-say a.down-arrow,
   .section-what-say .down-arrow {
-    margin-top: 73px;
-    margin-right: 52px;
+    margin-top: 76px;
+    margin-right: 85px;
     float: right; }
 
 .what-say-list {
@@ -3192,18 +3202,21 @@ a.right-arrow,
   margin: 0 auto;
   padding: 0 10px; }
   .what-say-box .content {
-    margin-bottom: 43px;
+    margin-bottom: 42px;
+    font-family: "Soleil Regular", Arial, Verdana, Tahoma, sans-serif;
     font-size: 20px;
-    line-height: 1.6; }
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0; }
   .what-say-box:last-child {
     margin-bottom: 0; }
 
 .what-say-title {
-  margin-bottom: -3px;
+  margin-bottom: 2px;
   font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 900;
   font-size: 28px;
-  line-height: 1.3;
+  line-height: 1.2;
   letter-spacing: 0.12em; }
 
 .what-name {
@@ -3226,7 +3239,7 @@ a.right-arrow,
 
 .section-positions {
   padding-top: 100px;
-  padding-bottom: 160px; }
+  padding-bottom: 177px; }
   .section-positions .section-title {
     margin-bottom: 78px; }
   .section-positions .center {
@@ -3250,8 +3263,8 @@ a.right-arrow,
     margin-left: 23px; }
 
 .section-careers-form {
-  padding-top: 160px;
-  padding-bottom: 100px; }
+  padding-top: 134px;
+  padding-bottom: 120px; }
   .section-careers-form .center {
     max-width: 1400px; }
   .section-careers-form a.right-arrow,
@@ -3265,7 +3278,8 @@ a.right-arrow,
     margin-top: 21px; }
 
 .career-form-box {
-  max-width: 737px; }
+  max-width: 737px;
+  padding-top: 64px; }
 
 .career-form-list {
   margin-bottom: 80px; }

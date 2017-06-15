@@ -1,7 +1,7 @@
 .section-about {
   overflow: hidden;
-  padding-top: 60px;
-  padding-bottom: 100px;
+  padding-top: 85px;
+  padding-bottom: 85px;
   .center {
     max-width: 1520px;
   }
@@ -141,8 +141,8 @@
 
 .section-leadership {
   position: relative;
-  padding-top: 153px;
-  padding-bottom: 101px;
+  padding-top: 165px;
+  padding-bottom: 76px;
   &:before {
     position: absolute;
     content: '';
@@ -151,10 +151,10 @@
     top: 0;
     background-color: #EAEAEA;
     transform-origin: 50% 50%;
-    @include css3-prefix('transform', 'rotate(-9.6deg)');
+    @include css3-prefix('transform', 'rotate(-9.7deg)');
   }
   .section-title {
-    padding: 0 10px;
+    padding: 0 0 0 10px;
     margin-bottom: 95px;
     text-align: right;
   }
@@ -334,7 +334,7 @@
 
 .section-customers {
   padding-top: 147px;
-  padding-bottom: 203px;
+  padding-bottom: 173px;
   border-top: 2px solid #EAEAEA;
   .section-title {
     margin-bottom: 107px;
