@@ -41,10 +41,11 @@ function stickyBtn() {
     }
 }
 function msieversion() {
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf("MSIE ");
-
-    if (msie > 0) {
+    var ua = window.navigator.userAgent,
+        msie = ua.indexOf('MSIE '),
+        trident = ua.indexOf('Trident/'),
+        edge = ua.indexOf('Edge/');
+    if (msie > 0 || trident > 0 || edge > 0) {
         $('body').addClass('ie');
     }
 
