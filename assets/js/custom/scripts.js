@@ -77,32 +77,30 @@ function circleProgressBar() {
                         mainStrokeDashoffset = mainStrokeDasharray * ((100 - mainCircle) * 0.01),
                         circleBg = '<circle cx="'+ radius +'" cy="'+ radius +'" r="'+ trueRadius +'" fill="none" stroke="#EAEAEA" stroke-width="'+ mainStrokeWidth +'" />',
                         circleMain =  '<circle class="cpb-main" cx="'+ radius +'" cy="'+ radius +'" r="'+ trueRadius +'" fill="none" stroke="#cd0000" stroke-width="'+ mainStrokeWidth +'" stroke-dasharray="'+ mainStrokeDasharray +'" stroke-dashoffset="'+ mainStrokeDasharray +'" />',
-                        circles = circleBg + circleMain;
-                        console.log(mainStrokeDasharray);
-                    var secondCircle = $(this).data('secondCircle');
+                        circles = circleBg + circleMain,
+                        secondCircle = $(this).data('secondCircle');
 
-                    if (secondCircle) {
-                        var secondStrokeWidth = 16,
-                            secondRadius = radius - mainStrokeWidth,
-                            secondTrueRadius = secondRadius- (secondStrokeWidth / 2),
-                            secondStrokeDasharray = 2 * pi * secondTrueRadius,
-                            secondStrokeDashoffset = secondStrokeDasharray * ((100 - secondCircle) * 0.01),
-                            circleSecond =  '<circle class="cpb-second" cx="'+ secondRadius +'" cy="'+ secondRadius +'" r="'+ secondTrueRadius +'" fill="none" stroke="#FE4040" stroke-width="'+ secondStrokeWidth +'" stroke-dasharray="'+ secondStrokeDasharray +'" stroke-dashoffset="'+ secondStrokeDasharray +'" transform="translate('+ mainStrokeWidth +', '+ mainStrokeWidth +')"/>',
-                            circles = circles + circleSecond;
+                        if (secondCircle) {
+                            var secondStrokeWidth = 16,
+                                secondRadius = radius - mainStrokeWidth,
+                                secondTrueRadius = secondRadius- (secondStrokeWidth / 2),
+                                secondStrokeDasharray = 2 * pi * secondTrueRadius,
+                                secondStrokeDashoffset = secondStrokeDasharray * ((100 - secondCircle) * 0.01),
+                                circleSecond =  '<circle class="cpb-second" cx="'+ secondRadius +'" cy="'+ secondRadius +'" r="'+ secondTrueRadius +'" fill="none" stroke="#FE4040" stroke-width="'+ secondStrokeWidth +'" stroke-dasharray="'+ secondStrokeDasharray +'" stroke-dashoffset="'+ secondStrokeDasharray +'" transform="translate('+ mainStrokeWidth +', '+ mainStrokeWidth +')"/>',
+                                circles = circles + circleSecond,
+                                thirdCircle = $(this).data('thirdCircle');
 
-                        var thirdCircle = $(this).data('thirdCircle');
-
-                        if (thirdCircle) {
-                            var thirdStrokeWidth = 22,
-                                offset = mainStrokeWidth + secondStrokeWidth,
-                                thirdRadius = radius - mainStrokeWidth - secondStrokeWidth,
-                                thirdTrueRadius = thirdRadius - (thirdStrokeWidth / 2),
-                                thirdStrokeDasharray = 2 * pi * thirdTrueRadius,
-                                thirdStrokeDashoffset = thirdStrokeDasharray * ((100 - thirdCircle) * 0.01),
-                                circleThird =  '<circle  class="cpb-third" cx="'+ thirdRadius +'" cy="'+ thirdRadius +'" r="'+ thirdTrueRadius +'" fill="none" stroke="#B00000" stroke-width="'+ thirdStrokeWidth +'" stroke-dasharray="'+ thirdStrokeDasharray +'" stroke-dashoffset="'+ thirdStrokeDasharray +'" transform="translate('+ offset +', '+ offset +')"/>',
-                                circles = circles + circleThird;
+                                if (thirdCircle) {
+                                var thirdStrokeWidth = 22,
+                                    offset = mainStrokeWidth + secondStrokeWidth,
+                                    thirdRadius = radius - mainStrokeWidth - secondStrokeWidth,
+                                    thirdTrueRadius = thirdRadius - (thirdStrokeWidth / 2),
+                                    thirdStrokeDasharray = 2 * pi * thirdTrueRadius,
+                                    thirdStrokeDashoffset = thirdStrokeDasharray * ((100 - thirdCircle) * 0.01),
+                                    circleThird =  '<circle  class="cpb-third" cx="'+ thirdRadius +'" cy="'+ thirdRadius +'" r="'+ thirdTrueRadius +'" fill="none" stroke="#B00000" stroke-width="'+ thirdStrokeWidth +'" stroke-dasharray="'+ thirdStrokeDasharray +'" stroke-dashoffset="'+ thirdStrokeDasharray +'" transform="translate('+ offset +', '+ offset +')"/>',
+                                    circles = circles + circleThird;
+                            }
                         }
-                    }
 
                     bar.eq(i).css('width',width).css('height', width);
 
@@ -114,7 +112,7 @@ function circleProgressBar() {
                         bar.eq(i).find('.cpb-main').css('stroke-dashoffset', mainStrokeDashoffset);
                     }, 100);
                     setTimeout(function () {
-                        bar.eq(i).find('.cpb-second').css('stroke-dashoffset', thirdStrokeDashoffset);
+                        bar.eq(i).find('.cpb-second').css('stroke-dashoffset', secondStrokeDashoffset);
                     }, 200);
                     setTimeout(function () {
                         bar.eq(i).find('.cpb-third').css('stroke-dashoffset', thirdStrokeDashoffset);
@@ -327,13 +325,11 @@ $(document).ready(function() {
             if (!(bar.hasClass('show'))) {
                 bar.addClass('show');
                 circleProgressBar();
-                console.log('TRUE SHOW')
             }
         }
         if (line.visible()) {
             if (!(line.hasClass('show'))) {
                 line.addClass('show');
-                console.log('SHOW line')
             }
         }
     });
