@@ -3450,12 +3450,12 @@ a.right-arrow,
       top: 0;
       left: 0;
       background-color: #cd0000;
-      -webkit-transition: all 4s ease;
-      -khtml-transition: all 4s ease;
-      -moz-transition: all 4s ease;
-      -ms-transition: all 4s ease;
-      -o-transition: all 4s ease;
-      transition: all 4s ease; }
+      -webkit-transition: all 4s ease-in-out;
+      -khtml-transition: all 4s ease-in-out;
+      -moz-transition: all 4s ease-in-out;
+      -ms-transition: all 4s ease-in-out;
+      -o-transition: all 4s ease-in-out;
+      transition: all 4s ease-in-out; }
 
 .section-what-say {
   padding-top: 100px;

@@ -519,7 +519,7 @@
                 top: 0;
                 left: 0;
                 background-color: $red;
-                @include css3-prefix('transition', 'all 4s ease');
+                @include css3-prefix('transition', 'all 4s ease-in-out');
               }
             }
           }
