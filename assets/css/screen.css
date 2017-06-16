@@ -3288,7 +3288,7 @@ a.right-arrow,
   font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.35;
   letter-spacing: .02em;
   text-align: center; }
 
@@ -3307,13 +3307,14 @@ a.right-arrow,
   display: block;
   width: 260px;
   height: 260px;
-  margin: 0 auto 26px; }
+  margin: 0 auto 28px; }
 
 .circle-value {
   position: absolute;
   display: block;
   top: 50%;
   left: 50%;
+  margin-top: 5px;
   font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-size: 60px;
   font-weight: 600;
