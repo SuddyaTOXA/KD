@@ -64,9 +64,9 @@ function circleProgressBar() {
         var bar = $('.circle-bar'),
             pi = Math.PI;
 
-        bar.each(function () {
-            var radius = $(this).data('radius'),
-                mainCircle = $(this).data('mainCircle');
+        bar.each(function (i) {
+            var radius = bar.eq(i).data('radius'),
+                mainCircle = bar.eq(i).data('mainCircle');
 
                 if (!radius) { radius = 130; }
                 if (mainCircle) {
@@ -76,9 +76,9 @@ function circleProgressBar() {
                         mainStrokeDasharray = 2 * pi * trueRadius,
                         mainStrokeDashoffset = mainStrokeDasharray * ((100 - mainCircle) * 0.01),
                         circleBg = '<circle cx="'+ radius +'" cy="'+ radius +'" r="'+ trueRadius +'" fill="none" stroke="#EAEAEA" stroke-width="'+ mainStrokeWidth +'" />',
-                        circleMain =  '<circle cx="'+ radius +'" cy="'+ radius +'" r="'+ trueRadius +'" fill="none" stroke="#cd0000" stroke-width="'+ mainStrokeWidth +'" stroke-dasharray="'+ mainStrokeDasharray +'" stroke-dashoffset="'+ mainStrokeDashoffset +'" />',
+                        circleMain =  '<circle class="cpb-main" cx="'+ radius +'" cy="'+ radius +'" r="'+ trueRadius +'" fill="none" stroke="#cd0000" stroke-width="'+ mainStrokeWidth +'" stroke-dasharray="'+ mainStrokeDasharray +'" stroke-dashoffset="'+ mainStrokeDasharray +'" />',
                         circles = circleBg + circleMain;
-
+                        console.log(mainStrokeDasharray);
                     var secondCircle = $(this).data('secondCircle');
 
                     if (secondCircle) {
@@ -87,7 +87,7 @@ function circleProgressBar() {
                             secondTrueRadius = secondRadius- (secondStrokeWidth / 2),
                             secondStrokeDasharray = 2 * pi * secondTrueRadius,
                             secondStrokeDashoffset = secondStrokeDasharray * ((100 - secondCircle) * 0.01),
-                            circleSecond =  '<circle cx="'+ secondRadius +'" cy="'+ secondRadius +'" r="'+ secondTrueRadius +'" fill="none" stroke="#FE4040" stroke-width="'+ secondStrokeWidth +'" stroke-dasharray="'+ secondStrokeDasharray +'" stroke-dashoffset="'+ secondStrokeDashoffset +'" transform="translate('+ mainStrokeWidth +', '+ mainStrokeWidth +')"/>',
+                            circleSecond =  '<circle class="cpb-second" cx="'+ secondRadius +'" cy="'+ secondRadius +'" r="'+ secondTrueRadius +'" fill="none" stroke="#FE4040" stroke-width="'+ secondStrokeWidth +'" stroke-dasharray="'+ secondStrokeDasharray +'" stroke-dashoffset="'+ secondStrokeDasharray +'" transform="translate('+ mainStrokeWidth +', '+ mainStrokeWidth +')"/>',
                             circles = circles + circleSecond;
 
                         var thirdCircle = $(this).data('thirdCircle');
@@ -99,34 +99,42 @@ function circleProgressBar() {
                                 thirdTrueRadius = thirdRadius - (thirdStrokeWidth / 2),
                                 thirdStrokeDasharray = 2 * pi * thirdTrueRadius,
                                 thirdStrokeDashoffset = thirdStrokeDasharray * ((100 - thirdCircle) * 0.01),
-                                circleThird =  '<circle cx="'+ thirdRadius +'" cy="'+ thirdRadius +'" r="'+ thirdTrueRadius +'" fill="none" stroke="#B00000" stroke-width="'+ thirdStrokeWidth +'" stroke-dasharray="'+ thirdStrokeDasharray +'" stroke-dashoffset="'+ thirdStrokeDashoffset +'" transform="translate('+ offset +', '+ offset +')"/>',
+                                circleThird =  '<circle  class="cpb-third" cx="'+ thirdRadius +'" cy="'+ thirdRadius +'" r="'+ thirdTrueRadius +'" fill="none" stroke="#B00000" stroke-width="'+ thirdStrokeWidth +'" stroke-dasharray="'+ thirdStrokeDasharray +'" stroke-dashoffset="'+ thirdStrokeDasharray +'" transform="translate('+ offset +', '+ offset +')"/>',
                                 circles = circles + circleThird;
                         }
                     }
+
+                    bar.eq(i).css('width',width).css('height', width);
+
                     $(this).html(function () {
-                        return '<svg class="progress-svg" width="'+ width +'" height="'+ width +'" viewbox="0 0 '+ width +' '+ width +'">' + circles + '</svg>';
-                    })
+                        return '<svg class="progress-svg" width="'+ width +'" height="'+ width +'" viewbox="0 0 '+ width +' '+ width +'">' + circles + '</svg><span class="circle-value"><span class="counter">'+ mainCircle +'</span>%</span> ';
+                    });
+
+                    setTimeout(function () {
+                        bar.eq(i).find('.cpb-main').css('stroke-dashoffset', mainStrokeDashoffset);
+                    }, 100);
+                    setTimeout(function () {
+                        bar.eq(i).find('.cpb-second').css('stroke-dashoffset', thirdStrokeDashoffset);
+                    }, 200);
+                    setTimeout(function () {
+                        bar.eq(i).find('.cpb-third').css('stroke-dashoffset', thirdStrokeDashoffset);
+                    }, 300);
+
+                    $(this).find('.counter').prop('Counter',0).animate({
+                        Counter: mainCircle
+                    }, {
+                        duration: 3000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
                 }
         });
-
-        // bar.html('<svg class="progress-svg" width="260" height="260" viewbox="0 0 260 260"><circle cx="130" cy="130" r="125" fill="none" stroke="#EAEAEA" stroke-width="10" /> <circle class="progress__value" cx="130" cy="130" r="125" fill="none" stroke="#cd0000" stroke-width="10" /> </svg>');
-        //     bar.html(function () {
-        //         var circleBg = '<circle cx="130" cy="130" r="125" fill="none" stroke="#EAEAEA" stroke-width="10" />',
-        //             circleMain =  '<circle cx="130" cy="130" r="125" fill="none" stroke="#cd0000" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="339.292" />',
-        //             circleSecond =  '<circle cx="130" cy="130" r="125" fill="none" stroke="#cd0000" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="339.292" />',
-        //             circleThird =  '<circle cx="130" cy="130" r="125" fill="none" stroke="#cd0000" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="339.292" />',
-        //             circles = '';
-        //
-        //
-        //                 circles = circleBg + circleMain;
-        //
-        //         return '<svg class="progress-svg" width="260" height="260" viewbox="0 0 260 260">' + circles + '</svg>';
-        //     })
     }
 }
 $(document).ready(function() {
     msieversion();
-    circleProgressBar();
 
     body = $('body');
 
@@ -310,4 +318,23 @@ $(document).ready(function() {
 
             jobForm.clone().appendTo(jobBox);
     })
+
+    // for animation
+    $(window).on('scroll', function () {
+        var bar = $('.circle-bar:not(.show)'),
+            line = $('.retention-box:not(.show)');
+        if (bar.visible()) {
+            if (!(bar.hasClass('show'))) {
+                bar.addClass('show');
+                circleProgressBar();
+                console.log('TRUE SHOW')
+            }
+        }
+        if (line.visible()) {
+            if (!(line.hasClass('show'))) {
+                line.addClass('show');
+                console.log('SHOW line')
+            }
+        }
+    });
 });

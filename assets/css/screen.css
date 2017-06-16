@@ -3302,7 +3302,7 @@ a.right-arrow,
     padding: 0 40px;
     vertical-align: top; }
 
-.promotions-circle {
+.circle-bar {
   position: relative;
   display: block;
   width: 260px;
@@ -3311,31 +3311,36 @@ a.right-arrow,
 
 .circle-value {
   position: absolute;
-  z-index: 200;
-  width: 100%;
-  height: 100%;
-  line-height: 260px;
-  text-align: center;
-  left: 0;
-  right: 0;
+  display: block;
+  top: 50%;
+  left: 50%;
   font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
   font-size: 60px;
   font-weight: 600;
   color: #cd0000;
-  letter-spacing: 0.02em; }
+  letter-spacing: 0.02em;
+  -webkit-transform: translate(-50%, -50%);
+  -khtml-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.cpb-main {
+  transition: stroke-dashoffset 3s;
+  -webkit-animation-play-state: running; }
+
+.cpb-second {
+  transition: stroke-dashoffset 4s;
+  -webkit-animation-play-state: running; }
+
+.cpb-third {
+  transition: stroke-dashoffset 5s;
+  -webkit-animation-play-state: running; }
 
 .progress-svg {
   transform: rotate(0deg); }
 
-.progress__value {
-  stroke-dasharray: 785.398;
-  stroke-dashoffset: 196.348; }
-
-@keyframes progress {
-  from {
-    stroke-dashoffset: 196.348; }
-  to {
-    stroke-dashoffset: 0; } }
 .retention-wrap {
   max-width: 355px;
   padding-top: 5px;
@@ -3351,6 +3356,8 @@ a.right-arrow,
 .retention-box {
   max-width: 355px;
   text-align: center; }
+  .retention-box:not(.show) .progress {
+    width: 0 !important; }
 
 .retention-line {
   text-align: center;
@@ -3413,12 +3420,12 @@ a.right-arrow,
       top: 0;
       left: 0;
       background-color: #cd0000;
-      -webkit-transition: all .55s ease;
-      -khtml-transition: all .55s ease;
-      -moz-transition: all .55s ease;
-      -ms-transition: all .55s ease;
-      -o-transition: all .55s ease;
-      transition: all .55s ease; }
+      -webkit-transition: all 4s ease;
+      -khtml-transition: all 4s ease;
+      -moz-transition: all 4s ease;
+      -ms-transition: all 4s ease;
+      -o-transition: all 4s ease;
+      transition: all 4s ease; }
 
 .section-what-say {
   padding-top: 100px;
