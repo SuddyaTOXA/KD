@@ -316,10 +316,10 @@ $(document).ready(function() {
             jobForm = jobBox.find('.job-history-list:first');
 
             jobForm.clone().appendTo(jobBox);
-    })
+    });
 
     // for animation
-    $(window).on('scroll', function () {
+    $(window).on('load scroll', function () {
         var bar = $('.circle-bar:not(.show)'),
             line = $('.retention-box:not(.show)');
         if (bar.visible()) {
