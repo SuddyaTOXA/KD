@@ -122,7 +122,7 @@ function circleProgressBar() {
                     $(this).find('.counter').prop('Counter',0).animate({
                         Counter: mainCircle
                     }, {
-                        duration: 3000,
+                        duration: 2000,
                         easing: 'swing',
                         step: function (now) {
                             $(this).text(Math.ceil(now));
