@@ -4,6 +4,9 @@
   display: none; }
 
 /*content*/
+.hide-content {
+  display: none; }
+
 /*footer */
 .footer-mobile-box {
   display: none; }
