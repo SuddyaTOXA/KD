@@ -1,13 +1,131 @@
+/*fonts*/
+/*fonts-weight*/
+/*fonts-size*/
+/*line-height*/
+/*letter-spacing*/
+/*colors*/
+/*transition*/
+/*border-radius*/
 /*header */
 .mobile-menu-toggle,
 .mobile-menu-wrap {
   display: none; }
 
-/*content*/
+/*careers*/
 .hide-content {
   display: none; }
 
+.promotions-box {
+  max-width: 280px;
+  min-width: 260px; }
+
+.promotions-desc {
+  padding: 0 10px;
+  font-family: "Soleil Light", Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: .02em;
+  text-align: center; }
+
+.promotions-list {
+  float: right;
+  margin: 0 -40px; }
+  .promotions-list > li {
+    display: inline-block;
+    max-width: 360px;
+    min-width: 340px;
+    padding: 0 40px;
+    vertical-align: top; }
+
+.circle-bar {
+  position: relative;
+  display: block;
+  width: 260px;
+  height: 260px;
+  margin: 0 auto 28px; }
+
+.circle-value {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-top: 5px;
+  font-family: "Mr Eaves Mod Heavy", "Mr Eaves Mod Bold", Arial, Verdana, Tahoma, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: #cd0000;
+  letter-spacing: 0.02em;
+  -webkit-transform: translate(-50%, -50%);
+  -khtml-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.cpb-main {
+  -webkit-transition: stroke-dashoffset 2s ease-in-out;
+  -khtml-transition: stroke-dashoffset 2s ease-in-out;
+  -moz-transition: stroke-dashoffset 2s ease-in-out;
+  -ms-transition: stroke-dashoffset 2s ease-in-out;
+  -o-transition: stroke-dashoffset 2s ease-in-out;
+  transition: stroke-dashoffset 2s ease-in-out;
+  -webkit-animation-play-state: running;
+  -khtml-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running; }
+
+.cpb-second {
+  -webkit-transition: stroke-dashoffset 3s ease-in-out;
+  -khtml-transition: stroke-dashoffset 3s ease-in-out;
+  -moz-transition: stroke-dashoffset 3s ease-in-out;
+  -ms-transition: stroke-dashoffset 3s ease-in-out;
+  -o-transition: stroke-dashoffset 3s ease-in-out;
+  transition: stroke-dashoffset 3s ease-in-out;
+  -webkit-animation-play-state: running;
+  -khtml-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running; }
+
+.cpb-third {
+  -webkit-transition: stroke-dashoffset 4s ease-in-out;
+  -khtml-transition: stroke-dashoffset 4s ease-in-out;
+  -moz-transition: stroke-dashoffset 4s ease-in-out;
+  -ms-transition: stroke-dashoffset 4s ease-in-out;
+  -o-transition: stroke-dashoffset 4s ease-in-out;
+  transition: stroke-dashoffset 4s ease-in-out;
+  -webkit-animation-play-state: running;
+  -khtml-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running; }
+
+.progress-svg {
+  transform: rotate(0deg); }
+
+.retention-box {
+  max-width: 355px;
+  text-align: center; }
+  .retention-box:not(.show) .progress {
+    width: 0 !important; }
+
+.progress-line .line .progress {
+  -webkit-transition: all 2s ease-in-out;
+  -khtml-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; }
+
 /*footer */
+.footerWrap {
+  z-index: 10; }
+
 .footer-mobile-box {
   display: none; }
   .footer-mobile-box .center {

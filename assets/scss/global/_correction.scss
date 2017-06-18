@@ -96,12 +96,95 @@
   display: none;
 }
 
-/*content*/
+/*careers*/
 .hide-content {
   display: none;
 }
-
+.promotions-box {
+  max-width: 280px;
+  min-width: 260px;
+}
+.promotions-desc {
+  padding: 0 10px;
+  font-family: $font-s-light;
+  font-weight: $light;
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: .02em;
+  text-align: center;
+}
+.promotions-list {
+  float: right;
+  margin: 0 -40px;
+  > li {
+    display: inline-block;
+    max-width: 360px;
+    min-width: 340px;
+    padding: 0 40px;
+    vertical-align: top;
+  }
+}
+.circle-bar {
+  position: relative;
+  display: block;
+  width: 260px;
+  height: 260px;
+  margin: 0 auto 28px;
+}
+.circle-value {
+  position: absolute;
+  display: block;
+  //z-index: 200;
+  //left: 0;
+  //right: 0;
+  top: 50%;
+  left: 50%;
+  margin-top: 5px;
+  font-family: $font-mem-heavy;
+  font-size: 60px;
+  font-weight: 600;
+  color: $red;
+  letter-spacing: 0.02em;
+  @include transform();
+}
+.cpb-main {
+  @include css3-prefix('transition', 'stroke-dashoffset 2s ease-in-out');
+  @include css3-prefix('animation-play-state', 'running');
+  //-webkit-animation-play-state: running;
+}
+.cpb-second {
+  @include css3-prefix('transition', 'stroke-dashoffset 3s ease-in-out');
+  @include css3-prefix('animation-play-state', 'running');
+  //-webkit-animation-play-state: running;
+}
+.cpb-third {
+  @include css3-prefix('transition', 'stroke-dashoffset 4s ease-in-out');
+  @include css3-prefix('animation-play-state', 'running');
+  //-webkit-animation-play-state: running;
+}
+.progress-svg {
+  transform: rotate(0deg);
+}
+.retention-box {
+  max-width: 355px;
+  text-align: center;
+  &:not(.show){
+    .progress {
+      width: 0 !important;
+    }
+  }
+}
+.progress-line {
+  .line {
+    .progress {
+      @include css3-prefix('transition', 'all 2s ease-in-out');
+    }
+  }
+}
 /*footer */
+.footerWrap {
+  z-index: 10;
+}
 .footer-mobile-box {
   display: none;
   .center {

@@ -174,7 +174,6 @@ $(document).ready(function() {
                 winHeight = $(window).height() - 106;
 
             banner.height(winHeight);
-            console.log(winHeight);
         });
     }
 
@@ -323,15 +322,17 @@ $(document).ready(function() {
     $(window).on('load scroll', function () {
         var bar = $('.circle-bar:not(.show)'),
             line = $('.retention-box:not(.show)');
-        if (bar.visible()) {
-            if (!(bar.hasClass('show'))) {
-                bar.addClass('show');
-                circleProgressBar();
+        if (bar.length || line.length) {
+            if (bar.visible()) {
+                if (!(bar.hasClass('show'))) {
+                    bar.addClass('show');
+                    circleProgressBar();
+                }
             }
-        }
-        if (line.visible()) {
-            if (!(line.hasClass('show'))) {
-                line.addClass('show');
+            if (line.visible()) {
+                if (!(line.hasClass('show'))) {
+                    line.addClass('show');
+                }
             }
         }
     });
