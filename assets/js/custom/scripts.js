@@ -174,6 +174,7 @@ $(document).ready(function() {
                 winHeight = $(window).height() - 106;
 
             banner.height(winHeight);
+            console.log(winHeight);
         });
     }
 

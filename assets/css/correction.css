@@ -1,3 +1,16 @@
+/*header */
+.mobile-menu-toggle,
+.mobile-menu-wrap {
+  display: none; }
 
+/*content*/
+/*footer */
+.footer-mobile-box {
+  display: none; }
+  .footer-mobile-box .center {
+    padding: 0 10px; }
+
+.full-site {
+  display: none; }
 
 /*# sourceMappingURL=correction.css.map */

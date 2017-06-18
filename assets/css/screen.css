@@ -3797,9 +3797,9 @@ a.right-arrow,
     .footerColumn:nth-child(5) .footerCTA {
       min-width: 190px; } }
 @media all and (max-width: 1024px) {
-  .center {
-    max-width: 320px;
-    padding: 0 15px; }
+  .navigation,
+  .navigationRight {
+    display: none; }
 
   .footerMainWrap .center {
     max-width: 320px;
