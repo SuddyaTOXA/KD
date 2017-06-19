@@ -166,10 +166,89 @@
 }
 
 @media all and (max-width: 1024px) {
+
+}
+
+@media all and (max-width: 991px) {
+
+}
+
+@media all and (max-width: 960px) {
+
+}
+
+@media all and (max-width: 860px) {
+
+}
+
+@media all and (max-width: 790px) {
+
+}
+
+@media all and (max-width: 768px) {
+
+}
+
+@media all and (max-width: 767px) {
+  .mobile-menu-toggle,
+  .mobile-menu-wrap {
+    display: block;
+  }
+  .navigationWrap {
+    height: 51px;
+    .center {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+    .siteLogo {
+      margin-top: 4px;
+      max-width: 210px;
+      img {
+        max-width: 100%;
+      }
+    }
+  .center {
+    max-width: 320px;
+    padding:  0 15px;
+  }
   .navigation,
   .navigationRight {
     display: none;
   }
+  .footer-top-list {
+    > li {
+      float: none;
+      width: 100%;
+    }
+  }
+    .footer-table {
+      min-height: 250px;
+      height: 300px;
+    }
+  .anchor-box {
+    padding: 8px 20px 8px;
+    min-height: 112px;
+    a.down-arrow,
+    .down-arrow {
+      padding-left: 20px;
+      font-size: 12px;
+    }
+  }
+    .footer-box.right {
+      top: -70px;
+      .anchor-box {
+        padding-right: 20px;
+      }
+    }
+    .footerPageHeadline {
+      font-size: 30px;
+    }
+    .footer-box .footerPageCTA {
+      min-width: 140px;
+      font-size: 12px;
+    }
+
   .footerMainWrap {
     .center {
       max-width: 320px;
@@ -198,9 +277,28 @@
   .footerHeadingSmall {
     margin-bottom: -4px;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 900;
   }
+  .footerSocialWrap {
+    a {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+    .footerSocial {
+      margin-top: 15px;
+      margin-right: 8px;
+      width: 23px;
+      height: 23px;
+      i {
+        line-height: 23px;
+      }
+    }
   .footer-mobile-link {
+    display: block;
+  }
+  .footer-mobile-box {
     display: block;
   }
   .copyrightWrap {
@@ -227,30 +325,21 @@
       }
     }
   }
-}
-
-@media all and (max-width: 991px) {
-
-}
-
-@media all and (max-width: 960px) {
-
-}
-
-@media all and (max-width: 860px) {
-
-}
-
-@media all and (max-width: 790px) {
-
-}
-
-@media all and (max-width: 768px) {
-
-}
-
-@media all and (max-width: 767px) {
-
+  /*HOME*/
+  .homeBannerContent {
+    .center {
+      max-width: 320px;
+    }
+    h1 {
+      font-size: 35px;
+      line-height: 1;
+    }
+  }
+  .homeBannerSubline {
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+  }
 }
 
 @media (max-width: 767px) and (max-height: 480px) {

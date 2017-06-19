@@ -134,8 +134,15 @@ function circleProgressBar() {
 }
 $(document).ready(function() {
     msieversion();
-
     body = $('body');
+
+    //for burger menu
+    $('.mobile-menu-toggle, .mobile-menu-overlay').on('click', function () {
+        $('.mobile-menu-toggle').toggleClass('active');
+        $('.mobile-menu-wrap').toggleClass('showing');
+        // $(document.body).toggleClass('overflow');
+        body.toggleClass('disable-scroll');
+    });
 
     // for submenu
     $('.open-overlay, .close-overlay').on('click', function(){
