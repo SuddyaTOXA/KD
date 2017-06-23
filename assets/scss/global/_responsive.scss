@@ -448,6 +448,19 @@
   .section-customers {
     padding-top: 90px;
   }
+  /*------------CONTACT-------------*/
+  .section-contact {
+    padding-top: 80px;
+    .section-title {
+      margin-bottom: 20px;
+      padding-left: 0;
+    }
+  }
+  .contact-page-list {
+    > li {
+      padding-left: 0;
+    }
+  }
 }
 
 @media all and (max-width: 960px) {
@@ -896,6 +909,85 @@
     .section-title {
       margin-bottom: 25px;
     }
+  }
+  /*------------CONTACT-------------*/
+  .section-contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .center {
+      max-width: 320px;
+    }
+  }
+  .contact-page-list {
+    > li {
+      float: none;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 80px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .input-style {
+    font-size: 16px;
+  }
+  textarea.input-style {
+    font-size: 16px;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  input::-moz-placeholder {
+    font-size: 16px;
+  }
+  input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  input:-moz-placeholder {
+    font-size: 16px;
+  }
+
+  textarea::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  textarea::-moz-placeholder {
+    font-size: 16px;
+  }
+  textarea:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  textarea:-moz-placeholder {
+    font-size: 16px;
+  }
+  .section-contact {
+    .section-title {
+      margin-bottom: 20px;
+    }
+  }
+  .form-box {
+    padding-top: 15px;
+  }
+  .form-list {
+    > li {
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .contact-box {
+    margin-bottom: 50px;
+  }
+  a.btn, .btn {
+    padding: 15px 35px 12px 30px;
+    font-size: 16px;
+  }
+  .contact-title {
+    font-size: 15px;
+  }
+  .contact-info {
+    font-size: 22px;
   }
 }
 

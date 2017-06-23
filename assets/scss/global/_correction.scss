@@ -362,3 +362,11 @@
 .section-about .right-box {
   float: right;
 }
+.input-wrap label {
+  opacity: 0;
+}
+.input-wrap .input-style:focus + label,
+label.show,
+.no-js .input-wrap label {
+  opacity: 1;
+}
