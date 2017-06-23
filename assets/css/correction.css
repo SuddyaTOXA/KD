@@ -350,7 +350,7 @@
   color: #a9a9a9; }
 
 .footer-mobile-box .center {
-  padding: 34px 9px 29px; }
+  padding: 0; }
 
 .footer-mobile-link {
   overflow: hidden;
@@ -363,7 +363,7 @@
       display: block;
       font-family: "MrEavesModOT", Arial, Verdana, Tahoma, sans-serif;
       font-weight: 900;
-      font-size: 13px;
+      font-size: 16px;
       padding: 8px 0;
       color: #232323;
       text-transform: uppercase;
@@ -471,7 +471,85 @@
     overflow: hidden; }
     .leadership-list > li {
       width: 33.33%;
-      padding-bottom: 33.33%; } }
+      padding-bottom: 33.33%; }
+
+  .siteLogo {
+    margin-top: 9px;
+    max-width: 300px; }
+    .siteLogo img {
+      max-width: 100%;
+      height: auto; }
+
+  .navigation {
+    padding: 0 180px 0 300px; }
+
+  .anchor-box a.down-arrow,
+  .anchor-box .down-arrow {
+    padding-left: 0; }
+
+  .footer-box.right .anchor-box {
+    padding-right: 20px; }
+
+  .footerPageHeadline {
+    font-size: 50px; }
+
+  .footer-cell-content {
+    max-width: 400px;
+    margin: 0; }
+
+  .footer-box.right .footer-cell-content {
+    float: right;
+    text-align: right; }
+  .footer-box.right .footer-table {
+    padding-left: 20px; } }
+@media all and (max-width: 1199px) {
+  .navigation > li > a,
+  .navigationRight {
+    font-size: 16px; }
+
+  .navigationWedge::before,
+  .navigationWedge:before {
+    margin-left: 370px; }
+
+  .homeBannerContent h1 {
+    font-size: 100px; }
+
+  .homeBannerSubline {
+    font-size: 26px; }
+
+  .footerHeading,
+  .footerContact {
+    font-size: 18px; }
+
+  .footerNavLink {
+    font-size: 14px; }
+
+  .footerCTA {
+    font-size: 17px;
+    padding-right: 50px; }
+
+  .footerMainWrap .center {
+    padding-top: 40px;
+    padding-bottom: 60px; }
+
+  .footerColumn:nth-child(1) {
+    max-width: 220px; }
+
+  .footerColumn:nth-child(2) {
+    max-width: 190px; }
+
+  .footerColumn:nth-child(3) {
+    max-width: 165px; }
+
+  .copyrightRight {
+    padding: 21px 0; }
+
+  .copyrightLeft a {
+    padding-left: 18px;
+    padding-right: 18px; }
+
+  .copyrightRight {
+    font-size: 14px; } }
 @media all and (max-width: 1080px) {
   .footerColumn:nth-child(1) {
     max-width: 245px; }
@@ -484,7 +562,87 @@
   .footerColumn:nth-child(5) {
     max-width: 190px; }
     .footerColumn:nth-child(5) .footerCTA {
-      min-width: 190px; } }
+      min-width: 190px; }
+
+  .siteLogo {
+    max-width: 240px; }
+
+  .navigation {
+    padding: 0 107px 0 230px; }
+
+  .navigation > li > a, .navigationRight {
+    font-size: 14px;
+    padding: 21px 8px 16px; }
+
+  .navigationWedge::before, .navigationWedge:before {
+    margin-left: 280px; }
+
+  .footer-table {
+    height: 568px; } }
+@media all and (max-width: 1024px) {
+  .footer-mobile-link {
+    display: block; }
+
+  .footer-mobile-box {
+    display: block; }
+    .footer-mobile-box .center {
+      padding: 34px 9px 30px; }
+
+  .footerSocialWrap a:last-child {
+    margin-right: 0; }
+
+  .footerSocial {
+    margin-top: 15px;
+    margin-right: 8px;
+    width: 23px;
+    height: 23px; }
+    .footerSocial i {
+      line-height: 23px; }
+
+  .footerMainWrap .center {
+    padding: 33px 15px 29px; }
+  .footerMainWrap .footerHeadingSmall {
+    display: none;
+    margin-top: -24px; }
+    .footerMainWrap .footerHeadingSmall.mobile-show {
+      display: block; }
+  .footerMainWrap .footerContact {
+    display: none; }
+  .footerMainWrap .footerColumn {
+    display: none; }
+    .footerMainWrap .footerColumn.mobile-show {
+      display: block;
+      max-width: 100%;
+      text-align: center; }
+
+  .copyrightLeft a {
+    font-size: 15px; } }
+@media all and (max-width: 991px) {
+  .homeBannerContent h1 {
+    font-size: 85px; }
+
+  .homeBannerSubline {
+    padding-right: 150px; }
+
+  .footerPageHeadline {
+    font-size: 45px; }
+
+  .subnav > li a {
+    padding-right: 30px;
+    font-size: 35px; }
+    .subnav > li a:after {
+      top: 22px; }
+
+  .submenu-overlay .close-overlay {
+    right: 0;
+    top: 0; }
+
+  .content {
+    font-size: 16px; } }
+@media all and (max-width: 790px) {
+  .footer-table {
+    min-height: 500px;
+    height: 540px; } }
 @media all and (max-width: 767px) {
   .mobile-menu-toggle,
   .mobile-menu-wrap {
@@ -581,50 +739,16 @@
     margin-bottom: -88px; }
 
   .footer-cell-content {
+    margin: 0 auto;
     max-width: 320px;
     padding: 0 15px; }
-
-  .footerMainWrap .center {
-    max-width: 320px;
-    padding: 33px 15px 29px; }
-  .footerMainWrap .footerHeadingSmall {
-    display: none;
-    margin-top: -24px; }
-    .footerMainWrap .footerHeadingSmall.mobile-show {
-      display: block; }
-  .footerMainWrap .footerContact {
-    display: none; }
-  .footerMainWrap .footerColumn {
-    display: none; }
-    .footerMainWrap .footerColumn.mobile-show {
-      display: block;
-      max-width: 100%;
-      text-align: center; }
-
-  .footer-mobile-box .center {
-    padding: 34px 9px 30px; }
+    .footer-box.right .footer-cell-content {
+      float: none; }
 
   .footerHeadingSmall {
     margin-bottom: -4px;
     font-size: 13px;
     font-weight: 900; }
-
-  .footerSocialWrap a:last-child {
-    margin-right: 0; }
-
-  .footerSocial {
-    margin-top: 15px;
-    margin-right: 8px;
-    width: 23px;
-    height: 23px; }
-    .footerSocial i {
-      line-height: 23px; }
-
-  .footer-mobile-link {
-    display: block; }
-
-  .footer-mobile-box {
-    display: block; }
 
   .copyrightWrap .center {
     max-width: 326px;
@@ -671,7 +795,27 @@
   .homeBannerSubline {
     font-size: 16px;
     line-height: 1;
-    padding: 0; } }
+    padding: 0; }
+
+  .footerMainWrap .center {
+    max-width: 320px;
+    padding: 33px 15px 29px; }
+  .footerMainWrap .footerHeadingSmall {
+    display: none;
+    margin-top: -24px; }
+    .footerMainWrap .footerHeadingSmall.mobile-show {
+      display: block; }
+  .footerMainWrap .footerContact {
+    display: none; }
+  .footerMainWrap .footerColumn {
+    display: none; }
+    .footerMainWrap .footerColumn.mobile-show {
+      display: block;
+      max-width: 100%;
+      text-align: center; }
+
+  .footer-mobile-link > li a {
+    font-size: 13px; } }
 @media all and (max-width: 640px) {
   .anchor-box a.down-arrow,
   .anchor-box .down-arrow {
