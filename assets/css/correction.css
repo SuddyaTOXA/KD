@@ -373,6 +373,9 @@
       .footer-mobile-link > li a:hover, .footer-mobile-link > li a:focus {
         color: #cd0000; }
 
+.section-about .right-box {
+  float: right; }
+
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1920px) {
   .section-page-title .center {
@@ -408,7 +411,17 @@
     display: table-cell; }
 
   .fleet-table-list {
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+
+  /*------------ABOUT----------------*/
+  .section-career-banner.about .banner-title {
+    right: -0.2em; }
+
+  .section-career-banner.about .banner-bottom-box .bottom-left {
+    padding-left: 0; }
+
+  .section-career-banner a.down-arrow, .section-career-banner .down-arrow {
+    left: -15px; } }
 @media all and (max-width: 1400px) {
   .footerColumn:first-child {
     padding-left: 0; }
@@ -549,7 +562,16 @@
     padding-right: 18px; }
 
   .copyrightRight {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  /*------------ABOUT----------------*/
+  .section-career-banner.about .banner-title {
+    font-size: 150px; }
+  .section-career-banner.about .banner-desc {
+    font-size: 34px; }
+
+  .about-desc {
+    font-size: 21px; } }
 @media all and (max-width: 1080px) {
   .footerColumn:nth-child(1) {
     max-width: 245px; }
@@ -616,7 +638,24 @@
       text-align: center; }
 
   .copyrightLeft a {
-    font-size: 15px; } }
+    font-size: 15px; }
+
+  /*------------ABOUT----------------*/
+  .section-career-banner.about .banner-title {
+    font-size: 125px; }
+  .section-career-banner.about .banner-desc {
+    font-size: 30px; }
+
+  .about-desc {
+    max-width: 450px;
+    font-size: 18px; }
+    .about-desc br {
+      display: none; }
+    .about-desc .bottom-name {
+      font-size: 13px; }
+    .about-desc .bottom-info {
+      margin-bottom: 6px;
+      font-size: 13px; } }
 @media all and (max-width: 991px) {
   .homeBannerContent h1 {
     font-size: 85px; }
@@ -638,7 +677,66 @@
     top: 0; }
 
   .content {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  /*------------ABOUT----------------*/
+  .important-info {
+    font-size: 38px; }
+
+  .blockquote-box {
+    padding-top: 40px; }
+
+  .section-about .right-box {
+    padding-top: 0; }
+
+  .section-title {
+    font-size: 50px; }
+
+  .leadership-overlay {
+    padding: 20px; }
+
+  .name {
+    font-size: 25px; }
+
+  .info {
+    font-size: 20px; }
+
+  .leadership-overlay a.btn,
+  .leadership-overlay .btn {
+    font-size: 16px;
+    bottom: 0; }
+
+  .separator .name {
+    font-size: 20px; }
+
+  .content .big {
+    font-size: 24px; }
+
+  .customers-list {
+    margin-left: -15px;
+    margin-right: -15px; }
+    .customers-list > li {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 50px; }
+
+  .customers-box {
+    width: auto;
+    height: auto;
+    line-height: 130px; }
+    .customers-box img {
+      max-width: 100%;
+      height: auto; }
+
+  body:not(.home) .footer-table {
+    height: 624px;
+    padding-top: 70px; }
+
+  .section-about.bottom-s {
+    padding-bottom: 105px; }
+
+  .section-customers {
+    padding-top: 90px; } }
 @media all and (max-width: 790px) {
   .footer-table {
     min-height: 500px;
@@ -653,6 +751,10 @@
     .navigationWrap .center {
       max-width: 320px;
       padding: 0; }
+
+  .navigationWedge::before,
+  .navigationWedge:before {
+    margin-left: 90px; }
 
   .siteLogo {
     margin-top: 4px;
@@ -815,7 +917,189 @@
       text-align: center; }
 
   .footer-mobile-link > li a {
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  body:not(.home) .footer-table {
+    height: 424px;
+    padding-top: 70px; }
+
+  /*------------ABOUT----------------*/
+  .section-career-banner.about {
+    min-height: 400px; }
+    .section-career-banner.about .center {
+      max-width: 320px; }
+    .section-career-banner.about .banner-desc {
+      font-size: 18px;
+      margin-bottom: 1px; }
+    .section-career-banner.about .banner-title {
+      margin-bottom: 8px;
+      font-size: 55px;
+      letter-spacing: .1em; }
+    .section-career-banner.about .banner-bottom-box .bottom-left {
+      display: none; }
+    .section-career-banner.about .banner-table {
+      height: 80vh;
+      padding-bottom: 225px; }
+      .section-career-banner.about .banner-table:after {
+        left: -10px; }
+  .section-career-banner a.down-arrow,
+  .section-career-banner .down-arrow {
+    left: -41px;
+    top: -180px;
+    max-width: 185px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: .1em; }
+    .section-career-banner a.down-arrow:after,
+    .section-career-banner .down-arrow:after {
+      top: 36px;
+      right: 18px;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #cd0000; }
+
+  .about-desc {
+    font-size: 14px;
+    line-height: 1.35; }
+
+  .section-about {
+    position: relative;
+    padding-top: 0;
+    margin-top: -46px;
+    z-index: 130; }
+    .section-about .center {
+      max-width: 320px; }
+    .section-about.bottom-s {
+      padding-top: 30px;
+      padding-bottom: 60px;
+      margin-top: 0; }
+      .section-about.bottom-s .center {
+        max-width: 320px; }
+      .section-about.bottom-s h5 {
+        font-size: 12px; }
+    .section-about .left-box,
+    .section-about .right-box {
+      float: none;
+      width: 100%;
+      padding: 0; }
+    .section-about .right-box {
+      margin-bottom: 61px; }
+
+  .important-info {
+    font-size: 24px; }
+
+  .blockquote-box {
+    padding-top: 25px;
+    margin-top: 36px;
+    margin-left: 0;
+    font-size: 12px;
+    letter-spacing: 0.06em; }
+    .blockquote-box:before {
+      width: 18px;
+      height: 7px; }
+    .blockquote-box .author {
+      margin-bottom: 1px;
+      font-size: 12px; }
+
+  .content {
+    font-size: 15px;
+    line-height: 1.5; }
+    .content * {
+      margin-bottom: 26px; }
+      .content *:last-child {
+        margin-bottom: 0; }
+    .content h1, .content .h1style {
+      font-size: 23px; }
+    .content h2, .content .h2style {
+      font-size: 22px; }
+    .content h3, .content .h3style {
+      font-size: 21px; }
+    .content h4, .content .h4style {
+      font-size: 20px; }
+    .content h5, .content .h5style {
+      font-size: 19px; }
+    .content h6, .content .h6style {
+      font-size: 18px; }
+    .content .big {
+      margin-bottom: 22px !important;
+      font-size: 21px;
+      line-height: 1.3; }
+    .section-about.bottom-s .content ul > li {
+      padding-left: 25px; }
+
+  .section-title {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: .1em; }
+
+  .leadership-list > li {
+    width: 50%;
+    padding-bottom: 50%; }
+
+  .leadership-overlay {
+    padding: 20px 10px 10px; }
+
+  .leader-header-box {
+    padding-bottom: 20px; }
+
+  .name {
+    font-size: 15px; }
+    .name.name {
+      font-size: 13px; }
+
+  .info {
+    font-size: 12px; }
+
+  .leadership-overlay a.btn.small,
+  .leadership-overlay .btn.small {
+    font-size: 12px;
+    bottom: 0;
+    padding: 15px 20px 12px 15px;
+    min-width: auto; }
+
+  .separator .leadership-separator-box {
+    padding: 10px; }
+  .separator .leadership-cell {
+    vertical-align: middle; }
+
+  .customers-list {
+    margin: 0 auto; }
+    .customers-list > li {
+      width: 50%;
+      padding: 0 10px;
+      margin-bottom: 20px; }
+
+  .customers-box {
+    width: auto;
+    height: auto;
+    line-height: 130px; }
+    .customers-box img {
+      max-width: 100%; }
+
+  .signatures-box p {
+    font-size: 15px; }
+
+  .president,
+  .president-name {
+    font-size: 16px; }
+
+  .section-leadership {
+    padding-top: 102px;
+    padding-bottom: 15px; }
+    .section-leadership .center {
+      max-width: 375px; }
+    .section-leadership .section-title {
+      margin-bottom: 26px;
+      text-align: center; }
+
+  .section-customers {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .section-customers .center {
+      max-width: 320px; }
+    .section-customers .section-title {
+      margin-bottom: 25px; } }
 @media all and (max-width: 640px) {
   .anchor-box a.down-arrow,
   .anchor-box .down-arrow {
