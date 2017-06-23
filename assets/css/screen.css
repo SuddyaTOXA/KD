@@ -3822,7 +3822,11 @@ a.right-arrow,
     float: right;
     text-align: right; }
   .footer-box.right .footer-table {
-    padding-left: 20px; } }
+    padding-left: 20px; }
+
+  /*------------EMPLOYEE-------------*/
+  .section-welcome .right-box {
+    padding-left: 50px; } }
 @media all and (max-width: 1199px) {
   .navigation > li > a,
   .navigationRight {
@@ -4054,7 +4058,26 @@ a.right-arrow,
       padding-left: 0; }
 
   .contact-page-list > li {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  /*------------EMPLOYEE-------------*/
+  .section-welcome {
+    padding-top: 40px; }
+    .section-welcome .right-box {
+      padding-left: 40px;
+      padding-right: 0; }
+    .section-welcome .left-box {
+      padding-left: 0;
+      padding-right: 20px; }
+
+  .link-box ul > li a {
+    font-size: 15px; }
+
+  .bottom:before {
+    width: 52%; }
+
+  .bottom:after {
+    width: 52%; } }
 @media all and (max-width: 790px) {
   .footer-table {
     min-height: 500px;
@@ -4486,7 +4509,37 @@ a.right-arrow,
     font-size: 15px; }
 
   .contact-info {
-    font-size: 22px; } }
+    font-size: 22px; }
+
+  /*------------EMPLOYEE-------------*/
+  .section-page-title .center {
+    min-height: 320px; }
+
+  .section-welcome {
+    padding-top: 40px; }
+    .section-welcome .left-box {
+      margin-bottom: 80px; }
+    .section-welcome .left-box,
+    .section-welcome .right-box {
+      padding: 0; }
+
+  .left-box,
+  .right-box {
+    float: none;
+    width: 100%;
+    padding: 0; }
+
+  .page-title {
+    font-size: 48px; }
+
+  .link-box-title {
+    font-size: 22px; }
+
+  .link-box ul > li a {
+    font-size: 14px; }
+
+  .link-box {
+    margin-bottom: 40px; } }
 @media all and (max-width: 640px) {
   .anchor-box a.down-arrow,
   .anchor-box .down-arrow {

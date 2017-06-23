@@ -180,6 +180,12 @@
       padding-left: 20px;
     }
   }
+  /*------------EMPLOYEE-------------*/
+  .section-welcome {
+    .right-box {
+      padding-left: 50px;
+    }
+  }
 
 }
 
@@ -461,6 +467,23 @@
       padding-left: 0;
     }
   }
+  /*------------EMPLOYEE-------------*/
+  .section-welcome {
+    padding-top: 40px;
+    .right-box {
+      padding-left: 40px;
+      padding-right: 0;
+    }
+    .left-box {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+  }
+  .link-box ul > li a {
+    font-size: 15px;
+  }
+  .bottom:before {width: 52%;}
+  .bottom:after {width: 52%;}
 }
 
 @media all and (max-width: 960px) {
@@ -988,6 +1011,40 @@
   }
   .contact-info {
     font-size: 22px;
+  }
+  /*------------EMPLOYEE-------------*/
+  .section-page-title {
+    .center {
+      min-height: 320px;
+    }
+  }
+  .section-welcome {
+    padding-top: 40px;
+    .left-box {
+      margin-bottom: 80px;
+    }
+    .left-box,
+    .right-box {
+      padding: 0;
+    }
+  }
+  .left-box,
+  .right-box {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .page-title {
+    font-size: 48px;
+  }
+  .link-box-title {
+    font-size: 22px;
+  }
+  .link-box ul > li a {
+    font-size: 14px;
+  }
+  .link-box {
+    margin-bottom: 40px;
   }
 }
 
