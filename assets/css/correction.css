@@ -839,7 +839,14 @@ label.show,
     max-width: 100%; }
 
   .section-structural .content ul, .section-structural .content ol {
-    margin-top: 25px; } }
+    margin-top: 25px; }
+
+  .section-structural.services .our-fleet .slider-title {
+    margin-bottom: 34px; }
+
+  .table-title {
+    margin-bottom: 18px;
+    font-size: 20px; } }
 @media all and (max-width: 790px) {
   .footer-table {
     min-height: 500px;
@@ -1414,7 +1421,7 @@ label.show,
     line-height: 1.3; }
 
   .box-title {
-    font-size: 28px; }
+    font-size: 29px; }
 
   .slider-title {
     font-size: 30px; }
@@ -1470,7 +1477,36 @@ label.show,
     margin-right: 0; }
 
   .info-box {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .section-structural.services .our-fleet .slider-title {
+    font-size: 28px;
+    margin-bottom: 20px; }
+
+  .section-structural.services .content.big {
+    line-height: 1.3; }
+
+  .our-fleet {
+    margin-top: 55px;
+    margin-bottom: 70px; }
+
+  .fleet-list > li {
+    margin-bottom: 70px; }
+
+  .fleet-table-list > li {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0; }
+    .fleet-table-list > li:last-child {
+      max-width: 100%; }
+    .fleet-table-list > li table tr td:first-child {
+      width: 60%; }
+
+  .fleet-box {
+    padding: 0; }
+
+  .fleet-img-wrap {
+    margin-bottom: 10px; } }
 @media all and (max-width: 640px) {
   .anchor-box a.down-arrow,
   .anchor-box .down-arrow {
