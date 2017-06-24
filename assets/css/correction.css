@@ -387,6 +387,9 @@ label.show,
 .project-list > li img {
   z-index: 11; }
 
+.anchor-list > li a {
+  display: inline-block; }
+
 /*--------------------------------------MEDIA-----------------------------------------*/
 @media all and (max-width: 1920px) {
   .section-page-title .center {
@@ -1271,8 +1274,8 @@ label.show,
     margin-bottom: 50px; }
 
   a.btn, .btn {
-    padding: 10px 35px 9px 30px;
-    font-size: 16px; }
+    padding: 10px 40px 8px 16px;
+    font-size: 12px; }
 
   .contact-title {
     font-size: 15px; }
@@ -1333,7 +1336,7 @@ label.show,
     overflow: hidden; }
     .job-detail-header-box .job-info {
       padding-right: 0;
-      font-size: 22px; }
+      font-size: 16px; }
     .job-detail-header-box .job-link {
       position: relative;
       right: auto;
@@ -1506,7 +1509,202 @@ label.show,
     padding: 0; }
 
   .fleet-img-wrap {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+
+  /*---------CAREERS---------*/
+  .section-career-banner {
+    min-height: 100vh; }
+    .section-career-banner .center {
+      max-width: 320px; }
+    .section-career-banner a.btn, .section-career-banner .btn {
+      min-width: auto; }
+
+  .banner-bottom-box {
+    display: none; }
+
+  .banner-down-arrow {
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 10px solid #ffffff; }
+
+  .banner-table {
+    padding-top: 84px;
+    padding-bottom: 130px; }
+
+  .anchor-list {
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: 27px; }
+    .anchor-list > li a {
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 0;
+      font-size: 10px; }
+
+  .banner-title {
+    margin-bottom: 7px;
+    font-size: 40px;
+    letter-spacing: .1em;
+    line-height: 1; }
+
+  .banner-desc {
+    margin-bottom: 22px;
+    font-size: 18px; }
+
+  .section-advancement {
+    padding-top: 46px;
+    padding-bottom: 33px; }
+    .section-advancement .left-box,
+    .section-advancement .right-box {
+      float: none;
+      padding: 0; }
+
+  .advancement-title {
+    font-size: 13px; }
+
+  .promotions-desc {
+    font-size: 12px; }
+
+  .circle-value {
+    font-size: 30px; }
+
+  .retention-list > li {
+    margin-bottom: 36px; }
+
+  .progress-value {
+    margin-bottom: 6px;
+    font-size: 20px; }
+
+  .progress-line span {
+    font-size: 12px; }
+  .progress-line .line {
+    height: 6px; }
+  .progress-line .start {
+    padding-right: 7px; }
+  .progress-line .finish {
+    padding-left: 7px; }
+
+  .retention-wrap {
+    padding: 5px 20px 0; }
+
+  .section-what-say {
+    padding-bottom: 230px; }
+    .section-what-say .center {
+      max-width: 320px; }
+    .section-what-say a.down-arrow,
+    .section-what-say .down-arrow {
+      display: none; }
+    .section-what-say .section-title {
+      margin-bottom: 42px; }
+
+  .what-say-list > li {
+    width: 100%;
+    margin-bottom: 53px; }
+
+  .what-say-title {
+    margin-bottom: 0;
+    font-size: 16px;
+    letter-spacing: .1em; }
+
+  .what-say-box {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 0; }
+    .what-say-box .content {
+      margin-bottom: 18px;
+      font-size: 14px;
+      line-height: 1.3;
+      letter-spacing: .02em; }
+
+  .what-name {
+    margin-bottom: 1px;
+    font-size: 10px; }
+
+  .what-build {
+    font-size: 10px; }
+
+  .section-positions {
+    padding-top: 62px;
+    padding-bottom: 58px; }
+    .section-positions .center {
+      max-width: 320px; }
+    .section-positions .section-title {
+      margin-bottom: 32px; }
+    .section-positions .box-title {
+      margin-bottom: 1px;
+      font-size: 20px;
+      letter-spacing: .02em; }
+    .section-positions .job-detail-header-box {
+      margin-bottom: 9px; }
+    .section-positions .content {
+      margin-bottom: -5px;
+      line-height: 1.4; }
+    .section-positions .job-detail-box {
+      margin-bottom: 52px; }
+
+  .job-detail-box a.right-arrow, .job-detail-box .right-arrow {
+    letter-spacing: .05em; }
+
+  .section-careers-form {
+    padding-top: 71px; }
+    .section-careers-form .center {
+      max-width: 320px; }
+    .section-careers-form a.btn,
+    .section-careers-form .btn {
+      margin-top: 9px; }
+    .section-careers-form .section-title {
+      margin-bottom: 56px; }
+
+  select,
+  .radio-btn,
+  .check-style span {
+    font-size: 16px; }
+
+  .select-wrap:after {
+    margin-top: 2px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 6px solid #cd0000; }
+
+  .career-form-list > li,
+  .job-history-list > li {
+    margin-bottom: 25px !important; }
+
+  .job-history-list > li:last-child {
+    padding-top: 10px; }
+
+  .name-row > li,
+  .address-row > li,
+  .birth-row > li,
+  .license-row > li {
+    float: none;
+    width: 100% !important;
+    margin-bottom: 25px; }
+    .name-row > li:last-child,
+    .address-row > li:last-child,
+    .birth-row > li:last-child,
+    .license-row > li:last-child {
+      margin-bottom: 0; }
+
+  .job-history-list > li > ul > li {
+    float: none;
+    width: 100%;
+    margin-bottom: 25px; }
+    .job-history-list > li > ul > li:last-child {
+      margin-bottom: 0; }
+
+  .section-careers-form a.right-arrow,
+  .section-careers-form .right-arrow {
+    margin-top: -30px; }
+
+  .check-box {
+    margin-top: 15px; }
+
+  .form-title {
+    margin-bottom: 30px; }
+
+  .career-form-box {
+    padding-top: 0; } }
 @media all and (max-width: 640px) {
   .anchor-box a.down-arrow,
   .anchor-box .down-arrow {

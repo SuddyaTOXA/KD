@@ -373,3 +373,10 @@ label.show,
 .project-list > li img {
   z-index: 11;
 }
+.anchor-list {
+  > li {
+    a {
+      display: inline-block;
+    }
+  }
+}

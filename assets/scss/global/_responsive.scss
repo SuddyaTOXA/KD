@@ -598,16 +598,16 @@
   .navigationWedge:before {
     margin-left: 90px;
   }
-    .siteLogo {
-      margin-top: 4px;
-      max-width: 210px;
-      img {
-        max-width: 100%;
-      }
+  .siteLogo {
+    margin-top: 4px;
+    max-width: 210px;
+    img {
+      max-width: 100%;
     }
+  }
   .center {
     max-width: 320px;
-    padding:  0 15px;
+    padding: 0 15px;
   }
   .navigation,
   .navigationRight {
@@ -622,17 +622,17 @@
       width: 100%;
     }
   }
-    .footer-table {
-      min-height: 250px;
-      height: 300px;
+  .footer-table {
+    min-height: 250px;
+    height: 300px;
+    padding-left: 0;
+    padding-right: 0;
+    .footer-box.right & {
       padding-left: 0;
       padding-right: 0;
-      .footer-box.right & {
-        padding-left: 0;
-        padding-right: 0;
-        text-align: right;
-      }
+      text-align: right;
     }
+  }
   .anchor-box {
     padding: 8px 0 8px;
     min-height: 72px;
@@ -664,35 +664,35 @@
     }
   }
   .footer-box.right {
-      z-index: 150;
-      top: -88px;
-      .anchor-box {
-        padding-right: 25px;
-      }
-      .footerPageHeadline {
-        margin-right: 0;
-        margin-left: auto;
-      }
+    z-index: 150;
+    top: -88px;
+    .anchor-box {
+      padding-right: 25px;
     }
     .footerPageHeadline {
-      max-width: 250px;
-      font-size: 30px;
-      letter-spacing: 0.11em;
+      margin-right: 0;
+      margin-left: auto;
     }
-    .footer-box .footerPageCTA {
-      margin-top: 38px;
-      margin-left: 1px;
-      min-width: 166px;
-      font-size: 12px;
-      padding: 10px 30px 7px 17px;
-      &:after {
-        top: 20px;
-        right: 18px;
-        border-top: 7px solid transparent;
-        border-left: 6px solid #fff;
-        border-bottom: 7px solid transparent;
-      }
+  }
+  .footerPageHeadline {
+    max-width: 250px;
+    font-size: 30px;
+    letter-spacing: 0.11em;
+  }
+  .footer-box .footerPageCTA {
+    margin-top: 38px;
+    margin-left: 1px;
+    min-width: 166px;
+    font-size: 12px;
+    padding: 10px 30px 7px 17px;
+    &:after {
+      top: 20px;
+      right: 18px;
+      border-top: 7px solid transparent;
+      border-left: 6px solid #fff;
+      border-bottom: 7px solid transparent;
     }
+  }
   .footer-top {
     margin-bottom: -88px;
   }
@@ -798,9 +798,9 @@
     height: 424px;
     padding-top: 70px;
   }
-/*------------ABOUT----------------*/
+  /*------------ABOUT----------------*/
   .section-career-banner {
-    &.about{
+    &.about {
       min-height: 400px;
       .center {
         max-width: 320px;
@@ -829,13 +829,13 @@
     }
     a.down-arrow,
     .down-arrow {
-        left: -41px;
-        top: -180px;
-        max-width: 185px;
-        font-size: 12px;
-        font-weight: 900;
-        line-height: 1.3;
-        letter-spacing: .1em;
+      left: -41px;
+      top: -180px;
+      max-width: 185px;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.3;
+      letter-spacing: .1em;
       &:after {
         top: 36px;
         right: 18px;
@@ -845,10 +845,10 @@
       }
     }
   }
-    .about-desc {
-      font-size: 14px;
-      line-height: 1.35;
-    }
+  .about-desc {
+    font-size: 14px;
+    line-height: 1.35;
+  }
 
   .section-about {
     position: relative;
@@ -865,7 +865,9 @@
       .center {
         max-width: 320px;
       }
-      h5{font-size: 12px;}
+      h5 {
+        font-size: 12px;
+      }
     }
     .left-box,
     .right-box {
@@ -880,111 +882,123 @@
   .important-info {
     font-size: 24px;
   }
-    .blockquote-box {
-      padding-top: 25px;
-      margin-top: 36px;
-      margin-left: 0;
+  .blockquote-box {
+    padding-top: 25px;
+    margin-top: 36px;
+    margin-left: 0;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    &:before {
+      width: 18px;
+      height: 7px;
+    }
+    .author {
+      margin-bottom: 1px;
       font-size: 12px;
-      letter-spacing: 0.06em;
-      &:before {
-        width: 18px;
-        height: 7px;
-      }
-      .author {
-        margin-bottom: 1px;
-        font-size: 12px;
+    }
+  }
+  .content {
+    font-size: 15px;
+    line-height: 1.5;
+    * {
+      margin-bottom: 26px;
+      &:last-child {
+        margin-bottom: 0;
       }
     }
-      .content {
-        font-size: 15px;
-        line-height: 1.5;
-        * {
-          margin-bottom: 26px;
-          &:last-child {
-            margin-bottom: 0;
-          }
-        }
-        h1, .h1style {font-size: 23px;}
-        h2, .h2style {font-size: 22px;}
-        h3, .h3style {font-size: 21px;}
-        h4, .h4style {font-size: 20px;}
-        h5, .h5style {font-size: 19px;}
-        h6, .h6style {font-size: 18px;}
-        .big {
-          margin-bottom: 22px !important;
-          font-size: 21px;
-          line-height: 1.3;
-        }
-        .section-about.bottom-s & {
-          ul > li {
-            padding-left: 25px;
-          }
-        }
-      }
-    .section-title {
-      font-size: 30px;
-      font-weight: 900;
-      letter-spacing: .1em;
+    h1, .h1style {
+      font-size: 23px;
     }
-    .leadership-list {
-      > li {
-        width: 50%;
-        padding-bottom: 50%;
+    h2, .h2style {
+      font-size: 22px;
+    }
+    h3, .h3style {
+      font-size: 21px;
+    }
+    h4, .h4style {
+      font-size: 20px;
+    }
+    h5, .h5style {
+      font-size: 19px;
+    }
+    h6, .h6style {
+      font-size: 18px;
+    }
+    .big {
+      margin-bottom: 22px !important;
+      font-size: 21px;
+      line-height: 1.3;
+    }
+    .section-about.bottom-s & {
+      ul > li {
+        padding-left: 25px;
       }
     }
-      .leadership-overlay {
-        padding: 20px 10px 10px;
-      }
-        .leader-header-box {
-          padding-bottom: 20px;
-        }
-        .name {
-          font-size: 15px;
-          &.name {
-            font-size: 13px;
-          }
-        }
-        .info {
-          font-size: 12px;
-        }
-        .leadership-overlay {
-          a.btn.small,
-          .btn.small {
-            font-size: 12px;
-            bottom: 0;
-            padding: 15px 20px 12px 15px;
-            min-width: auto;
-          }
-        }
-        .separator {
-          .leadership-separator-box {
-            padding: 10px;
-          }
-          .leadership-cell {
-            vertical-align: middle;
-          }
-        }
-    .customers-list {
-      margin: 0 auto;
-      > li {
-        width: 50%;
-        padding: 0 10px;
-        margin-bottom: 20px;
-      }
+  }
+  .section-title {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: .1em;
+  }
+  .leadership-list {
+    > li {
+      width: 50%;
+      padding-bottom: 50%;
     }
-      .customers-box {
-        width: auto;
-        height: auto;
-        line-height: 130px;
-        img {
-          max-width: 100%;
-        }
-      }
-    .signatures-box {
-      p {
-        font-size: 15px;
-      }
+  }
+  .leadership-overlay {
+    padding: 20px 10px 10px;
+  }
+  .leader-header-box {
+    padding-bottom: 20px;
+  }
+  .name {
+    font-size: 15px;
+    &.name {
+      font-size: 13px;
     }
+  }
+  .info {
+    font-size: 12px;
+  }
+  .leadership-overlay {
+    a.btn.small,
+    .btn.small {
+      font-size: 12px;
+      bottom: 0;
+      padding: 15px 20px 12px 15px;
+      min-width: auto;
+    }
+  }
+  .separator {
+    .leadership-separator-box {
+      padding: 10px;
+    }
+    .leadership-cell {
+      vertical-align: middle;
+    }
+  }
+  .customers-list {
+    margin: 0 auto;
+    > li {
+      width: 50%;
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+  }
+  .customers-box {
+    width: auto;
+    height: auto;
+    line-height: 130px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .signatures-box {
+    p {
+      font-size: 15px;
+    }
+  }
   .president,
   .president-name {
     font-size: 16px;
@@ -1080,8 +1094,8 @@
     margin-bottom: 50px;
   }
   a.btn, .btn {
-    padding: 10px 35px 9px 30px;
-    font-size: 16px;
+    padding: 10px 40px 8px 16px;
+    font-size: 12px;
   }
   .contact-title {
     font-size: 15px;
@@ -1143,7 +1157,8 @@
       }
     }
   }
-  .job-detail-box { }
+  .job-detail-box {
+  }
   .box-title {
     font-size: 35px;
   }
@@ -1152,7 +1167,7 @@
     overflow: hidden;
     .job-info {
       padding-right: 0;
-      font-size: 22px;
+      font-size: 16px;
     }
     .job-link {
       position: relative;
@@ -1183,9 +1198,9 @@
       height: 320px !important;
     }
   }
-    .project-box {
-      padding: 25px 15px 25px !important;
-    }
+  .project-box {
+    padding: 25px 15px 25px !important;
+  }
   .project-title {
     font-size: 16px;
     &:before {
@@ -1258,12 +1273,24 @@
   }
   .section-structural {
     .content {
-      h1{font-size: 26px}
-      h2{font-size: 24px}
-      h3{font-size: 23px}
-      h4{font-size: 20px}
-      h5{font-size: 19px}
-      h6 {font-size: 18px}
+      h1 {
+        font-size: 26px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 23px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+      h5 {
+        font-size: 19px;
+      }
+      h6 {
+        font-size: 18px;
+      }
     }
   }
   .swiper-button-prev,
@@ -1316,10 +1343,10 @@
   .section-structural.services .content.big {
     line-height: 1.3;
   }
-    .our-fleet {
-      margin-top: 55px;
-      margin-bottom: 70px;
-    }
+  .our-fleet {
+    margin-top: 55px;
+    margin-bottom: 70px;
+  }
   .fleet-list {
     > li {
       margin-bottom: 70px;
@@ -1343,6 +1370,244 @@
   }
   .fleet-img-wrap {
     margin-bottom: 10px;
+  }
+  /*---------CAREERS---------*/
+  .section-career-banner {
+    min-height: 100vh;
+    .center {
+      max-width: 320px;
+    }
+    a.btn, .btn {
+      min-width: auto;
+    }
+  }
+    .banner-bottom-box {
+      display: none;
+    }
+    .banner-down-arrow {
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 10px solid #ffffff;
+    }
+    .banner-table {
+      padding-top: 84px;
+      padding-bottom: 130px;
+    }
+    .anchor-list {
+      margin-right: -10px;
+      margin-left: -10px;
+      margin-bottom: 27px;
+      > li {
+        a {
+          margin-right: 10px;
+          margin-left: 10px;
+          margin-bottom: 0;
+          font-size: 10px;
+        }
+      }
+    }
+    .banner-title {
+      margin-bottom: 7px;
+      font-size: 40px;
+      letter-spacing: .1em;
+      line-height: 1;
+    }
+    .banner-desc {
+      margin-bottom: 22px;
+      font-size: 18px;
+    }
+  .section-advancement {
+    padding-top: 46px;
+    padding-bottom: 33px;
+    .left-box,
+    .right-box {
+      float: none;
+      padding: 0;
+    }
+  }
+    .advancement-title {
+      font-size: 13px;
+    }
+    .promotions-desc {
+      font-size: 12px;
+    }
+      .circle-value {
+        font-size: 30px;
+      }
+      .retention-list > li {
+        margin-bottom: 36px;
+      }
+      .progress-value {
+        margin-bottom: 6px;
+        font-size: 20px;
+      }
+      .progress-line {
+        span {
+          font-size: 12px;
+        }
+        .line {
+          height: 6px;
+        }
+        .start {
+          padding-right: 7px;
+        }
+        .finish {
+          padding-left: 7px;
+        }
+      }
+      .retention-wrap {
+        padding: 5px 20px 0;
+      }
+  .section-what-say {
+    padding-bottom: 230px;
+    .center {
+      max-width: 320px;
+    }
+    a.down-arrow,
+    .down-arrow {
+      display: none;
+    }
+    .section-title {
+      margin-bottom: 42px;
+    }
+  }
+    .what-say-list {
+      > li {
+        width: 100%;
+        margin-bottom: 53px;
+      }
+    }
+    .what-say-title {
+      margin-bottom: 0;
+      font-size: 16px;
+      letter-spacing: .1em;
+    }
+    .what-say-box {
+      max-width: 250px;
+      margin: 0 auto;
+      padding: 0;
+      .content {
+        margin-bottom: 18px;
+        font-size: 14px;
+        line-height: 1.3;
+        letter-spacing: .02em;
+      }
+    }
+    .what-name {
+      margin-bottom: 1px;
+      font-size: 10px;
+    }
+    .what-build {
+      font-size: 10px;
+    }
+  .section-positions {
+    padding-top: 62px;
+    padding-bottom: 58px;
+    .center {
+      max-width: 320px;
+    }
+    .section-title {
+      margin-bottom: 32px;
+    }
+    .box-title {
+      margin-bottom: 1px;
+      font-size: 20px;
+      letter-spacing: .02em;
+    }
+    .job-detail-header-box {
+      margin-bottom: 9px;
+    }
+    .content {
+      margin-bottom: -5px;
+      line-height: 1.4;
+    }
+    .job-detail-box {
+      margin-bottom: 52px;
+    }
+  }
+  .job-detail-box {
+    a.right-arrow, .right-arrow {
+      letter-spacing: .05em;
+    }
+  }
+  .section-careers-form {
+    padding-top: 71px;
+    .center {
+      max-width: 320px;
+    }
+    a.btn,
+    .btn {
+      margin-top: 9px;
+    }
+    .section-title {
+      margin-bottom: 56px;
+    }
+  }
+  select,
+  .radio-btn,
+  .check-style span {
+    font-size: 16px;
+  }
+  .select-wrap:after {
+    margin-top: 2px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 6px solid #cd0000;
+  }
+  .career-form-list,
+  .job-history-list {
+    > li {
+      margin-bottom: 25px !important;
+    }
+  }
+  .job-history-list {
+    > li {
+      &:last-child {
+        padding-top: 10px;
+      }
+    }
+  }
+  .name-row,
+  .address-row,
+  .birth-row,
+  .license-row {
+    > li {
+      float: none;
+      width: 100% !important;
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .job-history-list {
+    > li {
+      > ul {
+        > li {
+          float: none;
+          width: 100%;
+          margin-bottom: 25px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .section-careers-form {
+      a.right-arrow,
+      .right-arrow {
+        margin-top: -30px;
+    }
+  }
+  .check-box {
+    margin-top: 15px;
+  }
+  .form-title {
+    margin-bottom: 30px;
+  }
+  .career-form-box {
+    padding-top: 0;
   }
 }
 
