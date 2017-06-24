@@ -251,6 +251,12 @@
   .about-desc {
     font-size: 21px;
   }
+  /*-----------JOB-DETAIL-----------*/
+  .project-list {
+    > li {
+      height: 400px !important;
+    }
+  }
 }
 
 @media all and (max-width: 1080px) {
@@ -290,6 +296,11 @@
   .footer-table {
     height: 568px;
   }
+  /*-----------JOB-DETAIL-----------*/
+  .fullWrap {
+    padding-top: 61px;
+  }
+
 }
 
 @media all and (max-width: 1024px) {
@@ -493,6 +504,7 @@
     font-size: 18px;
     &:after {
       margin-top: 0;
+
     }
   }
   .box-title {
@@ -503,6 +515,19 @@
   }
   .job-detail-header-box {
     margin-bottom: 25px;
+  }
+  /*-----------JOB-DETAIL-----------*/
+  .section-projects + .footerWrap {
+    margin-top: -60px;
+  }
+  .project-view-title {
+    font-size: 32px;
+  }
+  .project-box {
+    padding-left: 50px !important;
+  }
+  .project-list > li {
+    height: 360px !important;
   }
 }
 
@@ -1112,6 +1137,56 @@
       border-top: 8px solid transparent;
       border-left: 7px solid #cd0000;
       border-bottom: 8px solid transparent;
+    }
+  }
+  /*-----------JOB-DETAIL-----------*/
+  .fullWrap {
+    padding-top: 51px;
+  }
+  .project-list {
+    max-width: 320px;
+    margin: 0 auto;
+    > li {
+      width: 100% !important;
+      height: 320px !important;
+    }
+  }
+    .project-box {
+      padding: 25px 15px 25px !important;
+    }
+  .project-title {
+    font-size: 16px;
+    &:before {
+      left: -10px;
+      top: 7px;
+      border-top: 6px solid transparent;
+      border-left: 5px solid #fff;
+      border-bottom: 6px solid transparent;
+    }
+  }
+  .project-cell .location {
+    font-size: 16px;
+    &:before {
+      width: 2px;
+      height: 2px;
+      left: -17px;
+      top: 11px;
+    }
+  }
+  .project-view-title {
+    font-size: 28px;
+  }
+  .section-projects + .footerWrap {
+    margin-top: 0;
+  }
+  .project-desc {
+    line-height: 1.4;
+  }
+  /*---------STRUCTURAL-FOUNDATION---------*/
+  .section-structural {
+    .center {
+      max-width: 320px;
+      margin: 0 auto;
     }
   }
 }
