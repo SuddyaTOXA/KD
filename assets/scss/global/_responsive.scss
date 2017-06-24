@@ -272,6 +272,14 @@
       min-width: 245px;
     }
   }
+  .banner-desc {
+    font-size: 34px;
+  }
+  .what-say-list  {
+    > li {
+      width: 49%;
+    }
+  }
 }
 
 @media all and (max-width: 1080px) {
@@ -392,6 +400,15 @@
       margin-bottom: 6px;
       font-size: 13px;
     }
+  }
+  .banner-table {
+    padding-top: 100px;
+  }
+  .banner-title {
+    font-size: 100px;
+  }
+  .banner-desc {
+    font-size: 30px;
   }
 }
 
@@ -560,6 +577,32 @@
   .table-title {
     margin-bottom: 18px;
     font-size: 20px;
+  }
+  .banner-title {
+    font-size: 90px;
+  }
+  .section-positions .section-title {
+    margin-bottom: 58px;
+  }
+  .what-say-list {
+    > li {
+      margin-bottom: 100px;
+    }
+  }
+  .what-say-title {
+    font-size: 24px;
+  }
+  .what-say-box {
+    .content {
+      margin-bottom: 28px;
+      font-size: 18px;
+    }
+  }
+  .what-name {
+    font-size: 14px;
+  }
+  .what-build {
+    font-size: 14px;
   }
 }
 

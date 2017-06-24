@@ -67,12 +67,16 @@ function circleProgressBar() {
 
         bar.each(function (i) {
             var radius = bar.eq(i).data('radius'),
-                mainCircle = bar.eq(i).data('mainCircle');
+                mainCircle = bar.eq(i).data('mainCircle'),
+                widthCf= 10,
+                widthCs= 16,
+                widthCt= 22;
+
 
                 if (!radius) { radius = 130; }
                 if (mainCircle) {
                     var width = radius * 2,
-                        mainStrokeWidth = 10,
+                        mainStrokeWidth = widthCf,
                         trueRadius = radius - (mainStrokeWidth / 2),
                         mainStrokeDasharray = 2 * pi * trueRadius,
                         mainStrokeDashoffset = mainStrokeDasharray * ((100 - mainCircle) * 0.01),
@@ -82,7 +86,7 @@ function circleProgressBar() {
                         secondCircle = $(this).data('secondCircle');
 
                         if (secondCircle) {
-                            var secondStrokeWidth = 16,
+                            var secondStrokeWidth = widthCs,
                                 secondRadius = radius - mainStrokeWidth,
                                 secondTrueRadius = secondRadius- (secondStrokeWidth / 2),
                                 secondStrokeDasharray = 2 * pi * secondTrueRadius,
@@ -92,7 +96,7 @@ function circleProgressBar() {
                                 thirdCircle = $(this).data('thirdCircle');
 
                                 if (thirdCircle) {
-                                var thirdStrokeWidth = 22,
+                                var thirdStrokeWidth = widthCt,
                                     offset = mainStrokeWidth + secondStrokeWidth,
                                     thirdRadius = radius - mainStrokeWidth - secondStrokeWidth,
                                     thirdTrueRadius = thirdRadius - (thirdStrokeWidth / 2),
@@ -343,4 +347,46 @@ $(document).ready(function() {
             }
         }
     });
+
+    //for hide content
+    $(window).on('load resize', function () {
+        var section = $('.limited-height'),
+            width = $(window).width(),
+            hideHeight = 520;
+
+        if (width < '768') {
+            section.each(function (i) {
+                var box = section.eq(i),
+                    btnBox = box.find('.hide-content'),
+                    btn = btnBox.find('.down-arrow'),
+                    height = box.outerHeight();
+
+                if (height > hideHeight) {
+                    if (!(box.hasClass('hide'))) {
+                        btnBox.addClass('show');
+                        box.addClass('hide');
+                        box.css('height', hideHeight);
+                    }
+                }
+
+                btn.on('click', function () {
+                    var btnBox = $(this).parents('.hide-content'),
+                        box = $(this).parents('.limited-height');
+
+                    btnBox.removeClass('show');
+                    box.removeClass('hide');
+                    box.css('height', '100%');
+                });
+            });
+        } else {
+            section.each(function (i) {
+                var box = section.eq(i),
+                    btnBox = box.find('.hide-content');
+
+                    btnBox.removeClass('show');
+                    box.removeClass('hide');
+                    box.css('height', '100%');
+            });
+        }
+    })
 });
