@@ -1331,6 +1331,11 @@
     }
   }
   .section-structural {
+    &.services {
+      .box-title {
+        margin-bottom: 14px;
+      }
+    }
     .box-title {
       margin-bottom: 14px;
     }

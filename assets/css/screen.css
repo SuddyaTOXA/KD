@@ -4775,6 +4775,8 @@ a.right-arrow,
     .section-structural .content ul, .section-structural .content ol {
       margin-top: 20px; }
 
+  .section-structural.services .box-title {
+    margin-bottom: 14px; }
   .section-structural .box-title {
     margin-bottom: 14px; }
 
