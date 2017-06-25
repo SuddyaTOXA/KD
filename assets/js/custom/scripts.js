@@ -60,81 +60,104 @@ function setMaxOuterHeight(box) {
     });
     box.height(maxHeight);
 }
-function circleProgressBar() {
+function renderCircle() {
     if ($('.circle-bar').length) {
         var bar = $('.circle-bar'),
             pi = Math.PI;
 
         bar.each(function (i) {
-            var radius = bar.eq(i).data('radius'),
-                mainCircle = bar.eq(i).data('mainCircle'),
-                widthCf= 10,
-                widthCs= 16,
-                widthCt= 22;
-
-
-                if (!radius) { radius = 130; }
-                if (mainCircle) {
-                    var width = radius * 2,
-                        mainStrokeWidth = widthCf,
-                        trueRadius = radius - (mainStrokeWidth / 2),
-                        mainStrokeDasharray = 2 * pi * trueRadius,
-                        mainStrokeDashoffset = mainStrokeDasharray * ((100 - mainCircle) * 0.01),
-                        circleBg = '<circle cx="'+ radius +'" cy="'+ radius +'" r="'+ trueRadius +'" fill="none" stroke="#EAEAEA" stroke-width="'+ mainStrokeWidth +'" />',
-                        circleMain =  '<circle class="cpb-main" cx="'+ radius +'" cy="'+ radius +'" r="'+ trueRadius +'" fill="none" stroke="#cd0000" stroke-width="'+ mainStrokeWidth +'" stroke-dasharray="'+ mainStrokeDasharray +'" stroke-dashoffset="'+ mainStrokeDasharray +'" />',
-                        circles = circleBg + circleMain,
-                        secondCircle = $(this).data('secondCircle');
-
-                        if (secondCircle) {
-                            var secondStrokeWidth = widthCs,
-                                secondRadius = radius - mainStrokeWidth,
-                                secondTrueRadius = secondRadius- (secondStrokeWidth / 2),
-                                secondStrokeDasharray = 2 * pi * secondTrueRadius,
-                                secondStrokeDashoffset = secondStrokeDasharray * ((100 - secondCircle) * 0.01),
-                                circleSecond =  '<circle class="cpb-second" cx="'+ secondRadius +'" cy="'+ secondRadius +'" r="'+ secondTrueRadius +'" fill="none" stroke="#FE4040" stroke-width="'+ secondStrokeWidth +'" stroke-dasharray="'+ secondStrokeDasharray +'" stroke-dashoffset="'+ secondStrokeDasharray +'" transform="translate('+ mainStrokeWidth +', '+ mainStrokeWidth +')"/>',
-                                circles = circles + circleSecond,
-                                thirdCircle = $(this).data('thirdCircle');
-
-                                if (thirdCircle) {
-                                var thirdStrokeWidth = widthCt,
-                                    offset = mainStrokeWidth + secondStrokeWidth,
-                                    thirdRadius = radius - mainStrokeWidth - secondStrokeWidth,
-                                    thirdTrueRadius = thirdRadius - (thirdStrokeWidth / 2),
-                                    thirdStrokeDasharray = 2 * pi * thirdTrueRadius,
-                                    thirdStrokeDashoffset = thirdStrokeDasharray * ((100 - thirdCircle) * 0.01),
-                                    circleThird =  '<circle  class="cpb-third" cx="'+ thirdRadius +'" cy="'+ thirdRadius +'" r="'+ thirdTrueRadius +'" fill="none" stroke="#B00000" stroke-width="'+ thirdStrokeWidth +'" stroke-dasharray="'+ thirdStrokeDasharray +'" stroke-dashoffset="'+ thirdStrokeDasharray +'" transform="translate('+ offset +', '+ offset +')"/>',
-                                    circles = circles + circleThird;
-                            }
-                        }
-
-                    bar.eq(i).css('width',width).css('height', width);
-
-                    $(this).html(function () {
-                        return '<svg class="progress-svg" width="'+ width +'" height="'+ width +'" viewbox="0 0 '+ width +' '+ width +'">' + circles + '</svg><span class="circle-value"><span class="counter">'+ mainCircle +'</span>%</span> ';
-                    });
-
-                    setTimeout(function () {
-                        bar.eq(i).find('.cpb-main').css('stroke-dashoffset', mainStrokeDashoffset);
-                    }, 100);
-                    setTimeout(function () {
-                        bar.eq(i).find('.cpb-second').css('stroke-dashoffset', secondStrokeDashoffset);
-                    }, 200);
-                    setTimeout(function () {
-                        bar.eq(i).find('.cpb-third').css('stroke-dashoffset', thirdStrokeDashoffset);
-                    }, 300);
-
-                    $(this).find('.counter').prop('Counter',0).animate({
-                        Counter: mainCircle
-                    }, {
-                        duration: 2000,
-                        easing: 'swing',
-                        step: function (now) {
-                            $(this).text(Math.ceil(now));
-                        }
-                    });
+            if ($(window).width() > 767) {
+                var radius = bar.eq(i).data('radius'),
+                    mainCircle = bar.eq(i).data('mainCircle'),
+                    widthCf = 10,
+                    widthCs = 16,
+                    widthCt = 22;
+                if (!radius) {
+                    radius = 130;
                 }
+            } else if ($(window).width() < 768) {
+                var radius = bar.eq(i).data('mRadius'),
+                    mainCircle = bar.eq(i).data('mainCircle'),
+                    widthCf = 6,
+                    widthCs = 8,
+                    widthCt = 10;
+                if (!radius) {
+                    radius = 65;
+                }
+            }
+
+
+            if (mainCircle) {
+                var width = radius * 2,
+                    mainStrokeWidth = widthCf,
+                    trueRadius = radius - (mainStrokeWidth / 2),
+                    mainStrokeDasharray = 2 * pi * trueRadius,
+                    mainStrokeDashoffset = mainStrokeDasharray * ((100 - mainCircle) * 0.01),
+                    circleBg = '<circle cx="' + radius + '" cy="' + radius + '" r="' + trueRadius + '" fill="none" stroke="#EAEAEA" stroke-width="' + mainStrokeWidth + '" />',
+                    circleMain = '<circle class="cpb-main" cx="' + radius + '" cy="' + radius + '" r="' + trueRadius + '" fill="none" stroke="#cd0000" stroke-width="' + mainStrokeWidth + '" stroke-dasharray="' + mainStrokeDasharray + '" stroke-dashoffset="' + mainStrokeDasharray + '" />',
+                    circles = circleBg + circleMain,
+                    secondCircle = $(this).data('secondCircle');
+
+                if (secondCircle) {
+                    var secondStrokeWidth = widthCs,
+                        secondRadius = radius - mainStrokeWidth,
+                        secondTrueRadius = secondRadius - (secondStrokeWidth / 2),
+                        secondStrokeDasharray = 2 * pi * secondTrueRadius,
+                        secondStrokeDashoffset = secondStrokeDasharray * ((100 - secondCircle) * 0.01),
+                        circleSecond = '<circle class="cpb-second" cx="' + secondRadius + '" cy="' + secondRadius + '" r="' + secondTrueRadius + '" fill="none" stroke="#FE4040" stroke-width="' + secondStrokeWidth + '" stroke-dasharray="' + secondStrokeDasharray + '" stroke-dashoffset="' + secondStrokeDasharray + '" transform="translate(' + mainStrokeWidth + ', ' + mainStrokeWidth + ')"/>',
+                        circles = circles + circleSecond,
+                        thirdCircle = $(this).data('thirdCircle');
+
+                    if (thirdCircle) {
+                        var thirdStrokeWidth = widthCt,
+                            offset = mainStrokeWidth + secondStrokeWidth,
+                            thirdRadius = radius - mainStrokeWidth - secondStrokeWidth,
+                            thirdTrueRadius = thirdRadius - (thirdStrokeWidth / 2),
+                            thirdStrokeDasharray = 2 * pi * thirdTrueRadius,
+                            thirdStrokeDashoffset = thirdStrokeDasharray * ((100 - thirdCircle) * 0.01),
+                            circleThird = '<circle  class="cpb-third" cx="' + thirdRadius + '" cy="' + thirdRadius + '" r="' + thirdTrueRadius + '" fill="none" stroke="#B00000" stroke-width="' + thirdStrokeWidth + '" stroke-dasharray="' + thirdStrokeDasharray + '" stroke-dashoffset="' + thirdStrokeDasharray + '" transform="translate(' + offset + ', ' + offset + ')"/>',
+                            circles = circles + circleThird;
+                    }
+                }
+
+                bar.eq(i).css('width', width).css('height', width);
+
+                $(this).html(function () {
+                    return '<svg class="progress-svg" width="' + width + '" height="' + width + '" viewbox="0 0 ' + width + ' ' + width + '">' + circles + '</svg><span class="circle-value"><span class="counter">' + mainCircle + '</span>%</span> ';
+                });
+
+                $('.circle-value').css('line-height', width + 'px');
+
+                setTimeout(function () {
+                    bar.eq(i).find('.cpb-main').css('stroke-dashoffset', mainStrokeDashoffset);
+                }, 100);
+                setTimeout(function () {
+                    bar.eq(i).find('.cpb-second').css('stroke-dashoffset', secondStrokeDashoffset);
+                }, 200);
+                setTimeout(function () {
+                    bar.eq(i).find('.cpb-third').css('stroke-dashoffset', thirdStrokeDashoffset);
+                }, 300);
+
+                $(this).find('.counter').prop('Counter', 0).animate({
+                    Counter: mainCircle
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+                bar.eq(i).addClass('complete');
+            }
         });
+
     }
+}
+function circleProgressBar() {
+    renderCircle();
+    $(window).on('resize', function () {
+        renderCircle();
+    });
 }
 $(document).ready(function() {
     msieversion();

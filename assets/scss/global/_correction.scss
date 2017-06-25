@@ -370,6 +370,9 @@ label.show,
 .no-js .input-wrap label {
   opacity: 1;
 }
+.section-leadership:before {
+  z-index: 200;
+}
 .project-list > li img {
   z-index: 11;
 }
@@ -387,7 +390,9 @@ label.show,
 .leadership-list > li:focus .leadership-overlay {
   opacity: 1;
 }
-
+.circle-bar {
+  text-align: center;
+}
 .limited-height {
   overflow: hidden;
   position: relative;
