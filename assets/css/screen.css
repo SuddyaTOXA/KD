@@ -4885,6 +4885,8 @@ a.right-arrow,
       max-width: 320px; }
     .section-career-banner a.btn, .section-career-banner .btn {
       min-width: auto; }
+    .section-career-banner img {
+      height: 100%; }
 
   .banner-bottom-box {
     display: none; }

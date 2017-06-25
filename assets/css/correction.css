@@ -439,7 +439,8 @@ label.show,
       font-size: 13px;
       letter-spacing: .01em;
       float: none;
-      margin: 90px auto 0; }
+      margin: 90px auto 0;
+      font-weight: 900; }
       .hide-content.show a.down-arrow:after,
       .hide-content.show .down-arrow:after {
         top: 23px;
@@ -1649,6 +1650,8 @@ label.show,
       max-width: 320px; }
     .section-career-banner a.btn, .section-career-banner .btn {
       min-width: auto; }
+    .section-career-banner img {
+      height: 100%; }
 
   .banner-bottom-box {
     display: none; }
