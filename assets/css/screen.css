@@ -3846,7 +3846,8 @@ a.right-arrow,
     font-size: 100px; }
 
   .homeBannerSubline {
-    font-size: 26px; }
+    font-size: 26px;
+    max-width: 860px; }
 
   .footerHeading,
   .footerContact {
@@ -4213,6 +4214,9 @@ a.right-arrow,
 
   .what-build {
     font-size: 14px; } }
+@media all and (max-width: 860px) {
+  .homeBannerSubline {
+    padding-right: 70px; } }
 @media all and (max-width: 790px) {
   .footer-table {
     min-height: 500px;

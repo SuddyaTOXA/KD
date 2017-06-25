@@ -217,7 +217,8 @@
 .homeBannerSubline {
   position: relative;
   display: block;
-  padding: 10px 231px 0 0;
+  //padding: 10px 231px 0 0;
+  padding-right: 25px;
   text-align: right;
   font-family: $font-mem;
   font-size: 28px;
@@ -358,6 +359,9 @@
       }
     }
   }
+}
+.homeBannerWrap + .footerWrap {
+  margin-top: -205px;
 }
 .section-about .right-box {
   float: right;

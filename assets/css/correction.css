@@ -211,7 +211,7 @@
 .homeBannerSubline {
   position: relative;
   display: block;
-  padding: 10px 231px 0 0;
+  padding-right: 25px;
   text-align: right;
   font-family: "MrEavesModOT", Arial, Verdana, Tahoma, sans-serif;
   font-size: 28px;
@@ -372,6 +372,9 @@
       line-height: 1.4; }
       .footer-mobile-link > li a:hover, .footer-mobile-link > li a:focus {
         color: #cd0000; }
+
+.homeBannerWrap + .footerWrap {
+  margin-top: -205px; }
 
 .section-about .right-box {
   float: right; }
@@ -607,7 +610,8 @@ label.show,
     font-size: 100px; }
 
   .homeBannerSubline {
-    font-size: 26px; }
+    font-size: 26px;
+    max-width: 860px; }
 
   .footerHeading,
   .footerContact {
@@ -974,6 +978,9 @@ label.show,
 
   .what-build {
     font-size: 14px; } }
+@media all and (max-width: 860px) {
+  .homeBannerSubline {
+    padding-right: 70px; } }
 @media all and (max-width: 790px) {
   .footer-table {
     min-height: 500px;
