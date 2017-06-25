@@ -4583,8 +4583,8 @@ a.right-arrow,
 
   /*------------CONTACT-------------*/
   .section-contact {
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    padding-top: 60px;
+    padding-bottom: 60px; }
     .section-contact .center {
       max-width: 320px; }
 
@@ -4682,7 +4682,7 @@ a.right-arrow,
 
   /*-----------JOB-DETAIL-----------*/
   .section-job-detail {
-    padding-top: 10px; }
+    padding-top: 60px; }
     .section-job-detail .center {
       max-width: 320px; }
     .section-job-detail a.btn,
@@ -4690,6 +4690,8 @@ a.right-arrow,
       width: 100%;
       max-width: 260px;
       min-width: auto; }
+    .section-job-detail .location:before {
+      top: 11px; }
     .section-job-detail .bnt-box a {
       padding-left: 0;
       padding-top: 12px;

@@ -1108,8 +1108,8 @@
   }
   /*------------CONTACT-------------*/
   .section-contact {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     .center {
       max-width: 320px;
     }
@@ -1221,7 +1221,7 @@
   }
   /*-----------JOB-DETAIL-----------*/
   .section-job-detail {
-    padding-top: 10px;
+    padding-top: 60px;
     .center {
       max-width: 320px;
     }
@@ -1230,6 +1230,9 @@
       width: 100%;
       max-width: 260px;
       min-width: auto;
+    }
+    .location:before {
+      top: 11px;
     }
     .bnt-box {
       a {
