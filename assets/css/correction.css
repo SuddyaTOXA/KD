@@ -1531,14 +1531,17 @@ label.show,
 
   /*---------STRUCTURAL-FOUNDATION---------*/
   .section-structural {
-    padding-top: 40px;
-    padding-bottom: 40px; }
+    padding-top: 60px;
+    padding-bottom: 60px; }
     .section-structural .center {
       max-width: 320px;
       margin: 0 auto;
       padding: 0 15px; }
     .section-structural .content ul, .section-structural .content ol {
       margin-top: 20px; }
+
+  .section-structural .box-title {
+    margin-bottom: 14px; }
 
   .btn-estimate-box {
     position: relative !important;

@@ -1317,8 +1317,8 @@
   }
   /*---------STRUCTURAL-FOUNDATION---------*/
   .section-structural {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     .center {
       max-width: 320px;
       margin: 0 auto;
@@ -1330,6 +1330,12 @@
       }
     }
   }
+  .section-structural {
+    .box-title {
+      margin-bottom: 14px;
+    }
+  }
+
   .btn-estimate-box {
     position: relative !important;
     top: auto !important;
