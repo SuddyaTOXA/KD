@@ -1,4 +1,14 @@
 /*--------------------------------------MEDIA-----------------------------------------*/
+@media all and (min-width: 2560px) {
+  .homeBannerWrap + .footerWrap {
+    margin-top: -240px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .homeBannerWrap + .footerWrap {
+    margin-top: -190px;
+  }
+}
 @media all and (max-width: 1920px) {
   .section-page-title .center {
     min-height: 600px;
@@ -1233,6 +1243,7 @@
     }
     .location:before {
       top: 11px;
+      left: -18px;
     }
     .bnt-box {
       a {

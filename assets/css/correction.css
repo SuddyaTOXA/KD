@@ -450,6 +450,12 @@ label.show,
         border-top: 6px solid #cd0000; }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
+@media all and (min-width: 2560px) {
+  .homeBannerWrap + .footerWrap {
+    margin-top: -240px; } }
+@media all and (min-width: 1920px) {
+  .homeBannerWrap + .footerWrap {
+    margin-top: -190px; } }
 @media all and (max-width: 1920px) {
   .section-page-title .center {
     min-height: 600px; } }
@@ -1456,7 +1462,8 @@ label.show,
       max-width: 260px;
       min-width: auto; }
     .section-job-detail .location:before {
-      top: 11px; }
+      top: 11px;
+      left: -18; }
     .section-job-detail .bnt-box a {
       padding-left: 0;
       padding-top: 12px;

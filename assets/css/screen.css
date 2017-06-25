@@ -3685,6 +3685,12 @@ a.right-arrow,
   margin-top: 45px; }
 
 /*--------------------------------------MEDIA-----------------------------------------*/
+@media all and (min-width: 2560px) {
+  .homeBannerWrap + .footerWrap {
+    margin-top: -240px; } }
+@media all and (min-width: 1920px) {
+  .homeBannerWrap + .footerWrap {
+    margin-top: -190px; } }
 @media all and (max-width: 1920px) {
   .section-page-title .center {
     min-height: 600px; } }
@@ -4691,7 +4697,8 @@ a.right-arrow,
       max-width: 260px;
       min-width: auto; }
     .section-job-detail .location:before {
-      top: 11px; }
+      top: 11px;
+      left: -18px; }
     .section-job-detail .bnt-box a {
       padding-left: 0;
       padding-top: 12px;
